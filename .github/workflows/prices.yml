@@ -1,0 +1,33 @@
+name: prices
+on:
+  workflow_dispatch:
+  push:
+    paths: [tickers.json]
+  schedule:
+    # KST 09:00-15:59 (KR market) every 10 min, Mon-Fri  (UTC 00-06)
+    - cron: "*/10 0-6 * * 1-5"
+    # US market incl. pre/after hours, UTC 08-23 Mon-Fri and 00-01 Tue-Sat, every 15 min
+    - cron: "*/15 8-23 * * 1-5"
+    - cron: "*/15 0-1 * * 2-6"
+permissions:
+  contents: write
+concurrency:
+  group: prices
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python scripts/fetch_prices.py
+      - name: commit
+        run: |
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          git add prices.json
+          git diff --cached --quiet && exit 0
+          git commit -m "prices $(TZ=Asia/Seoul date +'%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
