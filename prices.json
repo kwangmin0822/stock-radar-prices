@@ -1,7 +1,7 @@
 {
 "KR": {
 "000270": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -0.93,
 "prevClose": null,
 "price": 106900.0,
@@ -9,39 +9,39 @@
 "status": "OPEN"
 },
 "000660": {
-"at": "2026-10-29T09:36",
-"change": 4.91,
+"at": "2026-10-29T09:46",
+"change": 6.46,
 "prevClose": null,
-"price": 1560000.0,
+"price": 1583000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000720": {
-"at": "2026-10-29T09:36",
-"change": -7.54,
+"at": "2026-10-29T09:46",
+"change": -9.01,
 "prevClose": null,
-"price": 88300.0,
+"price": 86900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "001440": {
-"at": "2026-10-29T09:36",
-"change": -3.17,
+"at": "2026-10-29T09:46",
+"change": -3.62,
 "prevClose": null,
-"price": 21400.0,
+"price": 21300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "001450": {
-"at": "2026-10-29T09:36",
-"change": -0.36,
+"at": "2026-10-29T09:46",
+"change": 0.71,
 "prevClose": null,
-"price": 41900.0,
+"price": 42350.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003490": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": 0.0,
 "prevClose": null,
 "price": 26100.0,
@@ -49,103 +49,103 @@
 "status": "OPEN"
 },
 "004020": {
-"at": "2026-10-29T09:36",
-"change": -1.51,
-"prevClose": null,
-"price": 26150.0,
-"src": "naver",
-"status": "OPEN"
-},
-"005380": {
-"at": "2026-10-29T09:36",
-"change": -2.03,
-"prevClose": null,
-"price": 290000.0,
-"src": "naver",
-"status": "OPEN"
-},
-"005490": {
-"at": "2026-10-29T09:36",
-"change": -1.95,
-"prevClose": null,
-"price": 276500.0,
-"src": "naver",
-"status": "OPEN"
-},
-"005930": {
-"at": "2026-10-29T09:36",
-"change": 1.45,
-"prevClose": null,
-"price": 245500.0,
-"src": "naver",
-"status": "OPEN"
-},
-"005940": {
-"at": "2026-10-29T09:36",
-"change": -0.63,
-"prevClose": null,
-"price": 23700.0,
-"src": "naver",
-"status": "OPEN"
-},
-"006360": {
-"at": "2026-10-29T09:36",
-"change": -5.5,
-"prevClose": null,
-"price": 28350.0,
-"src": "naver",
-"status": "OPEN"
-},
-"006800": {
-"at": "2026-10-29T09:36",
-"change": -2.66,
-"prevClose": null,
-"price": 25600.0,
-"src": "naver",
-"status": "OPEN"
-},
-"009420": {
-"at": "2026-10-29T09:36",
-"change": -1.69,
-"prevClose": null,
-"price": 37850.0,
-"src": "naver",
-"status": "OPEN"
-},
-"009830": {
-"at": "2026-10-29T09:36",
-"change": -2.43,
+"at": "2026-10-29T09:46",
+"change": -1.88,
 "prevClose": null,
 "price": 26050.0,
 "src": "naver",
 "status": "OPEN"
 },
-"010140": {
-"at": "2026-10-29T09:36",
-"change": -3.82,
+"005380": {
+"at": "2026-10-29T09:46",
+"change": -1.69,
 "prevClose": null,
-"price": 15880.0,
+"price": 291000.0,
+"src": "naver",
+"status": "OPEN"
+},
+"005490": {
+"at": "2026-10-29T09:46",
+"change": -2.48,
+"prevClose": null,
+"price": 275000.0,
+"src": "naver",
+"status": "OPEN"
+},
+"005930": {
+"at": "2026-10-29T09:46",
+"change": 2.69,
+"prevClose": null,
+"price": 248500.0,
+"src": "naver",
+"status": "OPEN"
+},
+"005940": {
+"at": "2026-10-29T09:46",
+"change": -0.21,
+"prevClose": null,
+"price": 23800.0,
+"src": "naver",
+"status": "OPEN"
+},
+"006360": {
+"at": "2026-10-29T09:46",
+"change": -7.33,
+"prevClose": null,
+"price": 27800.0,
+"src": "naver",
+"status": "OPEN"
+},
+"006800": {
+"at": "2026-10-29T09:46",
+"change": -1.71,
+"prevClose": null,
+"price": 25850.0,
+"src": "naver",
+"status": "OPEN"
+},
+"009420": {
+"at": "2026-10-29T09:46",
+"change": -2.47,
+"prevClose": null,
+"price": 37550.0,
+"src": "naver",
+"status": "OPEN"
+},
+"009830": {
+"at": "2026-10-29T09:46",
+"change": -3.56,
+"prevClose": null,
+"price": 25750.0,
+"src": "naver",
+"status": "OPEN"
+},
+"010140": {
+"at": "2026-10-29T09:46",
+"change": -4.12,
+"prevClose": null,
+"price": 15830.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010950": {
-"at": "2026-10-29T09:36",
-"change": -2.87,
+"at": "2026-10-29T09:46",
+"change": -3.98,
 "prevClose": null,
-"price": 122000.0,
+"price": 120600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011200": {
-"at": "2026-10-29T09:36",
-"change": -1.35,
+"at": "2026-10-29T09:46",
+"change": -0.9,
 "prevClose": null,
-"price": 21850.0,
+"price": 21950.0,
 "src": "naver",
 "status": "OPEN"
 },
 "012330": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -0.85,
 "prevClose": null,
 "price": 349000.0,
@@ -153,39 +153,39 @@
 "status": "OPEN"
 },
 "012450": {
-"at": "2026-10-29T09:36",
-"change": -5.46,
+"at": "2026-10-29T09:46",
+"change": -6.35,
 "prevClose": null,
-"price": 744000.0,
+"price": 737000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "015760": {
-"at": "2026-10-29T09:36",
-"change": -1.75,
+"at": "2026-10-29T09:46",
+"change": -2.27,
 "prevClose": null,
-"price": 28150.0,
+"price": 28000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "017670": {
-"at": "2026-10-29T09:36",
-"change": -2.95,
+"at": "2026-10-29T09:46",
+"change": -3.21,
 "prevClose": null,
-"price": 75700.0,
+"price": 75500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "018880": {
-"at": "2026-10-29T09:36",
-"change": -1.75,
+"at": "2026-10-29T09:46",
+"change": -2.29,
 "prevClose": null,
-"price": 3645.0,
+"price": 3625.0,
 "src": "naver",
 "status": "OPEN"
 },
 "022100": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -2.63,
 "prevClose": null,
 "price": 19280.0,
@@ -193,111 +193,111 @@
 "status": "OPEN"
 },
 "024110": {
-"at": "2026-10-29T09:36",
-"change": -0.37,
+"at": "2026-10-29T09:46",
+"change": -0.05,
 "prevClose": null,
-"price": 18770.0,
+"price": 18830.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028050": {
-"at": "2026-10-29T09:36",
-"change": -1.56,
+"at": "2026-10-29T09:46",
+"change": -1.48,
 "prevClose": null,
-"price": 63200.0,
+"price": 63250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028260": {
-"at": "2026-10-29T09:36",
-"change": 1.39,
+"at": "2026-10-29T09:46",
+"change": 1.69,
 "prevClose": null,
-"price": 329000.0,
+"price": 330000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028670": {
-"at": "2026-10-29T09:36",
-"change": -1.4,
+"at": "2026-10-29T09:46",
+"change": -0.87,
 "prevClose": null,
-"price": 5640.0,
+"price": 5670.0,
 "src": "naver",
 "status": "OPEN"
 },
 "029780": {
-"at": "2026-10-29T09:36",
-"change": -0.37,
+"at": "2026-10-29T09:46",
+"change": 0.12,
 "prevClose": null,
-"price": 40700.0,
+"price": 40900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "030200": {
-"at": "2026-10-29T09:36",
-"change": -0.44,
+"at": "2026-10-29T09:46",
+"change": 0.11,
 "prevClose": null,
-"price": 45150.0,
+"price": 45400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "031210": {
-"at": "2026-10-29T09:36",
-"change": -1.5,
+"at": "2026-10-29T09:46",
+"change": -1.39,
 "prevClose": null,
-"price": 42650.0,
+"price": 42700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "032640": {
-"at": "2026-10-29T09:36",
-"change": 0.15,
+"at": "2026-10-29T09:46",
+"change": 0.36,
 "prevClose": null,
-"price": 13810.0,
+"price": 13840.0,
 "src": "naver",
 "status": "OPEN"
 },
 "032830": {
-"at": "2026-10-29T09:36",
-"change": 0.54,
+"at": "2026-10-29T09:46",
+"change": 1.26,
 "prevClose": null,
-"price": 279000.0,
+"price": 281000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "034020": {
-"at": "2026-10-29T09:36",
-"change": -7.33,
+"at": "2026-10-29T09:46",
+"change": -10.42,
 "prevClose": null,
-"price": 56900.0,
+"price": 55000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "034220": {
-"at": "2026-10-29T09:36",
-"change": -0.92,
+"at": "2026-10-29T09:46",
+"change": -1.18,
 "prevClose": null,
-"price": 7550.0,
+"price": 7530.0,
 "src": "naver",
 "status": "OPEN"
 },
 "035420": {
-"at": "2026-10-29T09:36",
-"change": -1.57,
+"at": "2026-10-29T09:46",
+"change": -1.63,
 "prevClose": null,
-"price": 175200.0,
+"price": 175100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "035720": {
-"at": "2026-10-29T09:36",
-"change": -1.51,
+"at": "2026-10-29T09:46",
+"change": -1.85,
 "prevClose": null,
-"price": 29350.0,
+"price": 29250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "036460": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -1.36,
 "prevClose": null,
 "price": 36400.0,
@@ -305,143 +305,143 @@
 "status": "OPEN"
 },
 "047040": {
-"at": "2026-10-29T09:36",
-"change": -14.3,
+"at": "2026-10-29T09:46",
+"change": -18.36,
 "prevClose": null,
-"price": 12230.0,
+"price": 11650.0,
 "src": "naver",
 "status": "OPEN"
 },
 "047050": {
-"at": "2026-10-29T09:36",
-"change": -2.81,
+"at": "2026-10-29T09:46",
+"change": -3.02,
 "prevClose": null,
-"price": 48350.0,
+"price": 48250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "051910": {
-"at": "2026-10-29T09:36",
-"change": -2.12,
+"at": "2026-10-29T09:46",
+"change": -2.97,
 "prevClose": null,
-"price": 231000.0,
+"price": 229000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "055550": {
-"at": "2026-10-29T09:36",
-"change": -1.59,
+"at": "2026-10-29T09:46",
+"change": -0.8,
 "prevClose": null,
-"price": 86400.0,
+"price": 87100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "064400": {
-"at": "2026-10-29T09:36",
-"change": 0.51,
+"at": "2026-10-29T09:46",
+"change": 0.38,
 "prevClose": null,
-"price": 79400.0,
+"price": 79300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "068270": {
-"at": "2026-10-29T09:36",
-"change": -0.21,
+"at": "2026-10-29T09:46",
+"change": -0.32,
 "prevClose": null,
-"price": 189400.0,
+"price": 189200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "078930": {
-"at": "2026-10-29T09:36",
-"change": -2.19,
+"at": "2026-10-29T09:46",
+"change": -2.31,
 "prevClose": null,
-"price": 80500.0,
+"price": 80400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "082740": {
-"at": "2026-10-29T09:36",
-"change": -6.5,
+"at": "2026-10-29T09:46",
+"change": -7.85,
 "prevClose": null,
-"price": 30950.0,
+"price": 30500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "085620": {
-"at": "2026-10-29T09:36",
-"change": 0.93,
+"at": "2026-10-29T09:46",
+"change": 0.82,
 "prevClose": null,
-"price": 19580.0,
+"price": 19560.0,
 "src": "naver",
 "status": "OPEN"
 },
 "086790": {
-"at": "2026-10-29T09:36",
-"change": 0.17,
+"at": "2026-10-29T09:46",
+"change": 0.69,
 "prevClose": null,
-"price": 115500.0,
+"price": 116100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "088350": {
-"at": "2026-10-29T09:36",
-"change": -1.7,
+"at": "2026-10-29T09:46",
+"change": -1.22,
 "prevClose": null,
-"price": 4045.0,
+"price": 4065.0,
 "src": "naver",
 "status": "OPEN"
 },
 "103590": {
-"at": "2026-10-29T09:36",
-"change": -3.23,
+"at": "2026-10-29T09:46",
+"change": -4.07,
 "prevClose": null,
-"price": 57000.0,
+"price": 56500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "105560": {
-"at": "2026-10-29T09:36",
-"change": -0.78,
+"at": "2026-10-29T09:46",
+"change": -0.19,
 "prevClose": null,
-"price": 152800.0,
+"price": 153700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "111770": {
-"at": "2026-10-29T09:36",
-"change": -1.33,
+"at": "2026-10-29T09:46",
+"change": -0.59,
 "prevClose": null,
-"price": 66800.0,
+"price": 67300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "138930": {
-"at": "2026-10-29T09:36",
-"change": -1.06,
+"at": "2026-10-29T09:46",
+"change": -0.83,
 "prevClose": null,
-"price": 13080.0,
+"price": 13110.0,
 "src": "naver",
 "status": "OPEN"
 },
 "161390": {
-"at": "2026-10-29T09:36",
-"change": -1.76,
+"at": "2026-10-29T09:46",
+"change": -1.06,
 "prevClose": null,
-"price": 55800.0,
+"price": 56200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "175330": {
-"at": "2026-10-29T09:36",
-"change": 0.0,
+"at": "2026-10-29T09:46",
+"change": 1.43,
 "prevClose": null,
-"price": 24450.0,
+"price": 24800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "207940": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -1.24,
 "prevClose": null,
 "price": 1355000.0,
@@ -449,15 +449,15 @@
 "status": "OPEN"
 },
 "241560": {
-"at": "2026-10-29T09:36",
-"change": -1.82,
+"at": "2026-10-29T09:46",
+"change": -2.02,
 "prevClose": null,
-"price": 48550.0,
+"price": 48450.0,
 "src": "naver",
 "status": "OPEN"
 },
 "251270": {
-"at": "2026-10-29T09:36",
+"at": "2026-10-29T09:46",
 "change": -1.49,
 "prevClose": null,
 "price": 33050.0,
@@ -465,82 +465,82 @@
 "status": "OPEN"
 },
 "272210": {
-"at": "2026-10-29T09:36",
-"change": -0.3,
+"at": "2026-10-29T09:46",
+"change": -2.11,
 "prevClose": null,
-"price": 66000.0,
+"price": 64800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "302440": {
-"at": "2026-10-29T09:36",
-"change": -1.56,
+"at": "2026-10-29T09:46",
+"change": -1.71,
 "prevClose": null,
-"price": 31650.0,
+"price": 31600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "316140": {
-"at": "2026-10-29T09:36",
-"change": -1.0,
+"at": "2026-10-29T09:46",
+"change": -0.67,
 "prevClose": null,
-"price": 29600.0,
+"price": 29700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "323410": {
-"at": "2026-10-29T09:36",
-"change": -2.46,
+"at": "2026-10-29T09:46",
+"change": -1.64,
 "prevClose": null,
-"price": 19050.0,
+"price": 19210.0,
 "src": "naver",
 "status": "OPEN"
 },
 "329180": {
-"at": "2026-10-29T09:36",
-"change": -4.55,
+"at": "2026-10-29T09:46",
+"change": -4.9,
 "prevClose": null,
-"price": 272500.0,
+"price": 271500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "336260": {
-"at": "2026-10-29T09:36",
-"change": -3.22,
+"at": "2026-10-29T09:46",
+"change": -4.83,
 "prevClose": null,
-"price": 30050.0,
+"price": 29550.0,
 "src": "naver",
 "status": "OPEN"
 },
 "373220": {
-"at": "2026-10-29T09:36",
-"change": -6.55,
+"at": "2026-10-29T09:46",
+"change": -7.96,
 "prevClose": null,
-"price": 364000.0,
+"price": 358500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "377300": {
-"at": "2026-10-29T09:36",
-"change": -1.61,
+"at": "2026-10-29T09:46",
+"change": -1.76,
 "prevClose": null,
-"price": 33600.0,
+"price": 33550.0,
 "src": "naver",
 "status": "OPEN"
 },
 "379800": {
-"at": "2026-10-29T09:36",
-"change": -0.17,
+"at": "2026-10-29T09:46",
+"change": -0.06,
 "prevClose": null,
-"price": 23170.0,
+"price": 23195.0,
 "src": "naver",
 "status": "OPEN"
 },
 "454910": {
-"at": "2026-10-29T09:36",
-"change": -3.47,
+"at": "2026-10-29T09:46",
+"change": -4.46,
 "prevClose": null,
-"price": 58400.0,
+"price": 57800.0,
 "src": "naver",
 "status": "OPEN"
 }
@@ -910,7 +910,7 @@
 "change": 0.86,
 "ext": {
 "at": "2026-10-29T08:59+09:00",
-"price": 273.84
+"price": 273.83
 },
 "prevClose": 268.73,
 "price": 271.04,
@@ -1338,11 +1338,11 @@
 "src": "yahoo"
 }
 },
-"fxAt": "2026-10-29T09:36+09:00",
-"fxUSDKRW": 1336.6,
+"fxAt": "2026-10-29T09:46+09:00",
+"fxUSDKRW": 1336.88,
 "missing": {
 "KR": [],
 "US": []
 },
-"updatedAt": "2026-10-29T09:36:03+09:00"
+"updatedAt": "2026-10-29T09:46:54+09:00"
 }
