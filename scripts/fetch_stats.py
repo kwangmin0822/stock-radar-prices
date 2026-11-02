@@ -8,6 +8,11 @@ def raw(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=15) as r:
         return r.read()
 
+def ma200(closes):
+    c = [x for x in closes if x and x > 0]
+    if len(c) < 200: return None
+    return round(sum(c[-200:]) / 200, 4)
+
 def vol(closes):
     c = [x for x in closes if x and x > 0]
     if len(c) < 120: return None
@@ -31,19 +36,23 @@ def yahoo(sym):
 
 def main():
     tk = json.load(open("tickers.json"))
-    out = {}
+    out, ma = {}, {}
     for c in tk["KR"]:
-        v = None
-        try: v = vol(naver(c))
+        cl = []
+        try: cl = naver(c)
         except Exception as e: print("naver fail", c, e)
-        if v is None: v = vol(yahoo(c + ".KS")) or vol(yahoo(c + ".KQ"))
+        if vol(cl) is None: cl = yahoo(c + ".KS") or yahoo(c + ".KQ")
+        v, m = vol(cl), ma200(cl)
         if v is not None: out["KR-" + c] = v
+        if m is not None: ma["KR-" + c] = m
         time.sleep(0.2)
     for t in tk["US"]:
-        v = vol(yahoo(t.replace(".", "-")))
+        cl = yahoo(t.replace(".", "-"))
+        v, m = vol(cl), ma200(cl)
         if v is not None: out["US-" + t] = v
+        if m is not None: ma["US-" + t] = m
         time.sleep(0.6)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out}, open("stats.json", "w"), indent=0, sort_keys=True)
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma}, open("stats.json", "w"), indent=0, sort_keys=True)
     print(f"vol {len(out)}/{len(tk['KR'])+len(tk['US'])}")
 
 if __name__ == "__main__":

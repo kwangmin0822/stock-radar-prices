@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 21 * * 0"   # Monday 06:00 KST
+    - cron: "0 21 * * 1-4" # Tue-Fri 06:00 KST (200-day average needs daily refresh)
 permissions:
   contents: write
 concurrency:
