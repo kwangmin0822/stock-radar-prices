@@ -64,7 +64,11 @@ def signal(P, i, kind, M=None, skip=21):
         return out
     raise ValueError(kind)
 
-def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None):
+def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None,
+        buy_ok=None, months=None, buyc=None, sellc=None):
+    """buy_ok: per-day bool array, new buys only when True (market filter); months: set of month numbers when the
+    portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account)"""
+    BUYc = BUY if buyc is None else buyc; SELLc = SELL if sellc is None else sellc
     n = P.shape[1]
     sh = np.zeros(n, int); cash = float(start); entry = np.full(n, np.nan); pend_stop = np.zeros(n, bool)
     curve, flows, month, trades, cost = [], [], None, 0, 0.0
@@ -73,13 +77,15 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
         # 1) stop-loss orders decided yesterday fill today
         for j in np.where(pend_stop & (sh > 0))[0]:
             if np.isnan(px[j]): continue
-            got = sh[j] * px[j] * (1 - SLIP); c = got * SELL
+            got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
             cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
         pend_stop[:] = False
         new_month = dates[i][:6] != month
         flow = 0.0
         if new_month and month is not None and deposit:
             cash += deposit; flow = deposit
+        if new_month and months is not None and int(dates[i][4:6]) not in months:
+            month = dates[i][:6]; new_month = False      # deposits wait as cash until the next re-ranking month
         if new_month:
             month = dates[i][:6]
             prev = P[i - 1]
@@ -90,25 +96,25 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
             # sell names that dropped out of the top 2N
             for j in np.where(sh > 0)[0]:
                 if rank.get(j, 1e9) >= 2 * topn and not np.isnan(px[j]):
-                    got = sh[j] * px[j] * (1 - SLIP); c = got * SELL
+                    got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
                     cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
             eq = cash + np.nansum(sh * px)
             cap = 0.5 * eq
             sec_n = {}
             for j in np.where(sh > 0)[0]: sec_n[sectors[j]] = sec_n.get(sectors[j], 0) + 1
-            target = order[:topn]
+            target = order[:topn] if (buy_ok is None or buy_ok[i - 1]) else []
             # buy: walk the top-N; one share at a time round-robin while money lasts
             changed = True
             while changed:
                 changed = False
                 for j in target:
-                    p = px[j] * (1 + SLIP) * (1 + BUY)
+                    p = px[j] * (1 + SLIP) * (1 + BUYc)
                     if p > cash: continue
                     held_val = sh[j] * px[j]
                     if sh[j] == 0 and sec_n.get(sectors[j], 0) >= 2: continue
                     if sh[j] > 0 and held_val + px[j] > cap: continue
                     if sh[j] == 0: sec_n[sectors[j]] = sec_n.get(sectors[j], 0) + 1; entry[j] = px[j]
-                    cash -= p; cost += px[j] * (SLIP + BUY); sh[j] += 1; trades += 1; changed = True
+                    cash -= p; cost += px[j] * (SLIP + BUYc); sh[j] += 1; trades += 1; changed = True
         # 2) stop check on today's close, fills tomorrow
         if stop is not None:
             pend_stop = (sh > 0) & ~np.isnan(px) & (px / entry - 1 <= stop)
