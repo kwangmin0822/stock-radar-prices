@@ -1,0 +1,28 @@
+name: scorecheck
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * 0"   # Mon 07:00 KST weekly
+permissions:
+  contents: write
+concurrency:
+  group: prices
+  cancel-in-progress: false
+jobs:
+  sc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python scripts/score_check.py
+      - name: commit
+        run: |
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          git add score_check.json
+          git diff --cached --quiet && exit 0
+          git commit -m "score check $(TZ=Asia/Seoul date +'%m-%d')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
