@@ -26,7 +26,7 @@ def num(x):
 def industries():
     """upjong number -> name from the Naver industry page"""
     h = raw("https://finance.naver.com/sise/sise_group.naver?type=upjong", "euc-kr")
-    return {no: re.sub(r"\s+", " ", nm).strip() for no, nm in re.findall(r"type=upjong&no=(\d+)\">([^<]+)<", h)}
+    return {no: re.sub(r"\s+", " ", nm).strip() for no, nm in re.findall(r'type=upjong&(?:amp;)?no=(\d+)"\s*>([^<]+)<', h)}
 
 # page sector list; first keyword hit wins
 SECTOR_KEYS = [
@@ -112,7 +112,7 @@ def main():
                          "industry": ind, "sector": sec, "fin": sec == "금융", **f}
         if sec == "금융":
             KR[c["code"]].update(operatingMargin=None, debtToEquity=None)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK,
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK, "industries": len(ind_names),
                "count": len(KR), "KR": KR}, open("universe.json", "w"), ensure_ascii=False, indent=0, sort_keys=True)
     tk = json.load(open("tickers.json"))
     tk["KR"] = sorted(set(tk["KR"]) | set(KR))
