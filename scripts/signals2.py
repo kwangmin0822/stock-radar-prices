@@ -10,15 +10,26 @@ from signals import hist, matrix, sim, etf, twr, KST
 
 YUA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124 Safari/537.36"}
 
+import http.cookiejar
+_cj = http.cookiejar.CookieJar()
+_op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_cj))
+try: _op.open(urllib.request.Request("https://fc.yahoo.com", headers=YUA), timeout=15)
+except Exception: pass
+try: CRUMB = _op.open(urllib.request.Request("https://query2.finance.yahoo.com/v1/test/getcrumb", headers=YUA), timeout=15).read().decode()
+except Exception as e: CRUMB = ""; print("crumb fail", e)
+ERR = []
+
 def yahoo(t):
-    for i in range(3):
+    for i in range(4):
         try:
-            u = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(t.replace('.', '-'))}?interval=1d&range=10y"
-            with urllib.request.urlopen(urllib.request.Request(u, headers=YUA), timeout=25) as r:
+            u = (f"https://query{1 + i % 2}.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(t.replace('.', '-'))}"
+                 f"?interval=1d&range=10y&crumb={urllib.parse.quote(CRUMB)}")
+            with _op.open(urllib.request.Request(u, headers=YUA), timeout=25) as r:
                 d = json.loads(r.read())["chart"]["result"][0]
             ts = d["timestamp"]; cl = d["indicators"]["quote"][0]["close"]
             return {dt.datetime.utcfromtimestamp(a).strftime("%Y%m%d"): c for a, c in zip(ts, cl) if c}
-        except Exception:
+        except Exception as e:
+            if i == 3 and len(ERR) < 5: ERR.append(f"{t}: {e}")
             time.sleep(1 + 2 * i)
     return {}
 
@@ -47,11 +58,13 @@ def main():
 
     # ---- A) US ----
     ust = list(u.get("US", {}))
-    with cf.ThreadPoolExecutor(6) as ex:
+    with cf.ThreadPoolExecutor(3) as ex:
         UH = list(ex.map(yahoo, ust))
     keep = [k for k, h in enumerate(UH) if len(h) > 600]
     ust = [ust[k] for k in keep]; UH = [UH[k] for k in keep]
-    spy = yahoo("SPLG")
+    spy = yahoo("SPLG") or yahoo("SPY")
+    print("US got", len(ust), "spy", len(spy), ERR)
+    if len(spy) < 600: raise SystemExit("yahoo blocked: " + "; ".join(ERR))
     dates = sorted(d for d in spy if d >= "20160101")
     P = matrix(UH, dates); B = np.array([spy[d] for d in dates])
     sec = [u["US"][t]["sector"] for t in ust]
