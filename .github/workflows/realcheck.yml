@@ -1,0 +1,24 @@
+name: realcheck
+on: workflow_dispatch
+permissions:
+  contents: write
+concurrency:
+  group: realcheck
+jobs:
+  opt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install numpy
+      - run: python scripts/realcheck.py
+      - name: commit
+        run: |
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          git add realcheck.json
+          git diff --cached --quiet && exit 0
+          git commit -m "realcheck $(TZ=Asia/Seoul date +'%m-%d')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
