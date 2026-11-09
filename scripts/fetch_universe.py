@@ -29,7 +29,6 @@ def industry_name(no):
     try:
         d = get(f"https://m.stock.naver.com/api/stocks/industry/{no}?page=1&pageSize=1")
         g = d.get("groupInfo") or {}
-        DEBUG.setdefault("sample", json.dumps(g, ensure_ascii=False)[:300])
         return g.get("name") or g.get("groupName") or ""
     except Exception as e:
         DEBUG.setdefault("indErr", str(e)); return ""
@@ -37,7 +36,6 @@ def industry_name(no):
 def industries():
     """upjong number -> name from the Naver industry page"""
     h = raw("https://finance.naver.com/sise/sise_group.naver?type=upjong", "euc-kr")
-    DEBUG["upjongHtml"] = len(h); DEBUG["upjongSnippet"] = h[h.find("upjong"):h.find("upjong")+200] if "upjong" in h else h[:200]
     return {no: re.sub(r"\s+", " ", nm).strip() for no, nm in re.findall(r'type=upjong&(?:amp;)?no=(\d+)"\s*>([^<]+)<', h)}
 
 # page sector list; first keyword hit wins
@@ -49,7 +47,7 @@ SECTOR_KEYS = [
     ("철강·소재", ["철강", "비철금속", "종이", "포장재", "건축자재"]), ("방산·조선·중공업", ["조선", "우주항공", "국방", "기계", "건축제품"]),
     ("에너지·유틸리티", ["석유", "가스", "전기유틸리티", "에너지", "복합유틸리티"]), ("운송", ["해운", "항공", "도로", "철도", "운송"]),
     ("소비·유통", ["식품", "음료", "담배", "화장품", "섬유", "의류", "백화점", "판매", "소매", "가정용", "레저용품", "교육", "생활용품"]),
-    ("지주·건설", ["건설", "지주", "부동산"]), ("상사·무역", ["무역회사", "상사"]), ("미디어", ["방송", "광고", "출판", "미디어", "엔터"]),
+    ("지주·건설", ["건설", "지주", "부동산", "복합기업"]), ("상사·무역", ["무역회사", "상사"]), ("미디어", ["방송", "광고", "출판", "미디어", "엔터"]),
     ("여행·레저", ["호텔", "레스토랑", "레저"]),
 ]
 def sector_of(ind):
@@ -126,7 +124,7 @@ def main():
                          "industry": ind, "sector": sec, "fin": sec == "금융", **f}
         if sec == "금융":
             KR[c["code"]].update(operatingMargin=None, debtToEquity=None)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK, "industries": len(ind_names), "debug": DEBUG,
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK, "industries": len(ind_names),
                "count": len(KR), "KR": KR}, open("universe.json", "w"), ensure_ascii=False, indent=0, sort_keys=True)
     tk = json.load(open("tickers.json"))
     tk["KR"] = sorted(set(tk["KR"]) | set(KR))
