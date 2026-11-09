@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T19:42:26+09:00",
+ "updatedAt": "2026-11-09T19:43:43+09:00",
  "stocks": 198,
  "train": [
   "20190513",
@@ -213,7 +213,7 @@
    "test": {
     "cagr": 57.3,
     "mdd": -48.6,
-    "sharpe": 1.21
+    "sharpe": 1.2
    }
   },
   {
@@ -249,7 +249,7 @@
    }
   }
  ],
- "tested": 90,
- "avgTest": 32.9,
- "rankOfTrainWinnerInTest": 38
+ "tested": 120,
+ "avgTest": 34.3,
+ "rankOfTrainWinnerInTest": 51
 }
