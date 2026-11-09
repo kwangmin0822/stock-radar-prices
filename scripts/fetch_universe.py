@@ -107,7 +107,21 @@ def fundamentals(code, ind_names):
         print("finance fail", code, e)
     return r
 
+def us_probe():
+    out = {}
+    try:
+        d = get("https://api.stock.naver.com/stock/exchange/NYSE/marketValue?page=1&pageSize=3")
+        out["list"] = d
+        rc = (d.get("stocks") or [{}])[0].get("reutersCode")
+        if rc:
+            out["integration"] = get(f"https://api.stock.naver.com/stock/{rc}/integration")
+            out["annual"] = get(f"https://api.stock.naver.com/stock/{rc}/finance/annual")
+    except Exception as e:
+        out["err"] = str(e)
+    json.dump(out, open("us_probe.json", "w"), ensure_ascii=False, indent=1)
+
 def main():
+    us_probe()
     try: ind_names = industries()
     except Exception as e: print("industry list fail", e); DEBUG["upjongErr"] = str(e); ind_names = {}
     cands = listing("KOSPI") + listing("KOSDAQ")
