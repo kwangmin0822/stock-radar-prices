@@ -27,6 +27,11 @@ def chg52(closes):
     base = c[-250] if len(c) >= 250 else c[0]
     return round((c[-1] / base - 1) * 100, 1)
 
+def chg26(closes):
+    c = [x for x in closes if x and x > 0]
+    if len(c) < 130: return None
+    return round((c[-1] / c[-127] - 1) * 100, 1)
+
 def naver(code):
     x = raw(f"https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=260&requestType=0").decode("euc-kr", "replace")
     return [float(m.split("|")[4]) for m in re.findall(r'data="([^"]+)"', x)]
@@ -52,7 +57,7 @@ def yahoo(sym):
 
 def main():
     tk = json.load(open("tickers.json"))
-    out, ma, p52 = {}, {}, {}
+    out, ma, p52, p26 = {}, {}, {}, {}
     bench = {}
     for k, c in BENCH.items():
         try: bench[k] = naver_dated(c)
@@ -67,6 +72,8 @@ def main():
         if m is not None: ma["KR-" + c] = m
         p = chg52(cl)
         if p is not None: p52["KR-" + c] = p
+        q = chg26(cl)
+        if q is not None: p26["KR-" + c] = q
         time.sleep(0.2)
     for t in tk["US"]:
         cl = yahoo(t.replace(".", "-"))
@@ -75,8 +82,10 @@ def main():
         if m is not None: ma["US-" + t] = m
         p = chg52(cl)
         if p is not None: p52["US-" + t] = p
+        q = chg26(cl)
+        if q is not None: p26["US-" + t] = q
         time.sleep(0.6)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "p26": p26, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
     print(f"vol {len(out)}/{len(tk['KR'])+len(tk['US'])}")
 
 if __name__ == "__main__":
