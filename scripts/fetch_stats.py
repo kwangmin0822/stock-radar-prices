@@ -27,6 +27,12 @@ def chg52(closes):
     base = c[-250] if len(c) >= 250 else c[0]
     return round((c[-1] / base - 1) * 100, 1)
 
+def near_high(closes):
+    """price / highest close of the last 252 days, in % (100 = at the 52-week high)"""
+    c = [x for x in closes if x and x > 0]
+    if len(c) < 200: return None
+    return round(c[-1] / max(c[-252:]) * 100, 1)
+
 def chg26(closes):
     c = [x for x in closes if x and x > 0]
     if len(c) < 130: return None
@@ -57,7 +63,7 @@ def yahoo(sym):
 
 def main():
     tk = json.load(open("tickers.json"))
-    out, ma, p52, p26 = {}, {}, {}, {}
+    out, ma, p52, p26, hi = {}, {}, {}, {}, {}
     bench = {}
     for k, c in BENCH.items():
         try: bench[k] = naver_dated(c)
@@ -74,6 +80,8 @@ def main():
         if p is not None: p52["KR-" + c] = p
         q = chg26(cl)
         if q is not None: p26["KR-" + c] = q
+        h = near_high(cl)
+        if h is not None: hi["KR-" + c] = h
         time.sleep(0.2)
     for t in tk["US"]:
         cl = yahoo(t.replace(".", "-"))
@@ -84,8 +92,10 @@ def main():
         if p is not None: p52["US-" + t] = p
         q = chg26(cl)
         if q is not None: p26["US-" + t] = q
+        h = near_high(cl)
+        if h is not None: hi["US-" + t] = h
         time.sleep(0.6)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "p26": p26, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "p26": p26, "hi52": hi, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
     print(f"vol {len(out)}/{len(tk['KR'])+len(tk['US'])}")
 
 if __name__ == "__main__":
