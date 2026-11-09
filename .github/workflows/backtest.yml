@@ -1,0 +1,23 @@
+name: backtest
+on: workflow_dispatch
+permissions:
+  contents: write
+concurrency:
+  group: backtest
+jobs:
+  bt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python scripts/backtest.py
+      - name: commit
+        run: |
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          git add backtest.json
+          git diff --cached --quiet && exit 0
+          git commit -m "backtest $(TZ=Asia/Seoul date +'%m-%d')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
