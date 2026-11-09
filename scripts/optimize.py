@@ -71,8 +71,10 @@ def run(P, dates, i0, i1, look, topn, stop, ma, skip=21):
         v = cash + pos.sum()
         if dates[i][:6] != month:
             month = dates[i][:6]
-            a, b = P[i - look], P[i - skip]
-            mom = b / a - 1
+            if look == "blend":   # average of 6-month and 12-month momentum
+                mom = (P[i - skip] / P[i - 126] - 1 + P[i - skip] / P[i - 252] - 1) / 2
+            else:
+                mom = P[i - skip] / P[i - look] - 1
             ok = ~np.isnan(mom) & ~np.isnan(P[i])
             if ma:
                 m200 = np.nanmean(P[i - 199:i + 1], axis=0)
@@ -94,7 +96,7 @@ def main():
     dates, codes, P, B = load()
     start = 260
     split = start + int((len(dates) - start) * 0.6)
-    grid = {"look": [63, 126, 252], "topn": [5, 10, 20], "stop": [None, -0.08, -0.12, -0.15, -0.20], "ma": [False, True]}
+    grid = {"look": [63, 126, 252, "blend"], "topn": [5, 10, 20], "stop": [None, -0.08, -0.12, -0.15, -0.20], "ma": [False, True]}
     rows = []
     for look, topn, stop, ma in itertools.product(*grid.values()):
         tr = run(P, dates, start, split, look, topn, stop, ma)
