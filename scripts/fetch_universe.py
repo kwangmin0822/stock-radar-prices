@@ -23,9 +23,21 @@ def num(x):
     try: return float(s) if s not in ("", "-", ".") else None
     except ValueError: return None
 
+DEBUG = {}
+def industry_name(no):
+    """name of a Naver industry group number, via the mobile API"""
+    try:
+        d = get(f"https://m.stock.naver.com/api/stocks/industry/{no}?page=1&pageSize=1")
+        g = d.get("groupInfo") or {}
+        DEBUG.setdefault("sample", json.dumps(g, ensure_ascii=False)[:300])
+        return g.get("name") or g.get("groupName") or ""
+    except Exception as e:
+        DEBUG.setdefault("indErr", str(e)); return ""
+
 def industries():
     """upjong number -> name from the Naver industry page"""
     h = raw("https://finance.naver.com/sise/sise_group.naver?type=upjong", "euc-kr")
+    DEBUG["upjongHtml"] = len(h); DEBUG["upjongSnippet"] = h[h.find("upjong"):h.find("upjong")+200] if "upjong" in h else h[:200]
     return {no: re.sub(r"\s+", " ", nm).strip() for no, nm in re.findall(r'type=upjong&(?:amp;)?no=(\d+)"\s*>([^<]+)<', h)}
 
 # page sector list; first keyword hit wins
@@ -79,7 +91,9 @@ def fundamentals(code, ind_names):
         r.update(pe=num(ti.get("per")), forwardPE=num(ti.get("cnsPer")), pb=num(ti.get("pbr")),
                  dividendYield=num(ti.get("dividendYieldRatio")),
                  high52=num(ti.get("highPriceOf52Weeks")), low52=num(ti.get("lowPriceOf52Weeks")))
-        ind = ind_names.get(str(g.get("industryCode") or ""), "")
+        no = str(g.get("industryCode") or "")
+        if no and no not in ind_names: ind_names[no] = industry_name(no)
+        ind = ind_names.get(no, "")
         r["industry"] = ind
     except Exception as e:
         print("integration fail", code, e)
@@ -97,7 +111,7 @@ def fundamentals(code, ind_names):
 
 def main():
     try: ind_names = industries()
-    except Exception as e: print("industry list fail", e); ind_names = {}
+    except Exception as e: print("industry list fail", e); DEBUG["upjongErr"] = str(e); ind_names = {}
     cands = listing("KOSPI") + listing("KOSDAQ")
     # liquidity: today's value can be small early in the session, so also keep the 120 biggest regardless
     cands.sort(key=lambda x: -x["capEok"])
@@ -112,7 +126,7 @@ def main():
                          "industry": ind, "sector": sec, "fin": sec == "금융", **f}
         if sec == "금융":
             KR[c["code"]].update(operatingMargin=None, debtToEquity=None)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK, "industries": len(ind_names),
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "minCapEok": MIN_CAP_EOK, "industries": len(ind_names), "debug": DEBUG,
                "count": len(KR), "KR": KR}, open("universe.json", "w"), ensure_ascii=False, indent=0, sort_keys=True)
     tk = json.load(open("tickers.json"))
     tk["KR"] = sorted(set(tk["KR"]) | set(KR))
