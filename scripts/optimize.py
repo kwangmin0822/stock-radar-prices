@@ -114,7 +114,7 @@ def main():
            "train": [dates[start], dates[split - 1]], "test": [dates[split], dates[-1]],
            "kospi200": {"train": bt(start, split), "test": bt(split, len(dates))},
            "current": cur, "bestOnTrain": ranked[:8], "bestOnTest_forReference": test_rank[:5],
-           "tested": len(rows),
+           "tested": len(rows), "all": rows,
            "avgTest": round(float(np.mean([r["test"]["cagr"] for r in rows])), 1),
            "rankOfTrainWinnerInTest": 1 + [id(r) for r in test_rank].index(id(ranked[0]))}
     json.dump(out, open("optimize.json", "w"), ensure_ascii=False, indent=1)
