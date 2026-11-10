@@ -46,7 +46,7 @@ def scores(u, s):
                         "roe": min(roe, 40) if roe is not None else None, "opm": x.get("operatingMargin"),
                         "lev": -x["debtToEquity"] if x.get("debtToEquity") is not None else None,
                         "lv": -s.get("vol", {}).get(k) if s.get("vol", {}).get(k) else None,
-                        "m": (s.get("hi52", {}).get(k) if mkt == "KR" else s.get("m6s", {}).get(k)) or s.get("p26", {}).get(k, s.get("p52", {}).get(k)), "sec": x.get("sector") or "기타", "price": x.get("price")}
+                        "m": s.get("m6s", {}).get(k) or s.get("p26", {}).get(k, s.get("p52", {}).get(k)), "sec": x.get("sector") or "기타", "price": x.get("price")}
         groups = {"value": ["ey", "fey", "bp", "fcf"], "quality": ["roe", "opm", "lev", "lv"], "mom": ["m"]}
         R = {}
         for f, keys in groups.items():
