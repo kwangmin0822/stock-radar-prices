@@ -65,12 +65,15 @@ def signal(P, i, kind, M=None, skip=21):
     raise ValueError(kind)
 
 def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None,
-        buy_ok=None, months=None, buyc=None, sellc=None):
+        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0):
     """buy_ok: per-day bool array, new buys only when True (market filter); months: set of month numbers when the
-    portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account)"""
+    portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account);
+    daily: re-rank every trading day (like the page) instead of once a month; lock: a stock bought less than this many
+    trading days ago is not sold for falling in rank (stop-loss still applies)"""
     BUYc = BUY if buyc is None else buyc; SELLc = SELL if sellc is None else sellc
     n = P.shape[1]
     sh = np.zeros(n, int); cash = float(start); entry = np.full(n, np.nan); pend_stop = np.zeros(n, bool)
+    since = np.zeros(n, int)
     curve, flows, month, trades, cost = [], [], None, 0, 0.0
     for i in range(i0, i1):
         px = P[i]
@@ -86,8 +89,8 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
             cash += deposit; flow = deposit
         if new_month and months is not None and int(dates[i][4:6]) not in months:
             month = dates[i][:6]; new_month = False      # deposits wait as cash until the next re-ranking month
-        if new_month:
-            month = dates[i][:6]
+        if new_month: month = dates[i][:6]
+        if new_month or daily:
             prev = P[i - 1]
             mom = signal(P, i - 1, kind, M)
             ok = ~np.isnan(mom) & ~np.isnan(prev) & ~np.isnan(px)
@@ -95,7 +98,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
             rank = {j: r for r, j in enumerate(order)}
             # sell names that dropped out of the top 2N
             for j in np.where(sh > 0)[0]:
-                if rank.get(j, 1e9) >= 2 * topn and not np.isnan(px[j]):
+                if rank.get(j, 1e9) >= 2 * topn and not np.isnan(px[j]) and i - since[j] >= lock:
                     got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
                     cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
             eq = cash + np.nansum(sh * px)
@@ -113,7 +116,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
                     held_val = sh[j] * px[j]
                     if sh[j] == 0 and sec_n.get(sectors[j], 0) >= 2: continue
                     if sh[j] > 0 and held_val + px[j] > cap: continue
-                    if sh[j] == 0: sec_n[sectors[j]] = sec_n.get(sectors[j], 0) + 1; entry[j] = px[j]
+                    if sh[j] == 0: sec_n[sectors[j]] = sec_n.get(sectors[j], 0) + 1; entry[j] = px[j]; since[j] = i
                     cash -= p; cost += px[j] * (SLIP + BUYc); sh[j] += 1; trades += 1; changed = True
         # 2) stop check on today's close, fills tomorrow
         if stop is not None:
