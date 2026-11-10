@@ -65,7 +65,7 @@ def signal(P, i, kind, M=None, skip=21):
     raise ValueError(kind)
 
 def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None,
-        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0):
+        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0, SIG=None, keep=2):
     """buy_ok: per-day bool array, new buys only when True (market filter); months: set of month numbers when the
     portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account);
     daily: re-rank every trading day (like the page) instead of once a month; lock: a stock bought less than this many
@@ -92,13 +92,13 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
         if new_month: month = dates[i][:6]
         if new_month or daily:
             prev = P[i - 1]
-            mom = signal(P, i - 1, kind, M)
+            mom = SIG[i - 1] if SIG is not None else signal(P, i - 1, kind, M)
             ok = ~np.isnan(mom) & ~np.isnan(prev) & ~np.isnan(px)
             order = [j for j in np.argsort(-np.where(ok, mom, -np.inf)) if ok[j]]
             rank = {j: r for r, j in enumerate(order)}
             # sell names that dropped out of the top 2N
             for j in np.where(sh > 0)[0]:
-                if rank.get(j, 1e9) >= 2 * topn and not np.isnan(px[j]) and i - since[j] >= lock:
+                if rank.get(j, 1e9) >= keep * topn and not np.isnan(px[j]) and i - since[j] >= lock:
                     got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
                     cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
             eq = cash + np.nansum(sh * px)
