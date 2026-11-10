@@ -1,0 +1,602 @@
+{
+ "updatedAt": "2026-11-10T10:51:32+09:00",
+ "windowYears": 3,
+ "KR": {
+  "stocks": 198,
+  "7만 원 + 매달 10만 원": {
+   "지금 규칙": {
+    "median": 28.6,
+    "worst": 8.0,
+    "beatIndexPct": 96,
+    "medianVsIndex": 23.1,
+    "medianMdd": -41.9,
+    "calmar": 0.66,
+    "tradesPerYear": 353
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 25.4,
+    "worst": 7.7,
+    "beatIndexPct": 96,
+    "medianVsIndex": 22.9,
+    "medianMdd": -42.2,
+    "calmar": 0.64,
+    "tradesPerYear": 349
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 28.6,
+    "worst": 8.0,
+    "beatIndexPct": 96,
+    "medianVsIndex": 23.1,
+    "medianMdd": -41.9,
+    "calmar": 0.66,
+    "tradesPerYear": 353
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 21.9,
+    "worst": 2.1,
+    "beatIndexPct": 92,
+    "medianVsIndex": 13.5,
+    "medianMdd": -47.1,
+    "calmar": 0.47,
+    "tradesPerYear": 625
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 28.2,
+    "worst": 7.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 27.0,
+    "medianMdd": -42.8,
+    "calmar": 0.74,
+    "tradesPerYear": 413
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 33.6,
+    "worst": 0.9,
+    "beatIndexPct": 96,
+    "medianVsIndex": 28.8,
+    "medianMdd": -41.4,
+    "calmar": 0.8,
+    "tradesPerYear": 424
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 31.4,
+    "worst": 6.8,
+    "beatIndexPct": 100,
+    "medianVsIndex": 27.3,
+    "medianMdd": -40.2,
+    "calmar": 0.65,
+    "tradesPerYear": 266
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 33.0,
+    "worst": 6.7,
+    "beatIndexPct": 92,
+    "medianVsIndex": 28.5,
+    "medianMdd": -41.4,
+    "calmar": 0.8,
+    "tradesPerYear": 351
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 27.9,
+    "worst": 2.6,
+    "beatIndexPct": 85,
+    "medianVsIndex": 19.6,
+    "medianMdd": -41.6,
+    "calmar": 0.74,
+    "tradesPerYear": 324
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 31.1,
+    "worst": 9.0,
+    "beatIndexPct": 96,
+    "medianVsIndex": 23.1,
+    "medianMdd": -41.7,
+    "calmar": 0.76,
+    "tradesPerYear": 350
+   },
+   "지수 적립": {
+    "median": 5.9,
+    "worst": -4.1,
+    "medianMdd": -33.8
+   }
+  },
+  "span": {
+   "windows": 26,
+   "first": "20190514",
+   "last": "20260917"
+  },
+  "300만 원": {
+   "지금 규칙": {
+    "median": 19.1,
+    "worst": 1.8,
+    "beatIndexPct": 92,
+    "medianVsIndex": 14.1,
+    "medianMdd": -41.1,
+    "calmar": 0.49,
+    "tradesPerYear": 522
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 18.3,
+    "worst": -0.3,
+    "beatIndexPct": 88,
+    "medianVsIndex": 9.4,
+    "medianMdd": -43.3,
+    "calmar": 0.44,
+    "tradesPerYear": 508
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 19.1,
+    "worst": 1.8,
+    "beatIndexPct": 92,
+    "medianVsIndex": 14.1,
+    "medianMdd": -41.1,
+    "calmar": 0.49,
+    "tradesPerYear": 522
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 17.9,
+    "worst": -4.9,
+    "beatIndexPct": 85,
+    "medianVsIndex": 12.2,
+    "medianMdd": -50.5,
+    "calmar": 0.35,
+    "tradesPerYear": 978
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 21.6,
+    "worst": -6.9,
+    "beatIndexPct": 96,
+    "medianVsIndex": 19.5,
+    "medianMdd": -42.6,
+    "calmar": 0.5,
+    "tradesPerYear": 621
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 24.9,
+    "worst": -0.4,
+    "beatIndexPct": 92,
+    "medianVsIndex": 19.7,
+    "medianMdd": -42.8,
+    "calmar": 0.56,
+    "tradesPerYear": 632
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 26.1,
+    "worst": 6.7,
+    "beatIndexPct": 96,
+    "medianVsIndex": 16.3,
+    "medianMdd": -39.2,
+    "calmar": 0.67,
+    "tradesPerYear": 371
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 21.5,
+    "worst": 4.6,
+    "beatIndexPct": 92,
+    "medianVsIndex": 15.7,
+    "medianMdd": -40.7,
+    "calmar": 0.49,
+    "tradesPerYear": 506
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 20.6,
+    "worst": 0.7,
+    "beatIndexPct": 88,
+    "medianVsIndex": 10.2,
+    "medianMdd": -40.2,
+    "calmar": 0.51,
+    "tradesPerYear": 485
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 20.1,
+    "worst": -1.0,
+    "beatIndexPct": 92,
+    "medianVsIndex": 13.3,
+    "medianMdd": -42.0,
+    "calmar": 0.45,
+    "tradesPerYear": 512
+   },
+   "지수 적립": {
+    "median": 6.4,
+    "worst": -4.2,
+    "medianMdd": -34.1
+   }
+  },
+  "1000만 원": {
+   "지금 규칙": {
+    "median": 19.9,
+    "worst": -5.5,
+    "beatIndexPct": 88,
+    "medianVsIndex": 13.4,
+    "medianMdd": -42.4,
+    "calmar": 0.46,
+    "tradesPerYear": 1372
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 18.4,
+    "worst": -5.9,
+    "beatIndexPct": 88,
+    "medianVsIndex": 11.3,
+    "medianMdd": -42.6,
+    "calmar": 0.42,
+    "tradesPerYear": 1349
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 19.9,
+    "worst": -5.5,
+    "beatIndexPct": 88,
+    "medianVsIndex": 13.4,
+    "medianMdd": -42.4,
+    "calmar": 0.46,
+    "tradesPerYear": 1372
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 13.7,
+    "worst": -6.3,
+    "beatIndexPct": 73,
+    "medianVsIndex": 5.9,
+    "medianMdd": -48.6,
+    "calmar": 0.28,
+    "tradesPerYear": 2513
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 19.4,
+    "worst": -10.5,
+    "beatIndexPct": 88,
+    "medianVsIndex": 16.5,
+    "medianMdd": -42.4,
+    "calmar": 0.45,
+    "tradesPerYear": 1615
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 19.8,
+    "worst": -7.6,
+    "beatIndexPct": 88,
+    "medianVsIndex": 17.4,
+    "medianMdd": -41.8,
+    "calmar": 0.48,
+    "tradesPerYear": 1653
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 19.1,
+    "worst": -0.3,
+    "beatIndexPct": 73,
+    "medianVsIndex": 7.8,
+    "medianMdd": -44.5,
+    "calmar": 0.44,
+    "tradesPerYear": 928
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 18.0,
+    "worst": -3.3,
+    "beatIndexPct": 96,
+    "medianVsIndex": 14.6,
+    "medianMdd": -41.5,
+    "calmar": 0.41,
+    "tradesPerYear": 1322
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 16.6,
+    "worst": -5.4,
+    "beatIndexPct": 81,
+    "medianVsIndex": 8.8,
+    "medianMdd": -40.3,
+    "calmar": 0.5,
+    "tradesPerYear": 1276
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 22.0,
+    "worst": -4.9,
+    "beatIndexPct": 92,
+    "medianVsIndex": 12.6,
+    "medianMdd": -42.3,
+    "calmar": 0.53,
+    "tradesPerYear": 1374
+   },
+   "지수 적립": {
+    "median": 6.4,
+    "worst": -4.3,
+    "medianMdd": -34.2
+   }
+  }
+ },
+ "US": {
+  "stocks": 294,
+  "$50 + 매달 $70": {
+   "지금 규칙": {
+    "median": 59.2,
+    "worst": 16.2,
+    "beatIndexPct": 100,
+    "medianVsIndex": 46.7,
+    "medianMdd": -44.4,
+    "calmar": 1.36,
+    "tradesPerYear": 281
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 55.3,
+    "worst": 9.0,
+    "beatIndexPct": 100,
+    "medianVsIndex": 42.2,
+    "medianMdd": -44.5,
+    "calmar": 1.22,
+    "tradesPerYear": 274
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 59.2,
+    "worst": 16.2,
+    "beatIndexPct": 100,
+    "medianVsIndex": 46.7,
+    "medianMdd": -44.4,
+    "calmar": 1.36,
+    "tradesPerYear": 281
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 48.7,
+    "worst": 15.8,
+    "beatIndexPct": 100,
+    "medianVsIndex": 36.2,
+    "medianMdd": -44.6,
+    "calmar": 1.14,
+    "tradesPerYear": 316
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 62.3,
+    "worst": 17.5,
+    "beatIndexPct": 100,
+    "medianVsIndex": 48.6,
+    "medianMdd": -42.0,
+    "calmar": 1.5,
+    "tradesPerYear": 298
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 53.0,
+    "worst": 28.4,
+    "beatIndexPct": 100,
+    "medianVsIndex": 42.2,
+    "medianMdd": -38.1,
+    "calmar": 1.52,
+    "tradesPerYear": 321
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 28.6,
+    "worst": 1.9,
+    "beatIndexPct": 94,
+    "medianVsIndex": 16.4,
+    "medianMdd": -46.0,
+    "calmar": 0.62,
+    "tradesPerYear": 215
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 43.9,
+    "worst": 4.1,
+    "beatIndexPct": 92,
+    "medianVsIndex": 34.6,
+    "medianMdd": -35.8,
+    "calmar": 1.17,
+    "tradesPerYear": 295
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 53.8,
+    "worst": 21.5,
+    "beatIndexPct": 100,
+    "medianVsIndex": 40.9,
+    "medianMdd": -36.5,
+    "calmar": 1.46,
+    "tradesPerYear": 232
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 63.9,
+    "worst": 15.2,
+    "beatIndexPct": 100,
+    "medianVsIndex": 50.5,
+    "medianMdd": -42.2,
+    "calmar": 1.44,
+    "tradesPerYear": 267
+   },
+   "지수 적립": {
+    "median": 11.3,
+    "worst": 2.5,
+    "medianMdd": -21.4
+   }
+  },
+  "span": {
+   "windows": 36,
+   "first": "20171122",
+   "last": "20261002"
+  },
+  "$2,200": {
+   "지금 규칙": {
+    "median": 52.4,
+    "worst": 7.8,
+    "beatIndexPct": 97,
+    "medianVsIndex": 38.5,
+    "medianMdd": -44.0,
+    "calmar": 1.16,
+    "tradesPerYear": 426
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 49.6,
+    "worst": 3.5,
+    "beatIndexPct": 94,
+    "medianVsIndex": 35.6,
+    "medianMdd": -44.7,
+    "calmar": 1.11,
+    "tradesPerYear": 410
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 52.4,
+    "worst": 7.8,
+    "beatIndexPct": 97,
+    "medianVsIndex": 38.5,
+    "medianMdd": -44.0,
+    "calmar": 1.16,
+    "tradesPerYear": 426
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 41.5,
+    "worst": 4.7,
+    "beatIndexPct": 92,
+    "medianVsIndex": 27.1,
+    "medianMdd": -41.3,
+    "calmar": 1.05,
+    "tradesPerYear": 452
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 53.0,
+    "worst": 3.4,
+    "beatIndexPct": 97,
+    "medianVsIndex": 39.1,
+    "medianMdd": -41.1,
+    "calmar": 1.27,
+    "tradesPerYear": 445
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 43.8,
+    "worst": 17.1,
+    "beatIndexPct": 100,
+    "medianVsIndex": 30.5,
+    "medianMdd": -37.2,
+    "calmar": 1.22,
+    "tradesPerYear": 499
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 19.5,
+    "worst": 0.5,
+    "beatIndexPct": 75,
+    "medianVsIndex": 8.3,
+    "medianMdd": -45.4,
+    "calmar": 0.44,
+    "tradesPerYear": 291
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 42.6,
+    "worst": 1.8,
+    "beatIndexPct": 92,
+    "medianVsIndex": 30.1,
+    "medianMdd": -34.8,
+    "calmar": 1.06,
+    "tradesPerYear": 456
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 38.0,
+    "worst": 10.1,
+    "beatIndexPct": 100,
+    "medianVsIndex": 26.3,
+    "medianMdd": -35.3,
+    "calmar": 1.22,
+    "tradesPerYear": 346
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 52.3,
+    "worst": 7.9,
+    "beatIndexPct": 97,
+    "medianVsIndex": 42.0,
+    "medianMdd": -40.8,
+    "calmar": 1.26,
+    "tradesPerYear": 403
+   },
+   "지수 적립": {
+    "median": 12.1,
+    "worst": 6.6,
+    "medianMdd": -24.3
+   }
+  },
+  "$7,000": {
+   "지금 규칙": {
+    "median": 45.5,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 31.4,
+    "medianMdd": -43.0,
+    "calmar": 1.06,
+    "tradesPerYear": 1053
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 42.2,
+    "worst": 4.9,
+    "beatIndexPct": 89,
+    "medianVsIndex": 27.7,
+    "medianMdd": -43.7,
+    "calmar": 0.99,
+    "tradesPerYear": 1002
+   },
+   "A 시장보다 강한 종목만 매수": {
+    "median": 45.5,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 31.4,
+    "medianMdd": -43.0,
+    "calmar": 1.06,
+    "tradesPerYear": 1053
+   },
+   "B 꾸준히 오른 종목 우대": {
+    "median": 32.4,
+    "worst": 2.9,
+    "beatIndexPct": 86,
+    "medianVsIndex": 18.5,
+    "medianMdd": -41.2,
+    "calmar": 0.8,
+    "tradesPerYear": 1033
+   },
+   "C1 5일 +12% 급등 직후 매수 보류": {
+    "median": 45.8,
+    "worst": 0.8,
+    "beatIndexPct": 94,
+    "medianVsIndex": 31.2,
+    "medianMdd": -39.3,
+    "calmar": 1.17,
+    "tradesPerYear": 1081
+   },
+   "C2 최근 하루 급등 상위 10% 제외": {
+    "median": 36.2,
+    "worst": 14.2,
+    "beatIndexPct": 100,
+    "medianVsIndex": 23.8,
+    "medianMdd": -36.2,
+    "calmar": 1.12,
+    "tradesPerYear": 1266
+   },
+   "D 12~7개월 전 추세 25% 섞기": {
+    "median": 15.8,
+    "worst": -5.7,
+    "beatIndexPct": 69,
+    "medianVsIndex": 3.6,
+    "medianMdd": -43.8,
+    "calmar": 0.39,
+    "tradesPerYear": 657
+   },
+   "E 베타 1.5 넘으면 매수 제외": {
+    "median": 35.8,
+    "worst": 4.3,
+    "beatIndexPct": 83,
+    "medianVsIndex": 21.9,
+    "medianMdd": -35.5,
+    "calmar": 0.96,
+    "tradesPerYear": 1156
+   },
+   "F 계좌 변동성 급등 때 매수 쉬기": {
+    "median": 32.4,
+    "worst": 5.9,
+    "beatIndexPct": 94,
+    "medianVsIndex": 19.8,
+    "medianMdd": -36.5,
+    "calmar": 0.96,
+    "tradesPerYear": 853
+   },
+   "G 추세주 급락 때 5일 매수 쉬기": {
+    "median": 47.2,
+    "worst": 6.3,
+    "beatIndexPct": 97,
+    "medianVsIndex": 33.2,
+    "medianMdd": -41.3,
+    "calmar": 1.11,
+    "tradesPerYear": 955
+   },
+   "지수 적립": {
+    "median": 12.3,
+    "worst": 6.9,
+    "medianMdd": -24.9
+   }
+  }
+ }
+}
