@@ -39,13 +39,41 @@ def mom6s(closes):
     if len(c) < 130: return None
     return round((c[-22] / c[-127] - 1) * 100, 1)
 
+def mom12_7(closes):
+    """return from 12 months ago to 6 months ago (closes 252 vs 126 days ago), in %"""
+    c = [x for x in closes if x and x > 0]
+    if len(c) < 253: return None
+    return round((c[-127] / c[-253] - 1) * 100, 1)
+
+def max21(closes):
+    """largest one-day gain of the last 21 trading days, in %"""
+    c = [x for x in closes if x and x > 0]
+    if len(c) < 23: return None
+    return round(max(c[i] / c[i - 1] - 1 for i in range(len(c) - 21, len(c))) * 100, 1)
+
+def crash_flag(series):
+    """momentum-crash check over the last 6 trading days: sort by 6-1 trend as of 20 days earlier, compare the next
+    20-day return of the top and bottom 20%. Triggered if the top trailed the bottom by more than 10 points."""
+    S = [[x for x in c if x and x > 0] for c in series]
+    S = [c for c in S if len(c) >= 160]
+    out = {"crash": False, "spread": None, "n": len(S)}
+    if len(S) < 20: return out
+    for o in range(6):
+        e = -1 - o
+        sig = [(c[e - 41] / c[e - 146] - 1, c[e] / c[e - 20] - 1) for c in S]
+        sig.sort(key=lambda t: t[0]); k = max(1, len(sig) // 5)
+        spread = sum(t[1] for t in sig[-k:]) / k - sum(t[1] for t in sig[:k]) / k
+        if o == 0: out["spread"] = round(spread * 100, 1)
+        if spread < -0.10: out["crash"] = True; out["triggeredDaysAgo"] = o; break
+    return out
+
 def chg26(closes):
     c = [x for x in closes if x and x > 0]
     if len(c) < 130: return None
     return round((c[-1] / c[-127] - 1) * 100, 1)
 
 def naver(code):
-    x = raw(f"https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=260&requestType=0").decode("euc-kr", "replace")
+    x = raw(f"https://fchart.stock.naver.com/sise.nhn?symbol={code}&timeframe=day&count=300&requestType=0").decode("euc-kr", "replace")
     return [float(m.split("|")[4]) for m in re.findall(r'data="([^"]+)"', x)]
 
 BENCH = {"KR-069500": "069500", "KR-379800": "379800"}   # KODEX 200 (코스피), KODEX 미국S&P500 (원화)
@@ -69,7 +97,8 @@ def yahoo(sym):
 
 def main():
     tk = json.load(open("tickers.json"))
-    out, ma, p52, p26, hi, m6 = {}, {}, {}, {}, {}, {}
+    out, ma, p52, p26, hi, m6, m712, mx = {}, {}, {}, {}, {}, {}, {}, {}
+    series = {"KR": [], "US": []}
     bench = {}
     for k, c in BENCH.items():
         try: bench[k] = naver_dated(c)
@@ -90,6 +119,11 @@ def main():
         if h is not None: hi["KR-" + c] = h
         w = mom6s(cl)
         if w is not None: m6["KR-" + c] = w
+        w = mom12_7(cl)
+        if w is not None: m712["KR-" + c] = w
+        w = max21(cl)
+        if w is not None: mx["KR-" + c] = w
+        series["KR"].append(cl)
         time.sleep(0.2)
     for t in tk["US"]:
         cl = yahoo(t.replace(".", "-"))
@@ -104,8 +138,13 @@ def main():
         if h is not None: hi["US-" + t] = h
         w = mom6s(cl)
         if w is not None: m6["US-" + t] = w
+        w = mom12_7(cl)
+        if w is not None: m712["US-" + t] = w
+        w = max21(cl)
+        if w is not None: mx["US-" + t] = w
+        series["US"].append(cl)
         time.sleep(0.6)
-    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "p26": p26, "hi52": hi, "m6s": m6, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
+    json.dump({"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "vol": out, "ma200": ma, "p52": p52, "p26": p26, "hi52": hi, "m6s": m6, "m712": m712, "max21": mx, "regime": {k: crash_flag(v) for k, v in series.items()}, "bench": bench}, open("stats.json", "w"), indent=0, sort_keys=True)
     print(f"vol {len(out)}/{len(tk['KR'])+len(tk['US'])}")
 
 if __name__ == "__main__":
