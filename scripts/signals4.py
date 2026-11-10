@@ -30,13 +30,13 @@ def rules(base):
         "하락장엔 새로 안 사기": {"filter": True},
     }
 
-def evaluate(P, dates, sec, M, base, start, dep, cost):
+def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
     sigs = {k: precompute(P, k, M) for k in ("high52", "mom6", "mom6+high52")}
     ma = np.array([M[max(0, i - 199):i + 1].mean() for i in range(len(M))]); up = M >= ma
     starts = list(range(S0, len(dates) - WIN, STEP))
     out = {}
     bench = [twr(*etf(M, dates, a, a + WIN, start, dep), dates[a:a + WIN]) for a in starts]
-    for nm, ov in rules(base).items():
+    for nm, ov in (R or rules(base)).items():
         kind = ov.get("kind", base)
         kw = dict(kind=kind, SIG=sigs[kind], daily=True, lock=ov.get("lock", 10), topn=ov.get("topn", 10),
                   stop=ov.get("stop", -0.12), keep=ov.get("keep", 2), buy_ok=up if ov.get("filter") else None, **cost)
