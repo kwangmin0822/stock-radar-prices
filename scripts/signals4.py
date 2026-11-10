@@ -38,8 +38,9 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
     bench = [twr(*etf(M, dates, a, a + WIN, start, dep), dates[a:a + WIN]) for a in starts]
     for nm, ov in (R or rules(base)).items():
         kind = ov.get("kind", base)
-        kw = dict(kind=kind, SIG=sigs[kind], daily=True, lock=ov.get("lock", 10), topn=ov.get("topn", 10),
-                  stop=ov.get("stop", -0.12), keep=ov.get("keep", 2), buy_ok=up if ov.get("filter") else None, **cost)
+        kw = dict(kind=kind, SIG=ov["SIG"] if "SIG" in ov else sigs[kind], daily=True, lock=ov.get("lock", 10), topn=ov.get("topn", 10),
+                  stop=ov.get("stop", -0.12), keep=ov.get("keep", 2), buy_ok=up if ov.get("filter") else None,
+                  buy_mask=ov.get("mask"), volctl=ov.get("volctl", False), **{**cost, **ov.get("cost", {})})
         rs = []
         for a in starts:
             c, f, tr, _ = sim(P, dates, sec, a, a + WIN, start, dep, M=M, **kw)
@@ -48,6 +49,7 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
         out[nm] = {"median": round(float(np.median(cg)), 1), "worst": round(float(cg.min()), 1),
                    "beatIndexPct": round(float((cg > bg).mean() * 100)), "medianVsIndex": round(float(np.median(cg - bg)), 1),
                    "medianMdd": round(float(np.median([r["mdd"] for r in rs])), 1),
+                   "calmar": round(float(np.median([r["cagr"] / abs(r["mdd"]) if r["mdd"] else 0 for r in rs])), 2),
                    "tradesPerYear": round(float(np.mean([r["trades"] for r in rs])) / 3)}
         print(nm, out[nm], flush=True)
     bg = [b["cagr"] for b in bench]

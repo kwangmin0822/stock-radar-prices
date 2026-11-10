@@ -65,7 +65,7 @@ def signal(P, i, kind, M=None, skip=21):
     raise ValueError(kind)
 
 def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None,
-        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0, SIG=None, keep=2):
+        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0, SIG=None, keep=2, buy_mask=None, volctl=False):
     """buy_ok: per-day bool array, new buys only when True (market filter); months: set of month numbers when the
     portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account);
     daily: re-rank every trading day (like the page) instead of once a month; lock: a stock bought less than this many
@@ -75,6 +75,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
     sh = np.zeros(n, int); cash = float(start); entry = np.full(n, np.nan); pend_stop = np.zeros(n, bool)
     since = np.zeros(n, int)
     curve, flows, month, trades, cost = [], [], None, 0, 0.0
+    dr, s20s, paused = [], [], False   # portfolio daily returns / rolling 20-day vol (volctl)
     for i in range(i0, i1):
         px = P[i]
         # 1) stop-loss orders decided yesterday fill today
@@ -106,6 +107,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
             sec_n = {}
             for j in np.where(sh > 0)[0]: sec_n[sectors[j]] = sec_n.get(sectors[j], 0) + 1
             target = order[:topn] if (buy_ok is None or buy_ok[i - 1]) else []
+            if volctl and paused: target = []
             # buy: walk the top-N; one share at a time round-robin while money lasts
             changed = True
             while changed:
@@ -113,6 +115,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
                 for j in target:
                     p = px[j] * (1 + SLIP) * (1 + BUYc)
                     if p > cash: continue
+                    if buy_mask is not None and not buy_mask[i - 1, j]: continue
                     held_val = sh[j] * px[j]
                     if sh[j] == 0 and sec_n.get(sectors[j], 0) >= 2: continue
                     if sh[j] > 0 and held_val + px[j] > cap: continue
@@ -122,6 +125,14 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
         if stop is not None:
             pend_stop = (sh > 0) & ~np.isnan(px) & (px / entry - 1 <= stop)
         curve.append(cash + np.nansum(np.where(sh > 0, sh * px, 0))); flows.append(flow)
+        if volctl and len(curve) > 1 and curve[-2] > 0:
+            dr.append((curve[-1] - flow) / curve[-2] - 1)
+            if len(dr) >= 20:
+                s20s.append(float(np.std(dr[-20:])))
+                if len(s20s) >= 60:
+                    med = float(np.median(s20s[-252:]))
+                    if med > 0 and s20s[-1] > 1.5 * med: paused = True
+                    elif med > 0 and s20s[-1] < 1.2 * med: paused = False
     return np.array(curve), np.array(flows), trades, cost
 
 def etf(prices, dates, i0, i1, start, deposit):
