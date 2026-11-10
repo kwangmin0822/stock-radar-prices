@@ -48,12 +48,13 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
         cg = np.array([r["cagr"] for r in rs]); bg = np.array([b["cagr"] for b in bench])
         out[nm] = {"median": round(float(np.median(cg)), 1), "worst": round(float(cg.min()), 1),
                    "beatIndexPct": round(float((cg > bg).mean() * 100)), "medianVsIndex": round(float(np.median(cg - bg)), 1),
+                   "medianEarly": round(float(np.median(cg[:len(cg) // 2])), 1), "medianLate": round(float(np.median(cg[len(cg) // 2:])), 1),
                    "medianMdd": round(float(np.median([r["mdd"] for r in rs])), 1),
                    "calmar": round(float(np.median([r["cagr"] / abs(r["mdd"]) if r["mdd"] else 0 for r in rs])), 2),
                    "tradesPerYear": round(float(np.mean([r["trades"] for r in rs])) / 3)}
         print(nm, out[nm], flush=True)
     bg = [b["cagr"] for b in bench]
-    out["지수 적립"] = {"median": round(float(np.median(bg)), 1), "worst": round(float(min(bg)), 1),
+    out["지수 적립"] = {"median": round(float(np.median(bg)), 1), "medianEarly": round(float(np.median(bg[:len(bg) // 2])), 1), "medianLate": round(float(np.median(bg[len(bg) // 2:])), 1), "worst": round(float(min(bg)), 1),
                     "medianMdd": round(float(np.median([b["mdd"] for b in bench])), 1)}
     return out, {"windows": len(starts), "first": dates[starts[0]], "last": dates[starts[-1] + WIN - 1]}
 
