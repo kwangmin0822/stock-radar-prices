@@ -1,0 +1,401 @@
+{
+ "updatedAt": "2026-11-10T10:32:04+09:00",
+ "windowYears": 3,
+ "KR": {
+  "stocks": 198,
+  "7만 원 + 매달 10만 원": {
+   "지금 규칙": {
+    "median": 20.8,
+    "worst": 3.8,
+    "beatIndexPct": 81,
+    "medianVsIndex": 9.0,
+    "medianMdd": -34.7,
+    "tradesPerYear": 1028
+   },
+   "30일 잠금": {
+    "median": 23.6,
+    "worst": -1.9,
+    "beatIndexPct": 96,
+    "medianVsIndex": 14.0,
+    "medianMdd": -34.9,
+    "tradesPerYear": 700
+   },
+   "종목 5개": {
+    "median": 14.9,
+    "worst": -17.1,
+    "beatIndexPct": 50,
+    "medianVsIndex": -0.2,
+    "medianMdd": -46.0,
+    "tradesPerYear": 1212
+   },
+   "종목 15개": {
+    "median": 15.8,
+    "worst": 5.7,
+    "beatIndexPct": 73,
+    "medianVsIndex": 7.3,
+    "medianMdd": -33.1,
+    "tradesPerYear": 811
+   },
+   "손절 −20%": {
+    "median": 19.7,
+    "worst": 7.4,
+    "beatIndexPct": 85,
+    "medianVsIndex": 14.7,
+    "medianMdd": -35.0,
+    "tradesPerYear": 1015
+   },
+   "손절 없음": {
+    "median": 15.3,
+    "worst": 8.0,
+    "beatIndexPct": 81,
+    "medianVsIndex": 11.6,
+    "medianMdd": -38.0,
+    "tradesPerYear": 1003
+   },
+   "순위 3배 밖으로 밀려야 매도": {
+    "median": 13.2,
+    "worst": -5.6,
+    "beatIndexPct": 69,
+    "medianVsIndex": 7.7,
+    "medianMdd": -36.9,
+    "tradesPerYear": 792
+   },
+   "순위 1.5배 밖이면 매도": {
+    "median": 13.2,
+    "worst": -8.4,
+    "beatIndexPct": 77,
+    "medianVsIndex": 7.9,
+    "medianMdd": -39.8,
+    "tradesPerYear": 1123
+   },
+   "6개월 추세": {
+    "median": 28.6,
+    "worst": 8.0,
+    "beatIndexPct": 96,
+    "medianVsIndex": 23.1,
+    "medianMdd": -41.9,
+    "tradesPerYear": 353
+   },
+   "두 추세 섞기": {
+    "median": 24.9,
+    "worst": 10.4,
+    "beatIndexPct": 100,
+    "medianVsIndex": 20.4,
+    "medianMdd": -38.6,
+    "tradesPerYear": 646
+   },
+   "하락장엔 새로 안 사기": {
+    "median": 23.4,
+    "worst": 17.1,
+    "beatIndexPct": 81,
+    "medianVsIndex": 18.9,
+    "medianMdd": -25.5,
+    "tradesPerYear": 753
+   },
+   "지수 적립": {
+    "median": 5.9,
+    "worst": -4.1,
+    "medianMdd": -33.8
+   }
+  },
+  "span": {
+   "windows": 26,
+   "first": "20190514",
+   "last": "20260917"
+  },
+  "300만 원": {
+   "지금 규칙": {
+    "median": 11.8,
+    "worst": 2.4,
+    "beatIndexPct": 73,
+    "medianVsIndex": 3.2,
+    "medianMdd": -38.8,
+    "tradesPerYear": 1410
+   },
+   "30일 잠금": {
+    "median": 9.9,
+    "worst": -0.4,
+    "beatIndexPct": 77,
+    "medianVsIndex": 3.5,
+    "medianMdd": -38.7,
+    "tradesPerYear": 916
+   },
+   "종목 5개": {
+    "median": 6.9,
+    "worst": -18.6,
+    "beatIndexPct": 27,
+    "medianVsIndex": -4.7,
+    "medianMdd": -46.6,
+    "tradesPerYear": 1775
+   },
+   "종목 15개": {
+    "median": 8.8,
+    "worst": 1.0,
+    "beatIndexPct": 62,
+    "medianVsIndex": 1.3,
+    "medianMdd": -37.2,
+    "tradesPerYear": 1117
+   },
+   "손절 −20%": {
+    "median": 14.1,
+    "worst": 0.9,
+    "beatIndexPct": 69,
+    "medianVsIndex": 5.2,
+    "medianMdd": -39.4,
+    "tradesPerYear": 1426
+   },
+   "손절 없음": {
+    "median": 13.6,
+    "worst": -1.0,
+    "beatIndexPct": 73,
+    "medianVsIndex": 3.0,
+    "medianMdd": -43.3,
+    "tradesPerYear": 1411
+   },
+   "순위 3배 밖으로 밀려야 매도": {
+    "median": 6.2,
+    "worst": -5.4,
+    "beatIndexPct": 46,
+    "medianVsIndex": -0.7,
+    "medianMdd": -40.0,
+    "tradesPerYear": 1077
+   },
+   "순위 1.5배 밖이면 매도": {
+    "median": 2.1,
+    "worst": -7.0,
+    "beatIndexPct": 23,
+    "medianVsIndex": -3.5,
+    "medianMdd": -44.0,
+    "tradesPerYear": 1515
+   },
+   "6개월 추세": {
+    "median": 19.1,
+    "worst": 1.8,
+    "beatIndexPct": 92,
+    "medianVsIndex": 14.1,
+    "medianMdd": -41.1,
+    "tradesPerYear": 522
+   },
+   "두 추세 섞기": {
+    "median": 18.7,
+    "worst": -5.6,
+    "beatIndexPct": 92,
+    "medianVsIndex": 12.9,
+    "medianMdd": -43.4,
+    "tradesPerYear": 917
+   },
+   "하락장엔 새로 안 사기": {
+    "median": 18.5,
+    "worst": 8.4,
+    "beatIndexPct": 77,
+    "medianVsIndex": 10.2,
+    "medianMdd": -22.6,
+    "tradesPerYear": 1048
+   },
+   "지수 적립": {
+    "median": 6.4,
+    "worst": -4.2,
+    "medianMdd": -34.1
+   }
+  }
+ },
+ "US": {
+  "stocks": 294,
+  "$50 + 매달 $70": {
+   "지금 규칙": {
+    "median": 56.9,
+    "worst": 13.8,
+    "beatIndexPct": 100,
+    "medianVsIndex": 44.8,
+    "medianMdd": -44.3,
+    "tradesPerYear": 303
+   },
+   "30일 잠금": {
+    "median": 59.2,
+    "worst": 16.2,
+    "beatIndexPct": 100,
+    "medianVsIndex": 46.7,
+    "medianMdd": -44.4,
+    "tradesPerYear": 281
+   },
+   "종목 5개": {
+    "median": 55.0,
+    "worst": 10.0,
+    "beatIndexPct": 100,
+    "medianVsIndex": 43.2,
+    "medianMdd": -46.5,
+    "tradesPerYear": 358
+   },
+   "종목 15개": {
+    "median": 53.0,
+    "worst": 6.0,
+    "beatIndexPct": 100,
+    "medianVsIndex": 41.6,
+    "medianMdd": -45.8,
+    "tradesPerYear": 277
+   },
+   "손절 −20%": {
+    "median": 53.8,
+    "worst": 9.4,
+    "beatIndexPct": 100,
+    "medianVsIndex": 41.9,
+    "medianMdd": -45.4,
+    "tradesPerYear": 275
+   },
+   "손절 없음": {
+    "median": 54.8,
+    "worst": 10.0,
+    "beatIndexPct": 100,
+    "medianVsIndex": 41.5,
+    "medianMdd": -44.9,
+    "tradesPerYear": 261
+   },
+   "순위 3배 밖으로 밀려야 매도": {
+    "median": 54.0,
+    "worst": 8.6,
+    "beatIndexPct": 100,
+    "medianVsIndex": 41.7,
+    "medianMdd": -46.0,
+    "tradesPerYear": 258
+   },
+   "순위 1.5배 밖이면 매도": {
+    "median": 52.4,
+    "worst": 15.9,
+    "beatIndexPct": 100,
+    "medianVsIndex": 40.5,
+    "medianMdd": -44.4,
+    "tradesPerYear": 343
+   },
+   "52주 신고가 근접": {
+    "median": -10.9,
+    "worst": -20.2,
+    "beatIndexPct": 0,
+    "medianVsIndex": -19.5,
+    "medianMdd": -42.8,
+    "tradesPerYear": 675
+   },
+   "두 추세 섞기": {
+    "median": 10.4,
+    "worst": -9.3,
+    "beatIndexPct": 50,
+    "medianVsIndex": -0.0,
+    "medianMdd": -33.1,
+    "tradesPerYear": 558
+   },
+   "하락장엔 새로 안 사기": {
+    "median": 39.0,
+    "worst": 7.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 27.7,
+    "medianMdd": -42.6,
+    "tradesPerYear": 244
+   },
+   "지수 적립": {
+    "median": 11.3,
+    "worst": 2.5,
+    "medianMdd": -21.4
+   }
+  },
+  "span": {
+   "windows": 36,
+   "first": "20171122",
+   "last": "20261002"
+  },
+  "$2,200": {
+   "지금 규칙": {
+    "median": 48.4,
+    "worst": 0.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 37.1,
+    "medianMdd": -44.8,
+    "tradesPerYear": 458
+   },
+   "30일 잠금": {
+    "median": 52.4,
+    "worst": 7.8,
+    "beatIndexPct": 97,
+    "medianVsIndex": 38.5,
+    "medianMdd": -44.0,
+    "tradesPerYear": 426
+   },
+   "종목 5개": {
+    "median": 55.8,
+    "worst": 1.4,
+    "beatIndexPct": 92,
+    "medianVsIndex": 42.8,
+    "medianMdd": -45.8,
+    "tradesPerYear": 587
+   },
+   "종목 15개": {
+    "median": 49.5,
+    "worst": 1.5,
+    "beatIndexPct": 92,
+    "medianVsIndex": 37.5,
+    "medianMdd": -43.6,
+    "tradesPerYear": 401
+   },
+   "손절 −20%": {
+    "median": 48.5,
+    "worst": 2.5,
+    "beatIndexPct": 94,
+    "medianVsIndex": 37.2,
+    "medianMdd": -44.8,
+    "tradesPerYear": 420
+   },
+   "손절 없음": {
+    "median": 49.8,
+    "worst": 4.4,
+    "beatIndexPct": 97,
+    "medianVsIndex": 37.3,
+    "medianMdd": -44.3,
+    "tradesPerYear": 402
+   },
+   "순위 3배 밖으로 밀려야 매도": {
+    "median": 53.9,
+    "worst": -2.0,
+    "beatIndexPct": 92,
+    "medianVsIndex": 39.5,
+    "medianMdd": -46.2,
+    "tradesPerYear": 386
+   },
+   "순위 1.5배 밖이면 매도": {
+    "median": 46.4,
+    "worst": 2.6,
+    "beatIndexPct": 92,
+    "medianVsIndex": 35.8,
+    "medianMdd": -46.0,
+    "tradesPerYear": 519
+   },
+   "52주 신고가 근접": {
+    "median": -11.9,
+    "worst": -21.3,
+    "beatIndexPct": 0,
+    "medianVsIndex": -23.4,
+    "medianMdd": -41.5,
+    "tradesPerYear": 891
+   },
+   "두 추세 섞기": {
+    "median": 8.4,
+    "worst": -6.7,
+    "beatIndexPct": 19,
+    "medianVsIndex": -5.4,
+    "medianMdd": -30.2,
+    "tradesPerYear": 761
+   },
+   "하락장엔 새로 안 사기": {
+    "median": 36.5,
+    "worst": -4.6,
+    "beatIndexPct": 78,
+    "medianVsIndex": 24.8,
+    "medianMdd": -43.2,
+    "tradesPerYear": 357
+   },
+   "지수 적립": {
+    "median": 12.1,
+    "worst": 6.6,
+    "medianMdd": -24.3
+   }
+  }
+ },
+ "notes": "3년 기간을 약 2달 간격으로 여러 번 시작해 비교 · 매일 점검 · 1주 단위 · 다음 날 체결 · 수수료·거래세 · 현재 후보만 사용(생존 편향, 미국이 특히 큼)"
+}
