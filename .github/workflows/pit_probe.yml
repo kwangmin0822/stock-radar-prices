@@ -13,5 +13,5 @@ jobs:
       - run: python scripts/pit_probe.py
       - run: |
           git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
-          git add pit_probe.json; git commit -m "pit probe" || true
+          git add pit_probe.json kind_sample.html; git commit -m "pit probe" || true
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

@@ -9,7 +9,7 @@ try:
     b = get("https://kind.krx.co.kr/investwarn/delcompany.do", {"method": "searchDelCompanySub", "currentPageSize": "3000", "pageIndex": "1",
             "orderMode": "1", "orderStat": "D", "marketType": "", "searchCorpName": "", "fromDate": "2018-01-01", "toDate": "2026-11-10"},
             {"Referer": "https://kind.krx.co.kr/investwarn/delcompany.do?method=searchDelCompanyMain"}).decode("utf-8", "replace")
-    rows = re.findall(r"<tr>(.*?)</tr>", b, re.S)
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", b, re.S); open("kind_sample.html","w").write(b[:200000])
     out["kind_len"] = len(b); out["kind_rows"] = len(rows); out["kind_sample"] = [re.sub(r"<[^>]+>|\s+", " ", r).strip() for r in rows[:6]]
 except Exception:
     out["kind_err"] = traceback.format_exc()[-400:]
@@ -20,6 +20,7 @@ try:
 except Exception:
     out["pykrx_err"] = traceback.format_exc()[-300:]
 codes = re.findall(r"\b(\d{6})\b", " ".join(out.get("kind_sample", [])))[:4]
+out["codes"] = codes
 out["delisted_try"] = {}
 for c in codes:
     try:
