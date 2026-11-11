@@ -65,7 +65,7 @@ def signal(P, i, kind, M=None, skip=21):
     raise ValueError(kind)
 
 def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126, skip=21, kind="mom6", M=None,
-        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0, SIG=None, keep=2, buy_mask=None, volctl=False):
+        buy_ok=None, months=None, buyc=None, sellc=None, daily=False, lock=0, SIG=None, keep=2, buy_mask=None, volctl=False, trad=None, alive=None):
     """buy_ok: per-day bool array, new buys only when True (market filter); months: set of month numbers when the
     portfolio is re-ranked (None = every month); buyc/sellc override the cost rates (US account);
     daily: re-rank every trading day (like the page) instead of once a month; lock: a stock bought less than this many
@@ -78,9 +78,14 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
     dr, s20s, paused = [], [], False   # portfolio daily returns / rolling 20-day vol (volctl)
     for i in range(i0, i1):
         px = P[i]
-        # 1) stop-loss orders decided yesterday fill today
+        # 0) delisted: sell what is left at the last traded price (includes the final liquidation-trading days)
+        if alive is not None:
+            for j in np.where((sh > 0) & ~alive[i])[0]:
+                got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
+                cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
+        # 1) stop-loss orders decided yesterday fill today (not while trading is halted)
         for j in np.where(pend_stop & (sh > 0))[0]:
-            if np.isnan(px[j]): continue
+            if np.isnan(px[j]) or (trad is not None and not trad[i, j]): continue
             got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
             cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
         pend_stop[:] = False
@@ -99,7 +104,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
             rank = {j: r for r, j in enumerate(order)}
             # sell names that dropped out of the top 2N
             for j in np.where(sh > 0)[0]:
-                if rank.get(j, 1e9) >= keep * topn and not np.isnan(px[j]) and i - since[j] >= lock:
+                if rank.get(j, 1e9) >= keep * topn and not np.isnan(px[j]) and i - since[j] >= lock and (trad is None or trad[i, j]):
                     got = sh[j] * px[j] * (1 - SLIP); c = got * SELLc
                     cash += got - c; cost += c; trades += 1; sh[j] = 0; entry[j] = np.nan
             eq = cash + np.nansum(sh * px)
@@ -116,6 +121,7 @@ def sim(P, dates, sectors, i0, i1, start, deposit, topn=10, stop=-0.12, look=126
                     p = px[j] * (1 + SLIP) * (1 + BUYc)
                     if p > cash: continue
                     if buy_mask is not None and not buy_mask[i - 1, j]: continue
+                    if trad is not None and not trad[i, j]: continue
                     held_val = sh[j] * px[j]
                     if sh[j] == 0 and sec_n.get(sectors[j], 0) >= 2: continue
                     if sh[j] > 0 and held_val + px[j] > cap: continue
