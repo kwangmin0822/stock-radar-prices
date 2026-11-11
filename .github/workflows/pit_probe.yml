@@ -1,0 +1,17 @@
+name: pit_probe
+on: workflow_dispatch
+permissions: {contents: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pykrx numpy
+      - run: python scripts/pit_probe.py
+      - run: |
+          git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
+          git add pit_probe.json; git commit -m "pit probe" || true
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
