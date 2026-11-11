@@ -1,0 +1,22 @@
+{
+ "20190502": {
+  "err": "KeyError(\"None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]\")"
+ },
+ "20220502": {
+  "err": "KeyError(\"None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]\")"
+ },
+ "20260105": {
+  "err": "KeyError(\"None of [Index(['종가', '시가총액', '거래량', '거래대금'], dtype='object')] are in the [columns]\")"
+ },
+ "ohlcv": {
+  "rows": 246,
+  "cols": [
+   "시가",
+   "고가",
+   "저가",
+   "종가",
+   "거래량",
+   "등락률"
+  ]
+ }
+}
