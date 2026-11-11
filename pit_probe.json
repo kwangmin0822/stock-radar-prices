@@ -1,20 +1,64 @@
 {
- "005930": {
-  "rows": 0,
-  "cols": [],
-  "head": [],
-  "tail": []
+ "https://m.stock.naver.com/api/stock/005930/integration": {
+  "len": 9508,
+  "shares": null,
+  "mv": "{\"code\": \"marketValue\", \"key\": \"시총\", \"value\": \"1,175조 1,020억\"}, {\"code",
+  "keys": [
+   "stockEndType",
+   "itemCode",
+   "reutersCode",
+   "stockName",
+   "totalInfos",
+   "iconInfos",
+   "description",
+   "etfKeyIndicator",
+   "dealTrendInfos",
+   "researches",
+   "industryCode",
+   "industryCompareInfo",
+   "consensusInfo",
+   "shareholdersMeetingInfo",
+   "irScheduleInfo"
+  ]
  },
- "134780": {
-  "rows": 0,
-  "cols": [],
-  "head": [],
-  "tail": []
+ "https://m.stock.naver.com/api/stock/005930/basic": {
+  "len": 4160,
+  "shares": null,
+  "mv": null,
+  "keys": [
+   "stockEndType",
+   "itemCode",
+   "reutersCode",
+   "stockName",
+   "itemLogoUrl",
+   "itemLogoPngUrl",
+   "sosok",
+   "closePrice",
+   "compareToPreviousClosePrice",
+   "compareToPreviousPrice",
+   "fluctuationsRatio",
+   "marketStatus",
+   "marketStatusDetailType",
+   "localTradedAt",
+   "tradeStopType"
+  ]
  },
- "028080": {
-  "rows": 0,
-  "cols": [],
-  "head": [],
-  "tail": []
+ "https://m.stock.naver.com/api/stock/134780/integration": {
+  "err": "<HTTPError 409: '409'>"
+ },
+ "https://m.stock.naver.com/api/stock/134780/basic": {
+  "err": "<HTTPError 409: '409'>"
+ },
+ "https://m.stock.naver.com/api/stock/028080/integration": {
+  "err": "<HTTPError 409: '409'>"
+ },
+ "https://m.stock.naver.com/api/stock/028080/basic": {
+  "err": "<HTTPError 409: '409'>"
+ },
+ "https://m.stock.naver.com/api/stock/057050/integration": {
+  "err": "<HTTPError 409: '409'>"
+ },
+ "https://m.stock.naver.com/api/stock/057050/basic": {
+  "err": "<HTTPError 409: '409'>"
  }
 }
