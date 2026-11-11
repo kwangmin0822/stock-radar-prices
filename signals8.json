@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T10:13:17+09:00",
+ "updatedAt": "2026-11-11T10:17:13+09:00",
  "windowYears": 3,
  "KR": {
   "stocks": 198,
@@ -346,6 +346,354 @@
     "medianLate": 12.2,
     "worst": -4.7,
     "medianMdd": -34.2
+   }
+  }
+ },
+ "US": {
+  "stocks": 294,
+  "reboundDays": 21,
+  "$50 + 매달 $70": {
+   "지금 규칙": {
+    "median": 59.5,
+    "worst": 12.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 46.5,
+    "medianEarly": 61.2,
+    "medianLate": 55.0,
+    "medianMdd": -41.5,
+    "calmar": 1.38,
+    "tradesPerYear": 265,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "A1 반등 땐 반등 점수만": {
+    "median": 46.4,
+    "worst": 12.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 34.8,
+    "medianEarly": 45.2,
+    "medianLate": 55.0,
+    "medianMdd": -41.5,
+    "calmar": 1.12,
+    "tradesPerYear": 264,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 3
+   },
+   "A2 반등 땐 반반 섞기": {
+    "median": 49.8,
+    "worst": 12.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 37.0,
+    "medianEarly": 47.5,
+    "medianLate": 55.0,
+    "medianMdd": -41.5,
+    "calmar": 1.15,
+    "tradesPerYear": 262,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 3
+   },
+   "A3 = A2 + 반등 땐 급락 쉬기 해제": {
+    "median": 49.8,
+    "worst": 12.7,
+    "beatIndexPct": 100,
+    "medianVsIndex": 37.0,
+    "medianEarly": 47.5,
+    "medianLate": 55.0,
+    "medianMdd": -41.5,
+    "calmar": 1.15,
+    "tradesPerYear": 262,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 3
+   },
+   "B1 최근 20일 추세 20% 섞기": {
+    "median": 28.4,
+    "worst": 1.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 17.6,
+    "medianEarly": 26.2,
+    "medianLate": 39.1,
+    "medianMdd": -40.2,
+    "calmar": 0.66,
+    "tradesPerYear": 348,
+    "finalVsFirstPct": -32.5,
+    "finalBeatsFirstPct": 3
+   },
+   "C1 거래량 늘며 오르면 +5점": {
+    "median": 53.0,
+    "worst": 11.5,
+    "beatIndexPct": 100,
+    "medianVsIndex": 42.0,
+    "medianEarly": 53.0,
+    "medianLate": 58.5,
+    "medianMdd": -41.2,
+    "calmar": 1.28,
+    "tradesPerYear": 272,
+    "finalVsFirstPct": -1.3,
+    "finalBeatsFirstPct": 42
+   },
+   "C2 = C1, 거래량 3배 넘으면 제외": {
+    "median": 53.6,
+    "worst": 11.5,
+    "beatIndexPct": 100,
+    "medianVsIndex": 41.6,
+    "medianEarly": 52.9,
+    "medianLate": 58.5,
+    "medianMdd": -42.8,
+    "calmar": 1.19,
+    "tradesPerYear": 275,
+    "finalVsFirstPct": -2.2,
+    "finalBeatsFirstPct": 39
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 53.2,
+    "worst": 7.3,
+    "beatIndexPct": 100,
+    "medianVsIndex": 40.5,
+    "medianEarly": 53.8,
+    "medianLate": 47.6,
+    "medianMdd": -42.8,
+    "calmar": 1.21,
+    "tradesPerYear": 262,
+    "finalVsFirstPct": -5.8,
+    "finalBeatsFirstPct": 11
+   },
+   "지수 적립": {
+    "median": 11.2,
+    "medianEarly": 11.2,
+    "medianLate": 10.7,
+    "worst": 2.5,
+    "medianMdd": -21.4
+   }
+  },
+  "span": {
+   "windows": 36,
+   "first": "20171124",
+   "last": "20261005"
+  },
+  "$2,200": {
+   "지금 규칙": {
+    "median": 53.7,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 40.2,
+    "medianEarly": 54.3,
+    "medianLate": 44.5,
+    "medianMdd": -40.2,
+    "calmar": 1.24,
+    "tradesPerYear": 398,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "A1 반등 땐 반등 점수만": {
+    "median": 36.0,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 24.7,
+    "medianEarly": 34.8,
+    "medianLate": 44.5,
+    "medianMdd": -40.2,
+    "calmar": 0.87,
+    "tradesPerYear": 387,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 3
+   },
+   "A2 반등 땐 반반 섞기": {
+    "median": 35.6,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 24.4,
+    "medianEarly": 35.2,
+    "medianLate": 44.5,
+    "medianMdd": -40.2,
+    "calmar": 0.82,
+    "tradesPerYear": 383,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "A3 = A2 + 반등 땐 급락 쉬기 해제": {
+    "median": 35.6,
+    "worst": 7.6,
+    "beatIndexPct": 97,
+    "medianVsIndex": 24.4,
+    "medianEarly": 35.2,
+    "medianLate": 44.5,
+    "medianMdd": -40.2,
+    "calmar": 0.82,
+    "tradesPerYear": 383,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "B1 최근 20일 추세 20% 섞기": {
+    "median": 19.9,
+    "worst": 3.1,
+    "beatIndexPct": 83,
+    "medianVsIndex": 8.1,
+    "medianEarly": 15.1,
+    "medianLate": 33.6,
+    "medianMdd": -41.5,
+    "calmar": 0.49,
+    "tradesPerYear": 492,
+    "finalVsFirstPct": -39.5,
+    "finalBeatsFirstPct": 8
+   },
+   "C1 거래량 늘며 오르면 +5점": {
+    "median": 51.5,
+    "worst": 7.3,
+    "beatIndexPct": 97,
+    "medianVsIndex": 38.7,
+    "medianEarly": 51.5,
+    "medianLate": 49.5,
+    "medianMdd": -41.7,
+    "calmar": 1.26,
+    "tradesPerYear": 390,
+    "finalVsFirstPct": -1.1,
+    "finalBeatsFirstPct": 44
+   },
+   "C2 = C1, 거래량 3배 넘으면 제외": {
+    "median": 51.9,
+    "worst": 5.6,
+    "beatIndexPct": 94,
+    "medianVsIndex": 39.2,
+    "medianEarly": 51.9,
+    "medianLate": 49.5,
+    "medianMdd": -42.2,
+    "calmar": 1.24,
+    "tradesPerYear": 396,
+    "finalVsFirstPct": -1.3,
+    "finalBeatsFirstPct": 47
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 50.5,
+    "worst": 5.5,
+    "beatIndexPct": 94,
+    "medianVsIndex": 36.8,
+    "medianEarly": 52.6,
+    "medianLate": 39.1,
+    "medianMdd": -40.0,
+    "calmar": 1.14,
+    "tradesPerYear": 386,
+    "finalVsFirstPct": -6.5,
+    "finalBeatsFirstPct": 8
+   },
+   "지수 적립": {
+    "median": 11.8,
+    "medianEarly": 11.6,
+    "medianLate": 11.8,
+    "worst": 5.9,
+    "medianMdd": -24.8
+   }
+  },
+  "$7,000": {
+   "지금 규칙": {
+    "median": 47.7,
+    "worst": 3.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 33.9,
+    "medianEarly": 48.8,
+    "medianLate": 40.7,
+    "medianMdd": -41.5,
+    "calmar": 1.13,
+    "tradesPerYear": 949,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "A1 반등 땐 반등 점수만": {
+    "median": 30.2,
+    "worst": 3.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 16.9,
+    "medianEarly": 30.1,
+    "medianLate": 40.7,
+    "medianMdd": -41.5,
+    "calmar": 0.71,
+    "tradesPerYear": 916,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 3
+   },
+   "A2 반등 땐 반반 섞기": {
+    "median": 30.2,
+    "worst": 3.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 16.0,
+    "medianEarly": 29.4,
+    "medianLate": 40.7,
+    "medianMdd": -41.5,
+    "calmar": 0.7,
+    "tradesPerYear": 899,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "A3 = A2 + 반등 땐 급락 쉬기 해제": {
+    "median": 30.2,
+    "worst": 3.3,
+    "beatIndexPct": 94,
+    "medianVsIndex": 16.0,
+    "medianEarly": 29.4,
+    "medianLate": 40.7,
+    "medianMdd": -41.5,
+    "calmar": 0.7,
+    "tradesPerYear": 899,
+    "finalVsFirstPct": 0.0,
+    "finalBeatsFirstPct": 0
+   },
+   "B1 최근 20일 추세 20% 섞기": {
+    "median": 14.4,
+    "worst": -2.7,
+    "beatIndexPct": 56,
+    "medianVsIndex": 2.7,
+    "medianEarly": 10.0,
+    "medianLate": 27.9,
+    "medianMdd": -42.8,
+    "calmar": 0.37,
+    "tradesPerYear": 1148,
+    "finalVsFirstPct": -42.4,
+    "finalBeatsFirstPct": 3
+   },
+   "C1 거래량 늘며 오르면 +5점": {
+    "median": 45.6,
+    "worst": 0.3,
+    "beatIndexPct": 86,
+    "medianVsIndex": 30.8,
+    "medianEarly": 45.6,
+    "medianLate": 40.6,
+    "medianMdd": -42.3,
+    "calmar": 1.13,
+    "tradesPerYear": 964,
+    "finalVsFirstPct": -5.4,
+    "finalBeatsFirstPct": 19
+   },
+   "C2 = C1, 거래량 3배 넘으면 제외": {
+    "median": 47.2,
+    "worst": -0.3,
+    "beatIndexPct": 86,
+    "medianVsIndex": 32.2,
+    "medianEarly": 47.8,
+    "medianLate": 40.6,
+    "medianMdd": -42.5,
+    "calmar": 1.18,
+    "tradesPerYear": 976,
+    "finalVsFirstPct": -4.9,
+    "finalBeatsFirstPct": 25
+   },
+   "지금 규칙 · 비용 2배": {
+    "median": 44.1,
+    "worst": 1.4,
+    "beatIndexPct": 92,
+    "medianVsIndex": 29.1,
+    "medianEarly": 44.7,
+    "medianLate": 36.3,
+    "medianMdd": -41.6,
+    "calmar": 1.03,
+    "tradesPerYear": 903,
+    "finalVsFirstPct": -8.9,
+    "finalBeatsFirstPct": 0
+   },
+   "지수 적립": {
+    "median": 11.9,
+    "medianEarly": 12.6,
+    "medianLate": 11.8,
+    "worst": 6.9,
+    "medianMdd": -25.0
    }
   }
  }
