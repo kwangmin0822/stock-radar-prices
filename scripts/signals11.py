@@ -46,8 +46,8 @@ def main():
     for i in range(T):
         ok = base[i] & (cap[i] > 0)
         if ok.any(): order = np.argsort(-np.where(ok, cap[i], -1)); caprank[i, order[:ok.sum()]] = np.arange(ok.sum())
-    def R(E, sig, topn=10, lock=10):
-        return {"kind": "mom6", "SIG": np.where(E, sig, np.nan), "mask": E, "topn": topn, "lock": lock, "trad": trad, "alive": alive}
+    def R(E, sig, topn=10, lock=10, daily=True):
+        return {"kind": "mom6", "SIG": np.where(E, sig, np.nan), "mask": E, "topn": topn, "lock": lock, "trad": trad, "alive": alive, "daily": daily}
     rk1 = rankpct(np.where(E1, m6, np.nan)); rk3 = rankpct(np.where(E3, m6, np.nan))
     top30 = base & (caprank < 30); top10 = base & (caprank < 10); top20 = base & (caprank < 20)
     rules = {
@@ -55,12 +55,14 @@ def main():
         "추세, 상위 10% 빼고 · 1조+": R(E1, np.where(rk1 <= 0.9, m6, np.nan)),
         "추세, 상위 10% 빼고 · 3천억+": R(E3, np.where(rk3 <= 0.9, m6, np.nan)),
         "52주 최고가 근접 · 1조+": R(E1, hi),
-        "1달 낙폭 큰 종목 (반전) · 1조+": R(E1, -r21),
-        "1달 낙폭 큰 종목 (반전) · 3천억+": R(E3, -r21),
-        "덜 출렁이는 종목 · 1조+": R(E1, -vol),
-        "초대형주 상위 10개": R(top10, -caprank, 10),
-        "초대형주 상위 20개": R(top20, -caprank, 20),
+        "추세 · 1조+ · 매달 교체": R(E1, m6, daily=False),
+        "1달 낙폭 큰 종목 (반전) · 1조+ · 매달 교체": R(E1, -r21, daily=False),
+        "1달 낙폭 큰 종목 (반전) · 3천억+ · 매달 교체": R(E3, -r21, daily=False),
+        "덜 출렁이는 종목 · 1조+ · 매달 교체": R(E1, -vol, daily=False),
+        "초대형주 상위 10개 · 매달 교체": R(top10, -caprank, 10, daily=False),
+        "초대형주 상위 20개 · 매달 교체": R(top20, -caprank, 20, daily=False),
         "초대형 30개 중 추세 상위 10": R(top30, m6),
+        "초대형 30개 중 추세 상위 10 · 매달 교체": R(top30, m6, daily=False),
     }
     res = {"updatedAt": dt.datetime.now(KST).isoformat(timespec="seconds"), "stocks": n,
            "avgUniverse": {"1조+": int(E1.sum(1)[260:].mean()), "3천억+": int(E3.sum(1)[260:].mean())}, "KR": {}}

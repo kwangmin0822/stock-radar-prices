@@ -38,7 +38,7 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
     bench = [twr(*etf(M, dates, a, a + WIN, start, dep), dates[a:a + WIN]) for a in starts]
     for nm, ov in (R or rules(base)).items():
         kind = ov.get("kind", base)
-        kw = dict(kind=kind, SIG=ov["SIG"] if "SIG" in ov else sigs[kind], daily=True, lock=ov.get("lock", 10), topn=ov.get("topn", 10),
+        kw = dict(kind=kind, SIG=ov["SIG"] if "SIG" in ov else sigs[kind], daily=ov.get("daily", True), lock=ov.get("lock", 10), topn=ov.get("topn", 10),
                   stop=ov.get("stop", -0.12), keep=ov.get("keep", 2), buy_ok=up if ov.get("filter") else None,
                   buy_mask=ov.get("mask"), volctl=ov.get("volctl", False), trad=ov.get("trad"), alive=ov.get("alive"), **{**cost, **ov.get("cost", {})})
         rs = []
