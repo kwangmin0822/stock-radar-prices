@@ -112,6 +112,7 @@ def main():
     keep = [k for k, h in enumerate(UH) if len(h[0]) > 600]
     ust = [ust[k] for k in keep]; UH = [UH[k] for k in keep]
     sc, _ = hist_us("SPLG")
+    if len(sc) < 600: sc, _ = hist_us("SPY")
     if len(sc) > 600:
         dates = sorted(d for d in sc if d >= "20160101")
         P = matrix([h[0] for h in UH], dates); V = matrix([h[1] for h in UH], dates); B = np.array([sc[d] for d in dates])
