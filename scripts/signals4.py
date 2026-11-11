@@ -34,7 +34,7 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
     sigs = {k: precompute(P, k, M) for k in ("high52", "mom6", "mom6+high52")}
     ma = np.array([M[max(0, i - 199):i + 1].mean() for i in range(len(M))]); up = M >= ma
     starts = list(range(S0, len(dates) - WIN, STEP))
-    out = {}
+    out = {}; finals0 = None
     bench = [twr(*etf(M, dates, a, a + WIN, start, dep), dates[a:a + WIN]) for a in starts]
     for nm, ov in (R or rules(base)).items():
         kind = ov.get("kind", base)
@@ -46,12 +46,16 @@ def evaluate(P, dates, sec, M, base, start, dep, cost, R=None):
             c, f, tr, _ = sim(P, dates, sec, a, a + WIN, start, dep, M=M, **kw)
             rs.append({**twr(c, f, dates[a:a + WIN]), "trades": tr})
         cg = np.array([r["cagr"] for r in rs]); bg = np.array([b["cagr"] for b in bench])
+        fin = np.array([r["final"] for r in rs], float)
+        if finals0 is None: finals0 = fin
         out[nm] = {"median": round(float(np.median(cg)), 1), "worst": round(float(cg.min()), 1),
                    "beatIndexPct": round(float((cg > bg).mean() * 100)), "medianVsIndex": round(float(np.median(cg - bg)), 1),
                    "medianEarly": round(float(np.median(cg[:len(cg) // 2])), 1), "medianLate": round(float(np.median(cg[len(cg) // 2:])), 1),
                    "medianMdd": round(float(np.median([r["mdd"] for r in rs])), 1),
                    "calmar": round(float(np.median([r["cagr"] / abs(r["mdd"]) if r["mdd"] else 0 for r in rs])), 2),
-                   "tradesPerYear": round(float(np.mean([r["trades"] for r in rs])) / 3)}
+                   "tradesPerYear": round(float(np.mean([r["trades"] for r in rs])) / 3),
+                   "finalVsFirstPct": round(float(np.median(fin / finals0 - 1) * 100), 1),
+                   "finalBeatsFirstPct": round(float((fin > finals0).mean() * 100))}
         print(nm, out[nm], flush=True)
     bg = [b["cagr"] for b in bench]
     out["지수 적립"] = {"median": round(float(np.median(bg)), 1), "medianEarly": round(float(np.median(bg[:len(bg) // 2])), 1), "medianLate": round(float(np.median(bg[len(bg) // 2:])), 1), "worst": round(float(min(bg)), 1),
