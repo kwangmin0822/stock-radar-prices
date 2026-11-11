@@ -1,0 +1,232 @@
+{
+ "updatedAt": "2026-11-11T10:47:27+09:00",
+ "windowYears": 3,
+ "counts": {
+  "listedToday": 2590,
+  "delistedSince2018": 310,
+  "withPrices": 2812,
+  "everInPitUniverse": 1548,
+  "delistedEverInPit": 134
+ },
+ "span": {
+  "windows": 26,
+  "first": "20190515",
+  "last": "20260918"
+ },
+ "KR": {
+  "오늘 대형주 200개를 과거에도 사용 (이전 방식)": {
+   "7만 원 + 매달 10만 원": {
+    "지금 규칙": {
+     "median": 28.6,
+     "worst": 5.9,
+     "beatIndexPct": 96,
+     "medianVsIndex": 27.6,
+     "medianEarly": 21.0,
+     "medianLate": 53.3,
+     "medianMdd": -39.2,
+     "calmar": 0.77,
+     "tradesPerYear": 305,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": 30.2,
+     "worst": 10.4,
+     "beatIndexPct": 96,
+     "medianVsIndex": 25.5,
+     "medianEarly": 22.7,
+     "medianLate": 49.8,
+     "medianMdd": -42.6,
+     "calmar": 0.73,
+     "tradesPerYear": 392,
+     "finalVsFirstPct": -2.3,
+     "finalBeatsFirstPct": 46
+    },
+    "지수 적립": {
+     "median": 5.8,
+     "medianEarly": 4.6,
+     "medianLate": 12.5,
+     "worst": -4.2,
+     "medianMdd": -33.8
+    }
+   },
+   "300만 원": {
+    "지금 규칙": {
+     "median": 27.8,
+     "worst": 5.0,
+     "beatIndexPct": 92,
+     "medianVsIndex": 24.7,
+     "medianEarly": 13.2,
+     "medianLate": 45.0,
+     "medianMdd": -35.1,
+     "calmar": 0.82,
+     "tradesPerYear": 440,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": 21.8,
+     "worst": 6.5,
+     "beatIndexPct": 100,
+     "medianVsIndex": 16.4,
+     "medianEarly": 15.2,
+     "medianLate": 39.3,
+     "medianMdd": -43.8,
+     "calmar": 0.51,
+     "tradesPerYear": 582,
+     "finalVsFirstPct": -10.1,
+     "finalBeatsFirstPct": 27
+    },
+    "지수 적립": {
+     "median": 5.8,
+     "medianEarly": 4.6,
+     "medianLate": 12.1,
+     "worst": -4.7,
+     "medianMdd": -34.1
+    }
+   },
+   "1000만 원": {
+    "지금 규칙": {
+     "median": 26.1,
+     "worst": 2.6,
+     "beatIndexPct": 96,
+     "medianVsIndex": 27.0,
+     "medianEarly": 13.6,
+     "medianLate": 47.6,
+     "medianMdd": -36.2,
+     "calmar": 0.72,
+     "tradesPerYear": 1105,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": 16.7,
+     "worst": -6.1,
+     "beatIndexPct": 88,
+     "medianVsIndex": 10.6,
+     "medianEarly": 14.6,
+     "medianLate": 29.4,
+     "medianMdd": -43.1,
+     "calmar": 0.4,
+     "tradesPerYear": 1420,
+     "finalVsFirstPct": -19.5,
+     "finalBeatsFirstPct": 19
+    },
+    "지수 적립": {
+     "median": 5.9,
+     "medianEarly": 4.6,
+     "medianLate": 12.2,
+     "worst": -4.7,
+     "medianMdd": -34.2
+    }
+   }
+  },
+  "그날 실제 거래 상위 250개 (상장폐지 포함)": {
+   "7만 원 + 매달 10만 원": {
+    "지금 규칙": {
+     "median": -23.7,
+     "worst": -36.0,
+     "beatIndexPct": 0,
+     "medianVsIndex": -28.2,
+     "medianEarly": -30.7,
+     "medianLate": -7.5,
+     "medianMdd": -81.8,
+     "calmar": -0.31,
+     "tradesPerYear": 763,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": -56.0,
+     "worst": -72.0,
+     "beatIndexPct": 0,
+     "medianVsIndex": -62.0,
+     "medianEarly": -57.8,
+     "medianLate": -47.9,
+     "medianMdd": -94.2,
+     "calmar": -0.59,
+     "tradesPerYear": 845,
+     "finalVsFirstPct": -55.3,
+     "finalBeatsFirstPct": 0
+    },
+    "지수 적립": {
+     "median": 5.8,
+     "medianEarly": 4.6,
+     "medianLate": 12.5,
+     "worst": -4.2,
+     "medianMdd": -33.8
+    }
+   },
+   "300만 원": {
+    "지금 규칙": {
+     "median": -22.1,
+     "worst": -41.6,
+     "beatIndexPct": 0,
+     "medianVsIndex": -29.2,
+     "medianEarly": -29.4,
+     "medianLate": -9.7,
+     "medianMdd": -81.7,
+     "calmar": -0.29,
+     "tradesPerYear": 1016,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": -52.5,
+     "worst": -64.6,
+     "beatIndexPct": 0,
+     "medianVsIndex": -61.8,
+     "medianEarly": -56.1,
+     "medianLate": -51.5,
+     "medianMdd": -93.8,
+     "calmar": -0.57,
+     "tradesPerYear": 920,
+     "finalVsFirstPct": -80.6,
+     "finalBeatsFirstPct": 0
+    },
+    "지수 적립": {
+     "median": 5.8,
+     "medianEarly": 4.6,
+     "medianLate": 12.1,
+     "worst": -4.7,
+     "medianMdd": -34.1
+    }
+   },
+   "1000만 원": {
+    "지금 규칙": {
+     "median": -22.6,
+     "worst": -42.6,
+     "beatIndexPct": 0,
+     "medianVsIndex": -31.0,
+     "medianEarly": -27.7,
+     "medianLate": -10.1,
+     "medianMdd": -80.2,
+     "calmar": -0.28,
+     "tradesPerYear": 2597,
+     "finalVsFirstPct": 0.0,
+     "finalBeatsFirstPct": 0
+    },
+    "6개월 추세만 (덧붙인 규칙 없이)": {
+     "median": -52.0,
+     "worst": -62.2,
+     "beatIndexPct": 0,
+     "medianVsIndex": -59.1,
+     "medianEarly": -53.5,
+     "medianLate": -49.9,
+     "medianMdd": -93.8,
+     "calmar": -0.56,
+     "tradesPerYear": 2294,
+     "finalVsFirstPct": -79.0,
+     "finalBeatsFirstPct": 0
+    },
+    "지수 적립": {
+     "median": 5.9,
+     "medianEarly": 4.6,
+     "medianLate": 12.2,
+     "worst": -4.7,
+     "medianMdd": -34.2
+    }
+   }
+  }
+ }
+}
