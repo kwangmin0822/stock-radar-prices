@@ -1,0 +1,21 @@
+name: export_data
+on: workflow_dispatch
+permissions:
+  contents: read
+concurrency:
+  group: export_data
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install numpy pandas pyarrow
+      - run: PYTHONPATH=scripts python scripts/export_data.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: export
+          path: export/
+          retention-days: 30
