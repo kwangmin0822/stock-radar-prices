@@ -24,7 +24,7 @@ def run(P, LOT, DIV, alive, E, SIG, crash, fx, dates, i0, i1, start, dep, ATR=No
         for j in np.where(pend & (u > 0))[0]:
             if not np.isnan(px[j]): sell(j)
         pend[:] = False
-        for j in np.where((u > 0) & (DIV[i] > 0))[0]: cash += u[j] / LOT[i, j] * DIV[i, j] * (1 - DIVTAX)
+        for j in np.where((u > 0) & (DIV[i] > 0))[0]: cash += u[j] * DIV[i, j] * (1 - DIVTAX)
         if dates[i][:6] != month:
             add = start if month is None else dep
             cash += add / fx_i * (1 - FXS); flow = add if month is not None else 0.0; month = dates[i][:6]

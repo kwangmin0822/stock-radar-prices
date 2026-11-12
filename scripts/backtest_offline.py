@@ -5,6 +5,8 @@ Needs only numpy + pandas + pyarrow and the data folder made by export_data.py. 
 
 The rules below are a line-by-line copy of pit_us7.run() / pit_us2.twr() / pit_us2.bench() with stop=None,
 topn=3, keep=2.0 (sell when rank >= 6, i.e. outside the top 6), lock=21 trading days, ban=0, cap=0.25.
+Fixes vs the first report (2026-11-12): dividends = units held x Yahoo's split-adjusted amount (was divided by the
+split factor again), and past market cap uses dated share counts (PIT_SHARES) instead of today's count.
 On top of that it records every trading day (signal, trades, holdings, cash, value) so the result can be audited.
 """
 import sys, os, json, datetime as dt
@@ -17,6 +19,7 @@ DEP = 100000
 CAP_MIN = 5e10          # candidate: that day's market cap (split-adjusted close x today's share count) >= $50B
 AGE_MIN = 253           # and at least 253 trading days of history
 TOPN, KEEP, LOCK, BAN, CAP = 3, 2.0, 21, 0, 0.25
+PIT_SHARES = True       # False = old method (today's share count for every past day)
 WIN, STEP, FIRST = 756, 63, 260   # 3-year windows, a new one every quarter, first one after ~1 year of history
 
 
@@ -59,13 +62,37 @@ def load(data_dir):
     fx_c = fxd[fxd["close"].notna() & (fxd["close"] != 0)]
     fx = ffill(dict(zip(fx_c["date"], fx_c["close"])), dates); fx = np.where(np.isnan(fx), np.nanmean(fx), fx)
     B = ffill(dict(zip(s_a["date"], s_a["adjclose"])) if len(s_a) else dict(zip(s_c["date"], s_c["close"])), dates)
-    return dict(P=P, LOT=LOT, DIV=DIV, alive=alive, fx=fx, B=B, dates=dates, tick=tick, SH=SH, T=T, n=n)
+    D = dict(P=P, LOT=LOT, DIV=DIV, alive=alive, fx=fx, B=B, dates=dates, tick=tick, SH=SH, T=T, n=n)
+    if PIT_SHARES and os.path.exists(os.path.join(data_dir, "us_shares_history_yahoo.parquet")):
+        D["SHT"], D["pit_shares_tickers"] = pit_shares(data_dir, D, uni)
+    return D
+
+
+def pit_shares(data_dir, D, uni):
+    """Share count by date instead of today's count. Yahoo's reported ordinary-share counts (quarterly, else annual;
+    split-adjusted) are used from their date on; before the oldest report (about 2021-12) the oldest report is used.
+    Counts are scaled so the latest report equals today's Naver count (fixes class/ADR unit differences); a ticker
+    whose latest report is more than 20% away from today's count (ADRs, multi-class) keeps today's count."""
+    sh = pd.read_parquet(os.path.join(data_dir, "us_shares_history_yahoo.parquet"))
+    q = sh[sh["type"] == "quarterlyOrdinarySharesNumber"]; a = sh[sh["type"] == "annualOrdinarySharesNumber"]
+    src = {t: g for t, g in q.groupby("ticker")}
+    for t, g in a.groupby("ticker"): src.setdefault(t, g)
+    DA = np.array(D["dates"]); SHT = np.tile(np.array([D["SH"][t] for t in D["tick"]], float), (D["T"], 1)); used = []
+    for j, t in enumerate(D["tick"]):
+        g = src.get(t)
+        if g is None or not len(g): continue
+        g = g.sort_values("as_of"); today = D["SH"][t]; k = today / g["shares"].iloc[-1]
+        if not (0.8 <= k <= 1.25): continue
+        col = np.full(D["T"], g["shares"].iloc[0] * k)
+        for d, v in zip(g["as_of"], g["shares"]): col[DA >= d] = v * k
+        SHT[:, j] = col; used.append(t)
+    return SHT, used
 
 
 def signals(D):
     P, alive, T, n = D["P"], D["alive"], D["T"], D["n"]
     age = np.cumsum(alive, axis=0)
-    capm = np.nan_to_num(P) * np.array([D["SH"][t] for t in D["tick"]])[None, :]
+    capm = np.nan_to_num(P) * D.get("SHT", np.array([D["SH"][t] for t in D["tick"]])[None, :])
     E = alive & (age >= AGE_MIN) & (capm >= CAP_MIN)
     m = np.full((T, n), np.nan); m[126:] = P[105:T - 21] / P[:T - 126] - 1     # 6-1 trend: close 21 days ago / close 126 days ago - 1
     SIG = np.where(E, m, np.nan)
@@ -75,7 +102,7 @@ def signals(D):
         if ok.sum() < 20: continue
         q = np.nanpercentile(s[ok], [20, 80]); ret = P[i] / P[i - 20] - 1
         spread[i] = np.nanmean(ret[ok & (s >= q[1])]) - np.nanmean(ret[ok & (s <= q[0])])
-        if spread[i] < -0.10: crash[i:i + 6] = True     # flag day i .. i+5 (6 rows); run() reads crash[i-1]
+        if spread[i] < -0.10: crash[i:i + 6] = True     # flag day i .. i+5; run() reads crash[i-1], so buys pause for the 6 trading days after a trigger (same as the live radar)
     return dict(E=E, SIG=SIG, crash=crash[:T], spread=spread, capm=capm, age=age)
 
 
@@ -96,7 +123,7 @@ def run(D, S, i0, i1, start, dep, ledger=None, trades_log=None):
         for j in np.where((u > 0) & ~alive[i])[0]: sell(j, "delisted/no-more-data")
         divi = 0.0
         for j in np.where((u > 0) & (DIV[i] > 0))[0]:
-            d = u[j] / LOT[i, j] * DIV[i, j] * (1 - DIVTAX); cash += d; divi += d
+            d = u[j] * DIV[i, j] * (1 - DIVTAX); cash += d; divi += d
         dep_krw = 0.0
         if dates[i][:6] != month:
             add = start if month is None else dep

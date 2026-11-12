@@ -61,8 +61,8 @@ def run(P, LOT, DIV, alive, E, SIG, crash, fx, dates, i0, i1, start, dep, topn, 
         for j in np.where(pend & (u > 0))[0]:
             if not np.isnan(px[j]): sell(j, px[j])
         pend[:] = False
-        # dividends (DIV is per real share on the ex-date)
-        for j in np.where((u > 0) & (DIV[i] > 0))[0]: cash += u[j] / LOT[i, j] * DIV[i, j] * (1 - DIVTAX)
+        # dividends: Yahoo amounts are already split-adjusted (per adjusted unit), so cash = units held x DIV
+        for j in np.where((u > 0) & (DIV[i] > 0))[0]: cash += u[j] * DIV[i, j] * (1 - DIVTAX)
         if dates[i][:6] != month:
             add = start if month is None else dep
             cash += add / fx_i * (1 - FXS); flow = add if month is not None else 0.0; cost += add * FXS
