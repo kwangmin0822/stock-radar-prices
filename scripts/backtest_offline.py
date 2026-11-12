@@ -6,7 +6,7 @@ Needs only numpy + pandas + pyarrow and the data folder made by export_data.py. 
 The rules below are a line-by-line copy of pit_us7.run() / pit_us2.twr() / pit_us2.bench() with stop=None,
 topn=3, keep=2.0 (sell when rank >= 6, i.e. outside the top 6), lock=21 trading days, ban=0, cap=0.25.
 Fixes vs the first report (2026-11-12): dividends = units held x Yahoo's split-adjusted amount (was divided by the
-split factor again), and past market cap uses dated share counts (PIT_SHARES) instead of today's count.
+split factor again), and past market cap uses dated share counts (PIT_SHARES, see pit_shares) instead of today's count.
 On top of that it records every trading day (signal, trades, holdings, cash, value) so the result can be audited.
 """
 import sys, os, json, datetime as dt
@@ -20,7 +20,7 @@ CAP_MIN = 5e10          # candidate: that day's market cap (split-adjusted close
 AGE_MIN = 253           # and at least 253 trading days of history
 TOPN, KEEP, LOCK, BAN, CAP = 3, 2.0, 21, 0, 0.25
 PIT_SHARES = True       # False = old method (today's share count for every past day)
-LEAD_DAYS = 120         # a filing's share count is also used this many days before its date
+STABLE = 1.5            # share count counts as stable if latest / oldest report is within 1/1.5 .. 1.5
 WIN, STEP, FIRST = 756, 63, 260   # 3-year windows, a new one every quarter, first one after ~1 year of history
 
 
@@ -69,55 +69,35 @@ def load(data_dir):
     return D
 
 
-def _steps(reports, D, today, lead=LEAD_DAYS):
-    """reports: list of (date, shares in today's units). Returns a per-day column or None.
-    Scaled so the latest report equals today's count; 0 (= not a candidate) before first report - lead days."""
-    if not reports: return None
-    reports = sorted(reports); k = today / reports[-1][1]
-    DA = np.array(D["dates"]); col = np.zeros(D["T"])
-    d0 = reports[0][0]; first = (dt.date(int(d0[:4]), int(d0[4:6]), int(d0[6:])) - dt.timedelta(days=lead)).strftime("%Y%m%d")
-    col[DA >= first] = reports[0][1] * k
-    for d, v in reports: col[DA >= d] = v * k
-    return col, k
-
-
 def pit_shares(data_dir, D, uni, spl):
     """Share count by date instead of today's count (fixes the main bias of the first report).
-    1) SEC EDGAR filings (sec_shares.parquet): dei:EntityCommonStockSharesOutstanding, else us-gaap
-       CommonStockSharesOutstanding; classes on the same filing are summed; raw counts are put in today's units with
-       the later splits. 2) else Yahoo reported counts (from about 2021-12, already split-adjusted). 3) else today's count.
-    Reports are scaled so the latest equals today's Naver count; that scale must be 0.8-1.25 (ADRs: any constant ratio),
-    otherwise the next source is tried. Before the first report (minus LEAD_DAYS) the stock is not a candidate,
-    because its size then is unknown."""
+    Source: Yahoo reported ordinary-share counts (us_shares_history_yahoo.parquet, quarterly + annual, already
+    split-adjusted, company total over all share classes; only from about 2021-12). SEC EDGAR would go back further but
+    refuses requests from GitHub servers.
+    - US stocks: market cap = split-adjusted close x the latest reported count on or before that day.
+      (Naver's count is not used for them: it is wrong for some names, e.g. GOOGL class A only, SKYD 4.5x.)
+    - ADRs: Yahoo counts are ordinary shares, not ADRs, so they are scaled by today's Naver count / latest report.
+    - before the first report: the oldest report, only if the count was stable (latest / oldest within 1/1.5..1.5);
+      otherwise the size then is unknown and the stock is NOT a candidate on those days.
+    - no report at all (never came near $25B even with today's count): today's Naver count."""
     SH = np.array([D["SH"][t] for t in D["tick"]], float); SHT = np.tile(SH, (D["T"], 1)); src = {}
     adr = set(uni.loc[uni["name_en"].fillna("").str.contains("ADR"), "ticker"])
-    sp_by = {t: g for t, g in spl.groupby("ticker")}
-    def later_splits(t, d):
-        g = sp_by.get(t); return float(np.prod(g.loc[g["date"] > d, "ratio"])) if g is not None else 1.0
-    sec = {}
-    f = os.path.join(data_dir, "sec_shares.parquet")
-    if os.path.exists(f):
-        s = pd.read_parquet(f)
-        for t, g in (s.groupby("ticker") if len(s) else []):
-            g = g[g["concept"] == "EntityCommonStockSharesOutstanding"] if (g["concept"] == "EntityCommonStockSharesOutstanding").any() else g
-            g = g.groupby(["end", "accn"], as_index=False).agg(val=("val", "sum"), filed=("filed", "max"))
-            g = g.sort_values("filed").groupby("end").tail(1)
-            sec[t] = [(e, v * later_splits(t, e)) for e, v in zip(g["end"], g["val"]) if v > 0]
-    yh = {}
+    DA = np.array(D["dates"]); yh = {}
     f = os.path.join(data_dir, "us_shares_history_yahoo.parquet")
     if os.path.exists(f):
-        y = pd.read_parquet(f)
+        y = pd.read_parquet(f); y = y[y["type"].str.contains("OrdinarySharesNumber")]
         for t, g in y.groupby("ticker"):
-            q = g[g["type"] == "quarterlyOrdinarySharesNumber"]; q = q if len(q) else g[g["type"] == "annualOrdinarySharesNumber"]
-            yh[t] = list(zip(q["as_of"], q["shares"]))
+            g = g.sort_values(["as_of", "type"]).groupby("as_of").tail(1)   # quarterly wins over annual on the same date
+            yh[t] = list(zip(g["as_of"], g["shares"]))
     for j, t in enumerate(D["tick"]):
-        src[t] = "today"
-        for name, reps in (("sec", sec.get(t)), ("yahoo", yh.get(t))):
-            r = _steps(reps, D, SH[j])
-            if r is None: continue
-            col, k = r
-            if 0.8 <= k <= 1.25 or t in adr:
-                SHT[:, j] = col; src[t] = name; break
+        reps = yh.get(t)
+        if not reps: src[t] = "today (Naver)"; continue
+        k = SH[j] / reps[-1][1] if t in adr else 1.0
+        stable = 1 / STABLE <= reps[-1][1] / reps[0][1] <= STABLE
+        col = np.full(D["T"], reps[0][1] * k if stable else 0.0)
+        for d, v in reps: col[DA >= d] = v * k
+        SHT[:, j] = col
+        src[t] = ("ADR " if t in adr else "") + ("yahoo, stable: oldest used before 2021-12" if stable else "yahoo, changed: not a candidate before first report")
     return SHT, src
 
 
