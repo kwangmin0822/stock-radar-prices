@@ -20,6 +20,7 @@ CAP_MIN = 5e10          # candidate: that day's market cap (split-adjusted close
 AGE_MIN = 253           # and at least 253 trading days of history
 TOPN, KEEP, LOCK, BAN, CAP = 3, 2.0, 21, 0, 0.25
 PIT_SHARES = True       # False = old method (today's share count for every past day)
+LEAD_DAYS = 120         # a filing's share count is also used this many days before its date
 WIN, STEP, FIRST = 756, 63, 260   # 3-year windows, a new one every quarter, first one after ~1 year of history
 
 
@@ -63,30 +64,61 @@ def load(data_dir):
     fx = ffill(dict(zip(fx_c["date"], fx_c["close"])), dates); fx = np.where(np.isnan(fx), np.nanmean(fx), fx)
     B = ffill(dict(zip(s_a["date"], s_a["adjclose"])) if len(s_a) else dict(zip(s_c["date"], s_c["close"])), dates)
     D = dict(P=P, LOT=LOT, DIV=DIV, alive=alive, fx=fx, B=B, dates=dates, tick=tick, SH=SH, T=T, n=n)
-    if PIT_SHARES and os.path.exists(os.path.join(data_dir, "us_shares_history_yahoo.parquet")):
-        D["SHT"], D["pit_shares_tickers"] = pit_shares(data_dir, D, uni)
+    if PIT_SHARES:
+        D["SHT"], D["share_source"] = pit_shares(data_dir, D, uni, spl)
     return D
 
 
-def pit_shares(data_dir, D, uni):
-    """Share count by date instead of today's count. Yahoo's reported ordinary-share counts (quarterly, else annual;
-    split-adjusted) are used from their date on; before the oldest report (about 2021-12) the oldest report is used.
-    Counts are scaled so the latest report equals today's Naver count (fixes class/ADR unit differences); a ticker
-    whose latest report is more than 20% away from today's count (ADRs, multi-class) keeps today's count."""
-    sh = pd.read_parquet(os.path.join(data_dir, "us_shares_history_yahoo.parquet"))
-    q = sh[sh["type"] == "quarterlyOrdinarySharesNumber"]; a = sh[sh["type"] == "annualOrdinarySharesNumber"]
-    src = {t: g for t, g in q.groupby("ticker")}
-    for t, g in a.groupby("ticker"): src.setdefault(t, g)
-    DA = np.array(D["dates"]); SHT = np.tile(np.array([D["SH"][t] for t in D["tick"]], float), (D["T"], 1)); used = []
+def _steps(reports, D, today, lead=LEAD_DAYS):
+    """reports: list of (date, shares in today's units). Returns a per-day column or None.
+    Scaled so the latest report equals today's count; 0 (= not a candidate) before first report - lead days."""
+    if not reports: return None
+    reports = sorted(reports); k = today / reports[-1][1]
+    DA = np.array(D["dates"]); col = np.zeros(D["T"])
+    d0 = reports[0][0]; first = (dt.date(int(d0[:4]), int(d0[4:6]), int(d0[6:])) - dt.timedelta(days=lead)).strftime("%Y%m%d")
+    col[DA >= first] = reports[0][1] * k
+    for d, v in reports: col[DA >= d] = v * k
+    return col, k
+
+
+def pit_shares(data_dir, D, uni, spl):
+    """Share count by date instead of today's count (fixes the main bias of the first report).
+    1) SEC EDGAR filings (sec_shares.parquet): dei:EntityCommonStockSharesOutstanding, else us-gaap
+       CommonStockSharesOutstanding; classes on the same filing are summed; raw counts are put in today's units with
+       the later splits. 2) else Yahoo reported counts (from about 2021-12, already split-adjusted). 3) else today's count.
+    Reports are scaled so the latest equals today's Naver count; that scale must be 0.8-1.25 (ADRs: any constant ratio),
+    otherwise the next source is tried. Before the first report (minus LEAD_DAYS) the stock is not a candidate,
+    because its size then is unknown."""
+    SH = np.array([D["SH"][t] for t in D["tick"]], float); SHT = np.tile(SH, (D["T"], 1)); src = {}
+    adr = set(uni.loc[uni["name_en"].fillna("").str.contains("ADR"), "ticker"])
+    sp_by = {t: g for t, g in spl.groupby("ticker")}
+    def later_splits(t, d):
+        g = sp_by.get(t); return float(np.prod(g.loc[g["date"] > d, "ratio"])) if g is not None else 1.0
+    sec = {}
+    f = os.path.join(data_dir, "sec_shares.parquet")
+    if os.path.exists(f):
+        s = pd.read_parquet(f)
+        for t, g in s.groupby("ticker"):
+            g = g[g["concept"] == "EntityCommonStockSharesOutstanding"] if (g["concept"] == "EntityCommonStockSharesOutstanding").any() else g
+            g = g.groupby(["end", "accn"], as_index=False).agg(val=("val", "sum"), filed=("filed", "max"))
+            g = g.sort_values("filed").groupby("end").tail(1)
+            sec[t] = [(e, v * later_splits(t, e)) for e, v in zip(g["end"], g["val"]) if v > 0]
+    yh = {}
+    f = os.path.join(data_dir, "us_shares_history_yahoo.parquet")
+    if os.path.exists(f):
+        y = pd.read_parquet(f)
+        for t, g in y.groupby("ticker"):
+            q = g[g["type"] == "quarterlyOrdinarySharesNumber"]; q = q if len(q) else g[g["type"] == "annualOrdinarySharesNumber"]
+            yh[t] = list(zip(q["as_of"], q["shares"]))
     for j, t in enumerate(D["tick"]):
-        g = src.get(t)
-        if g is None or not len(g): continue
-        g = g.sort_values("as_of"); today = D["SH"][t]; k = today / g["shares"].iloc[-1]
-        if not (0.8 <= k <= 1.25): continue
-        col = np.full(D["T"], g["shares"].iloc[0] * k)
-        for d, v in zip(g["as_of"], g["shares"]): col[DA >= d] = v * k
-        SHT[:, j] = col; used.append(t)
-    return SHT, used
+        src[t] = "today"
+        for name, reps in (("sec", sec.get(t)), ("yahoo", yh.get(t))):
+            r = _steps(reps, D, SH[j])
+            if r is None: continue
+            col, k = r
+            if 0.8 <= k <= 1.25 or t in adr:
+                SHT[:, j] = col; src[t] = name; break
+    return SHT, src
 
 
 def signals(D):
