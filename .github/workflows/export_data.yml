@@ -1,7 +1,7 @@
 name: export_data
 on: workflow_dispatch
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: export_data
 jobs:
@@ -19,3 +19,11 @@ jobs:
           name: export
           path: export/
           retention-days: 30
+      - name: push to data-export branch
+        run: |
+          ls -la export export/data; du -sh export
+          cd export
+          git init -q -b data-export
+          git config user.name "price-bot"; git config user.email "price-bot@users.noreply.github.com"
+          git add -A; git commit -qm "export $(TZ=Asia/Seoul date +'%m-%d %H:%M')"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-export
