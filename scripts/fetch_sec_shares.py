@@ -3,7 +3,7 @@ For every ticker in the exported universe: ticker -> CIK (sec.gov/files/company_
 companyconcept dei/EntityCommonStockSharesOutstanding (cover page, every 10-K/10-Q/20-F) and
 us-gaap/CommonStockSharesOutstanding (balance sheet). Values are raw share counts on 'end' (NOT split-adjusted).
 Output: sec_shares.parquet (ticker, cik, concept, end, val, accn, form, fy, fp, filed)."""
-import json, sys, time, urllib.request
+import json, sys, time, urllib.request, urllib.error
 import pandas as pd
 
 UA = {"User-Agent": "stock-radar-prices research script (github.com/kwangmin0822/stock-radar-prices) price-bot@users.noreply.github.com",
@@ -15,14 +15,16 @@ def get(u):
             with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30) as r: return json.loads(r.read())
         except urllib.error.HTTPError as e:
             if e.code == 404: return None
-            time.sleep(2 + 3 * i)
-        except Exception:
-            time.sleep(2 + 3 * i)
+            print("HTTP", e.code, u, flush=True); time.sleep(2 + 3 * i)
+        except Exception as e:
+            print("ERR", repr(e)[:200], u, flush=True); time.sleep(2 + 3 * i)
     return None
 
 def main(universe_parquet, out):
     tick = list(pd.read_parquet(universe_parquet)["ticker"])
     m = get("https://www.sec.gov/files/company_tickers.json") or {}
+    print("ticker map", len(m), flush=True)
+    if not m: sys.exit("SEC ticker map not reachable")
     cik = {v["ticker"].upper(): int(v["cik_str"]) for v in m.values()}
     rows, miss = [], []
     for t in tick:

@@ -98,7 +98,7 @@ def pit_shares(data_dir, D, uni, spl):
     f = os.path.join(data_dir, "sec_shares.parquet")
     if os.path.exists(f):
         s = pd.read_parquet(f)
-        for t, g in s.groupby("ticker"):
+        for t, g in (s.groupby("ticker") if len(s) else []):
             g = g[g["concept"] == "EntityCommonStockSharesOutstanding"] if (g["concept"] == "EntityCommonStockSharesOutstanding").any() else g
             g = g.groupby(["end", "accn"], as_index=False).agg(val=("val", "sum"), filed=("filed", "max"))
             g = g.sort_values("filed").groupby("end").tail(1)
