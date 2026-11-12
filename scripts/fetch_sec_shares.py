@@ -22,7 +22,13 @@ def get(u):
 
 def main(universe_parquet, out):
     tick = list(pd.read_parquet(universe_parquet)["ticker"])
-    m = get("https://www.sec.gov/files/company_tickers.json") or {}
+    m = {}
+    for ua in ("StockRadar Research kwangmin0822@users.noreply.github.com", "Mozilla/5.0 StockRadar research (contact: kwangmin0822@users.noreply.github.com)"):
+        UA["User-Agent"] = ua
+        for u in ("https://www.sec.gov/files/company_tickers.json", "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/dei/EntityCommonStockSharesOutstanding.json"):
+            r = get(u); print("UA try", ua[:30], u[-40:], "ok" if r else "fail", flush=True)
+            if r and "company_tickers" in u: m = r
+        if m: break
     print("ticker map", len(m), flush=True)
     if not m: sys.exit("SEC ticker map not reachable")
     cik = {v["ticker"].upper(): int(v["cik_str"]) for v in m.values()}
