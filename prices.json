@@ -1,95 +1,95 @@
 {
 "KR": {
 "000100": {
-"at": "2026-11-16T18:08",
-"change": 1.0,
+"at": "2026-11-16T19:12",
+"change": 1.25,
 "prevClose": null,
-"price": 80900.0,
+"price": 81100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000150": {
-"at": "2026-11-16T18:08",
-"change": -3.77,
+"at": "2026-11-16T19:12",
+"change": -4.75,
 "prevClose": null,
-"price": 587000.0,
+"price": 581000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000240": {
-"at": "2026-11-16T18:08",
-"change": -4.25,
+"at": "2026-11-16T19:12",
+"change": -4.48,
 "prevClose": null,
-"price": 20300.0,
+"price": 20250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000250": {
-"at": "2026-11-16T18:08",
-"change": -6.37,
+"at": "2026-11-16T19:12",
+"change": -6.31,
 "prevClose": null,
-"price": 167600.0,
+"price": 167700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000270": {
-"at": "2026-11-16T18:08",
-"change": 0.32,
+"at": "2026-11-16T19:12",
+"change": 0.11,
 "prevClose": null,
-"price": 94900.0,
+"price": 94700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000500": {
-"at": "2026-11-16T18:08",
-"change": -0.23,
+"at": "2026-11-16T19:12",
+"change": -1.37,
 "prevClose": null,
-"price": 218500.0,
+"price": 216000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000660": {
-"at": "2026-11-16T18:08",
-"change": -7.4,
+"at": "2026-11-16T19:12",
+"change": -7.98,
 "prevClose": null,
-"price": 1126000.0,
+"price": 1119000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000720": {
-"at": "2026-11-16T18:08",
-"change": -2.63,
+"at": "2026-11-16T19:12",
+"change": -2.98,
 "prevClose": null,
-"price": 81600.0,
+"price": 81300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000810": {
-"at": "2026-11-16T18:08",
-"change": 2.46,
+"at": "2026-11-16T19:12",
+"change": 2.84,
 "prevClose": null,
-"price": 542000.0,
+"price": 544000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000880": {
-"at": "2026-11-16T18:08",
-"change": -2.91,
+"at": "2026-11-16T19:12",
+"change": -2.52,
 "prevClose": null,
-"price": 73300.0,
+"price": 73600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "000990": {
-"at": "2026-11-16T18:08",
-"change": -8.95,
+"at": "2026-11-16T19:12",
+"change": -9.56,
 "prevClose": null,
-"price": 74300.0,
+"price": 73800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "001040": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.27,
 "prevClose": null,
 "price": 111100.0,
@@ -97,79 +97,79 @@
 "status": "OPEN"
 },
 "001440": {
-"at": "2026-11-16T18:08",
-"change": -2.1,
+"at": "2026-11-16T19:12",
+"change": -1.94,
 "prevClose": null,
-"price": 18170.0,
+"price": 18200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "001450": {
-"at": "2026-11-16T18:08",
-"change": 4.01,
+"at": "2026-11-16T19:12",
+"change": 4.28,
 "prevClose": null,
-"price": 37650.0,
+"price": 37750.0,
 "src": "naver",
 "status": "OPEN"
 },
 "002380": {
-"at": "2026-11-16T18:08",
-"change": -3.88,
+"at": "2026-11-16T19:12",
+"change": -4.15,
 "prevClose": null,
-"price": 359000.0,
+"price": 358000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "002790": {
-"at": "2026-11-16T18:08",
-"change": 2.09,
+"at": "2026-11-16T19:12",
+"change": 2.66,
 "prevClose": null,
-"price": 26850.0,
+"price": 27000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003230": {
-"at": "2026-11-16T18:08",
-"change": 5.62,
+"at": "2026-11-16T19:12",
+"change": 5.54,
 "prevClose": null,
-"price": 1278000.0,
+"price": 1277000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003490": {
-"at": "2026-11-16T18:08",
-"change": 0.32,
+"at": "2026-11-16T19:12",
+"change": 0.16,
 "prevClose": null,
-"price": 31650.0,
+"price": 31600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003550": {
-"at": "2026-11-16T18:08",
-"change": 1.27,
+"at": "2026-11-16T19:12",
+"change": 1.15,
 "prevClose": null,
-"price": 87900.0,
+"price": 87800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003670": {
-"at": "2026-11-16T18:08",
-"change": -1.56,
+"at": "2026-11-16T19:12",
+"change": -2.02,
 "prevClose": null,
-"price": 170500.0,
+"price": 169700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "003690": {
-"at": "2026-11-16T18:08",
-"change": 0.15,
+"at": "2026-11-16T19:12",
+"change": 0.0,
 "prevClose": null,
-"price": 12950.0,
+"price": 12930.0,
 "src": "naver",
 "status": "OPEN"
 },
 "004020": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.69,
 "prevClose": null,
 "price": 28700.0,
@@ -177,95 +177,95 @@
 "status": "OPEN"
 },
 "004170": {
-"at": "2026-11-16T18:08",
-"change": 0.6,
+"at": "2026-11-16T19:12",
+"change": 0.4,
 "prevClose": null,
-"price": 250500.0,
+"price": 250000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "004370": {
-"at": "2026-11-16T18:08",
-"change": -2.46,
+"at": "2026-11-16T19:12",
+"change": -2.18,
 "prevClose": null,
-"price": 357500.0,
+"price": 358500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "004800": {
-"at": "2026-11-16T18:08",
-"change": -2.32,
+"at": "2026-11-16T19:12",
+"change": -2.49,
 "prevClose": null,
-"price": 117900.0,
+"price": 117700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "004990": {
-"at": "2026-11-16T18:08",
-"change": -1.11,
+"at": "2026-11-16T19:12",
+"change": -0.89,
 "prevClose": null,
-"price": 22200.0,
+"price": 22250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005290": {
-"at": "2026-11-16T18:08",
-"change": -6.51,
+"at": "2026-11-16T19:12",
+"change": -7.06,
 "prevClose": null,
-"price": 34450.0,
+"price": 34250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005380": {
-"at": "2026-11-16T18:08",
-"change": -1.86,
+"at": "2026-11-16T19:12",
+"change": -2.04,
 "prevClose": null,
-"price": 264500.0,
+"price": 264000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005440": {
-"at": "2026-11-16T18:08",
-"change": 2.53,
+"at": "2026-11-16T19:12",
+"change": 2.06,
 "prevClose": null,
-"price": 10950.0,
+"price": 10900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005490": {
-"at": "2026-11-16T18:08",
-"change": -2.55,
+"at": "2026-11-16T19:12",
+"change": -2.73,
 "prevClose": null,
-"price": 268000.0,
+"price": 267500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005830": {
-"at": "2026-11-16T18:08",
-"change": 6.48,
+"at": "2026-11-16T19:12",
+"change": 6.3,
 "prevClose": null,
-"price": 174200.0,
+"price": 173900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005850": {
-"at": "2026-11-16T18:08",
-"change": -1.58,
+"at": "2026-11-16T19:12",
+"change": -1.79,
 "prevClose": null,
-"price": 46750.0,
+"price": 46650.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005930": {
-"at": "2026-11-16T18:08",
-"change": -4.51,
+"at": "2026-11-16T19:12",
+"change": -5.0,
 "prevClose": null,
-"price": 196700.0,
+"price": 195700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "005940": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.66,
 "prevClose": null,
 "price": 22750.0,
@@ -273,23 +273,23 @@
 "status": "OPEN"
 },
 "006260": {
-"at": "2026-11-16T18:08",
-"change": -4.07,
+"at": "2026-11-16T19:12",
+"change": -4.39,
 "prevClose": null,
-"price": 181300.0,
+"price": 180700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "006280": {
-"at": "2026-11-16T18:08",
-"change": -0.97,
+"at": "2026-11-16T19:12",
+"change": -0.75,
 "prevClose": null,
-"price": 132700.0,
+"price": 133000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "006360": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.0,
 "prevClose": null,
 "price": 31250.0,
@@ -297,55 +297,55 @@
 "status": "OPEN"
 },
 "006400": {
-"at": "2026-11-16T18:08",
-"change": -2.41,
+"at": "2026-11-16T19:12",
+"change": -3.03,
 "prevClose": null,
-"price": 466500.0,
+"price": 463500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "006800": {
-"at": "2026-11-16T18:08",
-"change": -4.45,
+"at": "2026-11-16T19:12",
+"change": -4.68,
 "prevClose": null,
-"price": 20400.0,
+"price": 20350.0,
 "src": "naver",
 "status": "OPEN"
 },
 "007070": {
-"at": "2026-11-16T18:08",
-"change": 1.8,
+"at": "2026-11-16T19:12",
+"change": 1.58,
 "prevClose": null,
-"price": 22600.0,
+"price": 22550.0,
 "src": "naver",
 "status": "OPEN"
 },
 "007340": {
-"at": "2026-11-16T18:08",
-"change": -4.68,
+"at": "2026-11-16T19:12",
+"change": -4.81,
 "prevClose": null,
-"price": 34650.0,
+"price": 34600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "007660": {
-"at": "2026-11-16T18:08",
-"change": -7.8,
+"at": "2026-11-16T19:12",
+"change": -8.59,
 "prevClose": null,
-"price": 81600.0,
+"price": 80900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "007810": {
-"at": "2026-11-16T18:08",
-"change": -1.77,
+"at": "2026-11-16T19:12",
+"change": -3.22,
 "prevClose": null,
-"price": 88600.0,
+"price": 87300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "008930": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 2.91,
 "prevClose": null,
 "price": 53100.0,
@@ -353,15 +353,15 @@
 "status": "OPEN"
 },
 "009150": {
-"at": "2026-11-16T18:08",
-"change": -8.19,
+"at": "2026-11-16T19:12",
+"change": -8.89,
 "prevClose": null,
-"price": 785000.0,
+"price": 779000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "009420": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.78,
 "prevClose": null,
 "price": 50700.0,
@@ -369,7 +369,7 @@
 "status": "OPEN"
 },
 "009540": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.05,
 "prevClose": null,
 "price": 240000.0,
@@ -377,119 +377,119 @@
 "status": "OPEN"
 },
 "009830": {
-"at": "2026-11-16T18:08",
-"change": -6.13,
+"at": "2026-11-16T19:12",
+"change": -5.92,
 "prevClose": null,
-"price": 22200.0,
+"price": 22250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "009970": {
-"at": "2026-11-16T18:08",
-"change": -1.78,
+"at": "2026-11-16T19:12",
+"change": 2.3,
 "prevClose": null,
-"price": 170700.0,
+"price": 177800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010060": {
-"at": "2026-11-16T18:08",
-"change": -4.15,
+"at": "2026-11-16T19:12",
+"change": -4.66,
 "prevClose": null,
-"price": 187000.0,
+"price": 186000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010120": {
-"at": "2026-11-16T18:08",
-"change": -3.65,
+"at": "2026-11-16T19:12",
+"change": -4.22,
 "prevClose": null,
-"price": 118800.0,
+"price": 118100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010130": {
-"at": "2026-11-16T18:08",
-"change": -0.69,
+"at": "2026-11-16T19:12",
+"change": -0.58,
 "prevClose": null,
-"price": 860000.0,
+"price": 861000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010140": {
-"at": "2026-11-16T18:08",
-"change": 0.6,
+"at": "2026-11-16T19:12",
+"change": 0.48,
 "prevClose": null,
-"price": 16710.0,
+"price": 16690.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010170": {
-"at": "2026-11-16T18:08",
-"change": -2.71,
+"at": "2026-11-16T19:12",
+"change": -3.54,
 "prevClose": null,
-"price": 12930.0,
+"price": 12820.0,
 "src": "naver",
 "status": "OPEN"
 },
 "010950": {
-"at": "2026-11-16T18:08",
-"change": 2.98,
+"at": "2026-11-16T19:12",
+"change": 2.59,
 "prevClose": null,
-"price": 107300.0,
+"price": 106900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011070": {
-"at": "2026-11-16T18:08",
-"change": -3.48,
+"at": "2026-11-16T19:12",
+"change": -3.83,
 "prevClose": null,
-"price": 277000.0,
+"price": 276000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011170": {
-"at": "2026-11-16T18:08",
-"change": -2.26,
+"at": "2026-11-16T19:12",
+"change": -2.37,
 "prevClose": null,
-"price": 45400.0,
+"price": 45350.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011200": {
-"at": "2026-11-16T18:08",
-"change": 2.33,
+"at": "2026-11-16T19:12",
+"change": 2.56,
 "prevClose": null,
-"price": 21950.0,
+"price": 22000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011780": {
-"at": "2026-11-16T18:08",
-"change": -0.21,
+"at": "2026-11-16T19:12",
+"change": 0.0,
 "prevClose": null,
-"price": 97300.0,
+"price": 97500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "011790": {
-"at": "2026-11-16T18:08",
-"change": -2.85,
+"at": "2026-11-16T19:12",
+"change": -2.99,
 "prevClose": null,
-"price": 71600.0,
+"price": 71500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "012330": {
-"at": "2026-11-16T18:08",
-"change": 0.14,
+"at": "2026-11-16T19:12",
+"change": -0.14,
 "prevClose": null,
-"price": 356000.0,
+"price": 355000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "012450": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.4,
 "prevClose": null,
 "price": 650000.0,
@@ -497,31 +497,31 @@
 "status": "OPEN"
 },
 "0126Z0": {
-"at": "2026-11-16T18:08",
-"change": 3.8,
+"at": "2026-11-16T19:12",
+"change": 4.23,
 "prevClose": null,
-"price": 355500.0,
+"price": 357000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "012750": {
-"at": "2026-11-16T18:08",
-"change": 0.79,
+"at": "2026-11-16T19:12",
+"change": 1.09,
 "prevClose": null,
-"price": 102000.0,
+"price": 102300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "014680": {
-"at": "2026-11-16T18:08",
-"change": -6.39,
+"at": "2026-11-16T19:12",
+"change": -7.05,
 "prevClose": null,
-"price": 169900.0,
+"price": 168700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "015760": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -4.16,
 "prevClose": null,
 "price": 26500.0,
@@ -529,7 +529,7 @@
 "status": "OPEN"
 },
 "016360": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.54,
 "prevClose": null,
 "price": 73500.0,
@@ -537,23 +537,23 @@
 "status": "OPEN"
 },
 "017670": {
-"at": "2026-11-16T18:08",
-"change": 0.48,
+"at": "2026-11-16T19:12",
+"change": 0.36,
 "prevClose": null,
-"price": 84300.0,
+"price": 84200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "017800": {
-"at": "2026-11-16T18:08",
-"change": -2.47,
+"at": "2026-11-16T19:12",
+"change": -2.77,
 "prevClose": null,
-"price": 67000.0,
+"price": 66800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "018260": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.56,
 "prevClose": null,
 "price": 228500.0,
@@ -561,39 +561,39 @@
 "status": "OPEN"
 },
 "018670": {
-"at": "2026-11-16T18:08",
-"change": -1.88,
+"at": "2026-11-16T19:12",
+"change": -2.09,
 "prevClose": null,
-"price": 235000.0,
+"price": 234500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "018880": {
-"at": "2026-11-16T18:08",
-"change": 1.8,
+"at": "2026-11-16T19:12",
+"change": 1.48,
 "prevClose": null,
-"price": 3105.0,
+"price": 3095.0,
 "src": "naver",
 "status": "OPEN"
 },
 "020150": {
-"at": "2026-11-16T18:08",
-"change": -4.25,
+"at": "2026-11-16T19:12",
+"change": -4.91,
 "prevClose": null,
-"price": 36050.0,
+"price": 35800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "021240": {
-"at": "2026-11-16T18:08",
-"change": 3.9,
+"at": "2026-11-16T19:12",
+"change": 4.59,
 "prevClose": null,
-"price": 106500.0,
+"price": 107200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "022100": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -1.18,
 "prevClose": null,
 "price": 21000.0,
@@ -601,7 +601,7 @@
 "status": "OPEN"
 },
 "023530": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 3.73,
 "prevClose": null,
 "price": 80600.0,
@@ -609,7 +609,7 @@
 "status": "OPEN"
 },
 "024110": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.47,
 "prevClose": null,
 "price": 19210.0,
@@ -617,15 +617,15 @@
 "status": "OPEN"
 },
 "026960": {
-"at": "2026-11-16T18:08",
-"change": -0.36,
+"at": "2026-11-16T19:12",
+"change": -0.54,
 "prevClose": null,
-"price": 27500.0,
+"price": 27450.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028050": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.15,
 "prevClose": null,
 "price": 68900.0,
@@ -633,23 +633,23 @@
 "status": "OPEN"
 },
 "028260": {
-"at": "2026-11-16T18:08",
-"change": -2.81,
+"at": "2026-11-16T19:12",
+"change": -2.98,
 "prevClose": null,
-"price": 277000.0,
+"price": 276500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028300": {
-"at": "2026-11-16T18:08",
-"change": -1.4,
+"at": "2026-11-16T19:12",
+"change": -1.58,
 "prevClose": null,
-"price": 28150.0,
+"price": 28100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "028670": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.0,
 "prevClose": null,
 "price": 5040.0,
@@ -657,55 +657,55 @@
 "status": "OPEN"
 },
 "029780": {
-"at": "2026-11-16T18:08",
-"change": 1.35,
+"at": "2026-11-16T19:12",
+"change": 1.84,
 "prevClose": null,
-"price": 41400.0,
+"price": 41600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "030000": {
-"at": "2026-11-16T18:08",
-"change": 0.79,
+"at": "2026-11-16T19:12",
+"change": 0.74,
 "prevClose": null,
-"price": 19130.0,
+"price": 19120.0,
 "src": "naver",
 "status": "OPEN"
 },
 "030200": {
-"at": "2026-11-16T18:08",
-"change": 0.98,
+"at": "2026-11-16T19:12",
+"change": 1.18,
 "prevClose": null,
-"price": 51500.0,
+"price": 51600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "030530": {
-"at": "2026-11-16T18:08",
-"change": 0.0,
+"at": "2026-11-16T19:12",
+"change": -0.96,
 "prevClose": null,
-"price": 31350.0,
+"price": 31050.0,
 "src": "naver",
 "status": "OPEN"
 },
 "031210": {
-"at": "2026-11-16T18:08",
-"change": -4.1,
+"at": "2026-11-16T19:12",
+"change": -3.87,
 "prevClose": null,
-"price": 40900.0,
+"price": 41000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "031980": {
-"at": "2026-11-16T18:08",
-"change": -11.96,
+"at": "2026-11-16T19:12",
+"change": -13.15,
 "prevClose": null,
-"price": 133200.0,
+"price": 131400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "032640": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.16,
 "prevClose": null,
 "price": 15730.0,
@@ -713,7 +713,7 @@
 "status": "OPEN"
 },
 "032830": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.6,
 "prevClose": null,
 "price": 253500.0,
@@ -721,55 +721,55 @@
 "status": "OPEN"
 },
 "033780": {
-"at": "2026-11-16T18:08",
-"change": 3.18,
+"at": "2026-11-16T19:12",
+"change": 3.24,
 "prevClose": null,
-"price": 181600.0,
+"price": 181700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "034020": {
-"at": "2026-11-16T18:08",
-"change": -4.48,
+"at": "2026-11-16T19:12",
+"change": -4.91,
 "prevClose": null,
-"price": 44750.0,
+"price": 44550.0,
 "src": "naver",
 "status": "OPEN"
 },
 "034220": {
-"at": "2026-11-16T18:08",
-"change": -0.14,
+"at": "2026-11-16T19:12",
+"change": -0.43,
 "prevClose": null,
-"price": 7020.0,
+"price": 7000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "034730": {
-"at": "2026-11-16T18:08",
-"change": -4.66,
+"at": "2026-11-16T19:12",
+"change": -4.96,
 "prevClose": null,
-"price": 480500.0,
+"price": 479000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "035250": {
-"at": "2026-11-16T18:08",
-"change": -0.57,
+"at": "2026-11-16T19:12",
+"change": 0.28,
 "prevClose": null,
-"price": 13980.0,
+"price": 14100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "035420": {
-"at": "2026-11-16T18:08",
-"change": 0.17,
+"at": "2026-11-16T19:12",
+"change": -0.12,
 "prevClose": null,
-"price": 172800.0,
+"price": 172300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "035720": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 2.05,
 "prevClose": null,
 "price": 32350.0,
@@ -777,7 +777,7 @@
 "status": "OPEN"
 },
 "036460": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 2.0,
 "prevClose": null,
 "price": 38250.0,
@@ -785,39 +785,39 @@
 "status": "OPEN"
 },
 "036570": {
-"at": "2026-11-16T18:08",
-"change": 1.28,
+"at": "2026-11-16T19:12",
+"change": 1.06,
 "prevClose": null,
-"price": 181300.0,
+"price": 180900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "036930": {
-"at": "2026-11-16T18:08",
-"change": -11.36,
+"at": "2026-11-16T19:12",
+"change": -11.83,
 "prevClose": null,
-"price": 152900.0,
+"price": 152100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "039030": {
-"at": "2026-11-16T18:08",
-"change": -8.25,
+"at": "2026-11-16T19:12",
+"change": -9.23,
 "prevClose": null,
-"price": 328000.0,
+"price": 324500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "039490": {
-"at": "2026-11-16T18:08",
-"change": -0.5,
+"at": "2026-11-16T19:12",
+"change": -0.89,
 "prevClose": null,
-"price": 200500.0,
+"price": 199700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "041510": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.57,
 "prevClose": null,
 "price": 75800.0,
@@ -825,63 +825,63 @@
 "status": "OPEN"
 },
 "042660": {
-"at": "2026-11-16T18:08",
-"change": -3.0,
+"at": "2026-11-16T19:12",
+"change": -3.31,
 "prevClose": null,
-"price": 46900.0,
+"price": 46750.0,
 "src": "naver",
 "status": "OPEN"
 },
 "042700": {
-"at": "2026-11-16T18:08",
-"change": -6.55,
+"at": "2026-11-16T19:12",
+"change": -6.99,
 "prevClose": null,
-"price": 169800.0,
+"price": 169000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "047040": {
-"at": "2026-11-16T18:08",
-"change": -3.89,
+"at": "2026-11-16T19:12",
+"change": -4.33,
 "prevClose": null,
-"price": 11110.0,
+"price": 11060.0,
 "src": "naver",
 "status": "OPEN"
 },
 "047050": {
-"at": "2026-11-16T18:08",
-"change": -0.5,
+"at": "2026-11-16T19:12",
+"change": -0.7,
 "prevClose": null,
-"price": 49600.0,
+"price": 49500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "047810": {
-"at": "2026-11-16T18:08",
-"change": 2.78,
+"at": "2026-11-16T19:12",
+"change": 2.59,
 "prevClose": null,
-"price": 107100.0,
+"price": 106900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "051600": {
-"at": "2026-11-16T18:08",
-"change": -0.28,
+"at": "2026-11-16T19:12",
+"change": -0.85,
 "prevClose": null,
-"price": 35400.0,
+"price": 35200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "051900": {
-"at": "2026-11-16T18:08",
-"change": 2.86,
+"at": "2026-11-16T19:12",
+"change": 3.08,
 "prevClose": null,
-"price": 234000.0,
+"price": 234500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "051910": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.37,
 "prevClose": null,
 "price": 226500.0,
@@ -889,87 +889,87 @@
 "status": "OPEN"
 },
 "052690": {
-"at": "2026-11-16T18:08",
-"change": -4.97,
+"at": "2026-11-16T19:12",
+"change": -5.11,
 "prevClose": null,
-"price": 68800.0,
+"price": 68700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "055550": {
-"at": "2026-11-16T18:08",
-"change": 1.0,
+"at": "2026-11-16T19:12",
+"change": 1.11,
 "prevClose": null,
-"price": 90700.0,
+"price": 90800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "058470": {
-"at": "2026-11-16T18:08",
-"change": -5.04,
+"at": "2026-11-16T19:12",
+"change": -5.62,
 "prevClose": null,
-"price": 49000.0,
+"price": 48700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "062040": {
-"at": "2026-11-16T18:08",
-"change": -5.5,
+"at": "2026-11-16T19:12",
+"change": -5.89,
 "prevClose": null,
-"price": 120300.0,
+"price": 119800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "064350": {
-"at": "2026-11-16T18:08",
-"change": -2.24,
+"at": "2026-11-16T19:12",
+"change": -2.52,
 "prevClose": null,
-"price": 69700.0,
+"price": 69500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "064400": {
-"at": "2026-11-16T18:08",
-"change": -1.02,
+"at": "2026-11-16T19:12",
+"change": -1.53,
 "prevClose": null,
-"price": 77700.0,
+"price": 77300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "064760": {
-"at": "2026-11-16T18:08",
-"change": -7.16,
+"at": "2026-11-16T19:12",
+"change": -7.8,
 "prevClose": null,
-"price": 173800.0,
+"price": 172600.0,
 "src": "naver",
 "status": "OPEN"
 },
 "066570": {
-"at": "2026-11-16T18:08",
-"change": -3.02,
+"at": "2026-11-16T19:12",
+"change": -3.17,
 "prevClose": null,
-"price": 131500.0,
+"price": 131300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "066970": {
-"at": "2026-11-16T18:08",
-"change": -3.17,
+"at": "2026-11-16T19:12",
+"change": -3.55,
 "prevClose": null,
-"price": 76400.0,
+"price": 76100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "067310": {
-"at": "2026-11-16T18:08",
-"change": -15.37,
+"at": "2026-11-16T19:12",
+"change": -16.06,
 "prevClose": null,
-"price": 24500.0,
+"price": 24300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "068270": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.23,
 "prevClose": null,
 "price": 213500.0,
@@ -977,10 +977,10 @@
 "status": "OPEN"
 },
 "068760": {
-"at": "2026-11-16T18:08",
-"change": -1.7,
+"at": "2026-11-16T19:12",
+"change": -1.34,
 "prevClose": null,
-"price": 40400.0,
+"price": 40550.0,
 "src": "naver",
 "status": "OPEN"
 },
@@ -993,7 +993,7 @@
 "status": "CLOSE"
 },
 "069960": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 5.17,
 "prevClose": null,
 "price": 89500.0,
@@ -1001,39 +1001,39 @@
 "status": "OPEN"
 },
 "071050": {
-"at": "2026-11-16T18:08",
-"change": -1.19,
+"at": "2026-11-16T19:12",
+"change": -1.66,
 "prevClose": null,
-"price": 125000.0,
+"price": 124400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "078930": {
-"at": "2026-11-16T18:08",
-"change": -0.48,
+"at": "2026-11-16T19:12",
+"change": -0.71,
 "prevClose": null,
-"price": 83600.0,
+"price": 83400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "079550": {
-"at": "2026-11-16T18:08",
-"change": 1.99,
+"at": "2026-11-16T19:12",
+"change": 1.71,
 "prevClose": null,
-"price": 358000.0,
+"price": 357000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "080220": {
-"at": "2026-11-16T18:08",
-"change": -9.98,
+"at": "2026-11-16T19:12",
+"change": -11.31,
 "prevClose": null,
-"price": 54100.0,
+"price": 53300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "081660": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -11.72,
 "prevClose": null,
 "price": 33150.0,
@@ -1041,71 +1041,71 @@
 "status": "OPEN"
 },
 "082740": {
-"at": "2026-11-16T18:08",
-"change": -3.98,
+"at": "2026-11-16T19:12",
+"change": -4.36,
 "prevClose": null,
-"price": 25350.0,
+"price": 25250.0,
 "src": "naver",
 "status": "OPEN"
 },
 "084370": {
-"at": "2026-11-16T18:08",
-"change": -15.0,
+"at": "2026-11-16T19:12",
+"change": -15.63,
 "prevClose": null,
-"price": 68000.0,
+"price": 67500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "085620": {
-"at": "2026-11-16T18:08",
-"change": -0.36,
+"at": "2026-11-16T19:12",
+"change": -0.78,
 "prevClose": null,
-"price": 16690.0,
+"price": 16620.0,
 "src": "naver",
 "status": "OPEN"
 },
 "086280": {
-"at": "2026-11-16T18:08",
-"change": 0.24,
+"at": "2026-11-16T19:12",
+"change": 0.49,
 "prevClose": null,
-"price": 205000.0,
+"price": 205500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "086520": {
-"at": "2026-11-16T18:08",
-"change": -3.58,
+"at": "2026-11-16T19:12",
+"change": -3.99,
 "prevClose": null,
-"price": 70100.0,
+"price": 69800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "086790": {
-"at": "2026-11-16T18:08",
-"change": 1.44,
+"at": "2026-11-16T19:12",
+"change": 1.69,
 "prevClose": null,
-"price": 126400.0,
+"price": 126700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "087010": {
-"at": "2026-11-16T18:08",
-"change": -4.85,
+"at": "2026-11-16T19:12",
+"change": -4.64,
 "prevClose": null,
-"price": 88200.0,
+"price": 88400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "088350": {
-"at": "2026-11-16T18:08",
-"change": 2.58,
+"at": "2026-11-16T19:12",
+"change": 2.72,
 "prevClose": null,
-"price": 3775.0,
+"price": 3780.0,
 "src": "naver",
 "status": "OPEN"
 },
 "088980": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.0,
 "prevClose": null,
 "price": 9840.0,
@@ -1113,7 +1113,7 @@
 "status": "OPEN"
 },
 "089860": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.0,
 "prevClose": null,
 "price": 58400.0,
@@ -1121,34 +1121,34 @@
 "status": "OPEN"
 },
 "090430": {
-"at": "2026-11-16T18:08",
-"change": 2.3,
+"at": "2026-11-16T19:12",
+"change": 2.38,
 "prevClose": null,
-"price": 129100.0,
+"price": 129200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "095340": {
-"at": "2026-11-16T18:08",
-"change": -8.61,
+"at": "2026-11-16T19:12",
+"change": -8.88,
 "prevClose": null,
-"price": 137900.0,
+"price": 137500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "096770": {
-"at": "2026-11-16T18:08",
-"change": -2.29,
+"at": "2026-11-16T19:12",
+"change": -2.47,
 "prevClose": null,
-"price": 106700.0,
+"price": 106500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "097950": {
-"at": "2026-11-16T18:08",
-"change": 2.86,
+"at": "2026-11-16T19:12",
+"change": 2.75,
 "prevClose": null,
-"price": 179800.0,
+"price": 179600.0,
 "src": "naver",
 "status": "OPEN"
 },
@@ -1161,15 +1161,15 @@
 "status": "CLOSE"
 },
 "103590": {
-"at": "2026-11-16T18:08",
-"change": 0.35,
+"at": "2026-11-16T19:12",
+"change": -0.71,
 "prevClose": null,
-"price": 56900.0,
+"price": 56300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "105560": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.26,
 "prevClose": null,
 "price": 161000.0,
@@ -1177,63 +1177,63 @@
 "status": "OPEN"
 },
 "108490": {
-"at": "2026-11-16T18:08",
-"change": -4.73,
+"at": "2026-11-16T19:12",
+"change": -5.76,
 "prevClose": null,
-"price": 231500.0,
+"price": 229000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "111770": {
-"at": "2026-11-16T18:08",
-"change": -0.29,
+"at": "2026-11-16T19:12",
+"change": -0.14,
 "prevClose": null,
-"price": 69400.0,
+"price": 69500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "112610": {
-"at": "2026-11-16T18:08",
-"change": -9.11,
+"at": "2026-11-16T19:12",
+"change": -9.33,
 "prevClose": null,
-"price": 41900.0,
+"price": 41800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "128940": {
-"at": "2026-11-16T18:08",
-"change": -3.97,
+"at": "2026-11-16T19:12",
+"change": -4.4,
 "prevClose": null,
-"price": 447000.0,
+"price": 445000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "131290": {
-"at": "2026-11-16T18:08",
-"change": -13.37,
+"at": "2026-11-16T19:12",
+"change": -14.97,
 "prevClose": null,
-"price": 217000.0,
+"price": 213000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "138040": {
-"at": "2026-11-16T18:08",
-"change": 1.85,
+"at": "2026-11-16T19:12",
+"change": 2.19,
 "prevClose": null,
-"price": 120900.0,
+"price": 121300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "138930": {
-"at": "2026-11-16T18:08",
-"change": 0.51,
+"at": "2026-11-16T19:12",
+"change": 1.03,
 "prevClose": null,
-"price": 13700.0,
+"price": 13770.0,
 "src": "naver",
 "status": "OPEN"
 },
 "139130": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.02,
 "prevClose": null,
 "price": 15910.0,
@@ -1241,15 +1241,15 @@
 "status": "OPEN"
 },
 "139480": {
-"at": "2026-11-16T18:08",
-"change": 0.0,
+"at": "2026-11-16T19:12",
+"change": -0.16,
 "prevClose": null,
-"price": 63600.0,
+"price": 63500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "140410": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.86,
 "prevClose": null,
 "price": 64500.0,
@@ -1257,7 +1257,7 @@
 "status": "OPEN"
 },
 "141080": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -10.93,
 "prevClose": null,
 "price": 55400.0,
@@ -1265,55 +1265,55 @@
 "status": "OPEN"
 },
 "145020": {
-"at": "2026-11-16T18:08",
-"change": 0.26,
+"at": "2026-11-16T19:12",
+"change": 0.31,
 "prevClose": null,
-"price": 192800.0,
+"price": 192900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "161390": {
-"at": "2026-11-16T18:08",
-"change": 0.32,
+"at": "2026-11-16T19:12",
+"change": 0.96,
 "prevClose": null,
-"price": 63000.0,
+"price": 63400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "161890": {
-"at": "2026-11-16T18:08",
-"change": 4.18,
+"at": "2026-11-16T19:12",
+"change": 4.28,
 "prevClose": null,
-"price": 107200.0,
+"price": 107300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "175330": {
-"at": "2026-11-16T18:08",
-"change": 2.41,
+"at": "2026-11-16T19:12",
+"change": 2.78,
 "prevClose": null,
-"price": 27600.0,
+"price": 27700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "178320": {
-"at": "2026-11-16T18:08",
-"change": 1.42,
+"at": "2026-11-16T19:12",
+"change": 0.95,
 "prevClose": null,
-"price": 32150.0,
+"price": 32000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "180640": {
-"at": "2026-11-16T18:08",
-"change": 7.13,
+"at": "2026-11-16T19:12",
+"change": 8.85,
 "prevClose": null,
-"price": 218000.0,
+"price": 221500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "181710": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 1.66,
 "prevClose": null,
 "price": 67500.0,
@@ -1321,23 +1321,23 @@
 "status": "OPEN"
 },
 "192820": {
-"at": "2026-11-16T18:08",
-"change": 1.25,
+"at": "2026-11-16T19:12",
+"change": 1.6,
 "prevClose": null,
-"price": 284000.0,
+"price": 285000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "196170": {
-"at": "2026-11-16T18:08",
-"change": -2.55,
+"at": "2026-11-16T19:12",
+"change": -2.78,
 "prevClose": null,
-"price": 171700.0,
+"price": 171300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "207940": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.5,
 "prevClose": null,
 "price": 1418000.0,
@@ -1345,87 +1345,87 @@
 "status": "OPEN"
 },
 "214150": {
-"at": "2026-11-16T18:08",
-"change": -2.1,
+"at": "2026-11-16T19:12",
+"change": -1.89,
 "prevClose": null,
-"price": 23300.0,
+"price": 23350.0,
 "src": "naver",
 "status": "OPEN"
 },
 "214450": {
-"at": "2026-11-16T18:08",
-"change": 2.79,
+"at": "2026-11-16T19:12",
+"change": 2.99,
 "prevClose": null,
-"price": 258000.0,
+"price": 258500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "222800": {
-"at": "2026-11-16T18:08",
-"change": -12.42,
+"at": "2026-11-16T19:12",
+"change": -13.46,
 "prevClose": null,
-"price": 109300.0,
+"price": 108000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "226950": {
-"at": "2026-11-16T18:08",
-"change": -6.8,
+"at": "2026-11-16T19:12",
+"change": -7.05,
 "prevClose": null,
-"price": 75400.0,
+"price": 75200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "240810": {
-"at": "2026-11-16T18:08",
-"change": -8.88,
+"at": "2026-11-16T19:12",
+"change": -9.52,
 "prevClose": null,
-"price": 70800.0,
+"price": 70300.0,
 "src": "naver",
 "status": "OPEN"
 },
 "241560": {
-"at": "2026-11-16T18:08",
-"change": -1.32,
+"at": "2026-11-16T19:12",
+"change": -1.13,
 "prevClose": null,
-"price": 52300.0,
+"price": 52400.0,
 "src": "naver",
 "status": "OPEN"
 },
 "247540": {
-"at": "2026-11-16T18:08",
-"change": -4.3,
+"at": "2026-11-16T19:12",
+"change": -4.74,
 "prevClose": null,
-"price": 86900.0,
+"price": 86500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "251270": {
-"at": "2026-11-16T18:08",
-"change": 0.62,
+"at": "2026-11-16T19:12",
+"change": 0.47,
 "prevClose": null,
-"price": 32250.0,
+"price": 32200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "257720": {
-"at": "2026-11-16T18:08",
-"change": -1.46,
+"at": "2026-11-16T19:12",
+"change": -2.29,
 "prevClose": null,
-"price": 23650.0,
+"price": 23450.0,
 "src": "naver",
 "status": "OPEN"
 },
 "259960": {
-"at": "2026-11-16T18:08",
-"change": 0.45,
+"at": "2026-11-16T19:12",
+"change": 0.4,
 "prevClose": null,
-"price": 200000.0,
+"price": 199900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "263750": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 0.55,
 "prevClose": null,
 "price": 27550.0,
@@ -1433,23 +1433,23 @@
 "status": "OPEN"
 },
 "267250": {
-"at": "2026-11-16T18:08",
-"change": -0.64,
+"at": "2026-11-16T19:12",
+"change": -0.32,
 "prevClose": null,
-"price": 123800.0,
+"price": 124200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "267260": {
-"at": "2026-11-16T18:08",
-"change": -3.61,
+"at": "2026-11-16T19:12",
+"change": -4.09,
 "prevClose": null,
-"price": 401000.0,
+"price": 399000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "267270": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.15,
 "prevClose": null,
 "price": 91000.0,
@@ -1457,15 +1457,15 @@
 "status": "OPEN"
 },
 "271560": {
-"at": "2026-11-16T18:08",
-"change": 0.7,
+"at": "2026-11-16T19:12",
+"change": 0.53,
 "prevClose": null,
-"price": 114400.0,
+"price": 114200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "272210": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -2.78,
 "prevClose": null,
 "price": 52400.0,
@@ -1473,23 +1473,23 @@
 "status": "OPEN"
 },
 "277810": {
-"at": "2026-11-16T18:08",
-"change": -0.83,
+"at": "2026-11-16T19:12",
+"change": -1.24,
 "prevClose": null,
-"price": 360500.0,
+"price": 359000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "278470": {
-"at": "2026-11-16T18:08",
-"change": 1.27,
+"at": "2026-11-16T19:12",
+"change": 1.06,
 "prevClose": null,
-"price": 239000.0,
+"price": 238500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "279570": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": 2.83,
 "prevClose": null,
 "price": 5450.0,
@@ -1497,23 +1497,23 @@
 "status": "OPEN"
 },
 "282330": {
-"at": "2026-11-16T18:08",
-"change": 2.01,
+"at": "2026-11-16T19:12",
+"change": 2.22,
 "prevClose": null,
-"price": 142400.0,
+"price": 142700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "298040": {
-"at": "2026-11-16T18:08",
-"change": -3.49,
+"at": "2026-11-16T19:12",
+"change": -4.26,
 "prevClose": null,
-"price": 1744000.0,
+"price": 1730000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "298380": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -5.41,
 "prevClose": null,
 "price": 38450.0,
@@ -1521,71 +1521,71 @@
 "status": "OPEN"
 },
 "302440": {
-"at": "2026-11-16T18:08",
-"change": -0.13,
+"at": "2026-11-16T19:12",
+"change": 0.26,
 "prevClose": null,
-"price": 38950.0,
+"price": 39100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "307950": {
-"at": "2026-11-16T18:08",
-"change": 0.53,
+"at": "2026-11-16T19:12",
+"change": 0.35,
 "prevClose": null,
-"price": 287000.0,
+"price": 286500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "310210": {
-"at": "2026-11-16T18:08",
-"change": -8.92,
+"at": "2026-11-16T19:12",
+"change": -9.01,
 "prevClose": null,
-"price": 101100.0,
+"price": 101000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "316140": {
-"at": "2026-11-16T18:08",
-"change": 1.54,
+"at": "2026-11-16T19:12",
+"change": 1.69,
 "prevClose": null,
-"price": 33000.0,
+"price": 33050.0,
 "src": "naver",
 "status": "OPEN"
 },
 "319400": {
-"at": "2026-11-16T18:08",
-"change": -3.16,
+"at": "2026-11-16T19:12",
+"change": -3.41,
 "prevClose": null,
-"price": 15040.0,
+"price": 15000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "319660": {
-"at": "2026-11-16T18:08",
-"change": -13.19,
+"at": "2026-11-16T19:12",
+"change": -14.31,
 "prevClose": null,
-"price": 84900.0,
+"price": 83800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "323410": {
-"at": "2026-11-16T18:08",
-"change": 1.68,
+"at": "2026-11-16T19:12",
+"change": 1.92,
 "prevClose": null,
-"price": 21150.0,
+"price": 21200.0,
 "src": "naver",
 "status": "OPEN"
 },
 "326030": {
-"at": "2026-11-16T18:08",
-"change": 1.02,
+"at": "2026-11-16T19:12",
+"change": 1.14,
 "prevClose": null,
-"price": 88800.0,
+"price": 88900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "329180": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -0.18,
 "prevClose": null,
 "price": 270500.0,
@@ -1593,39 +1593,39 @@
 "status": "OPEN"
 },
 "336260": {
-"at": "2026-11-16T18:08",
-"change": -7.64,
+"at": "2026-11-16T19:12",
+"change": -8.53,
 "prevClose": null,
-"price": 26000.0,
+"price": 25750.0,
 "src": "naver",
 "status": "OPEN"
 },
 "347850": {
-"at": "2026-11-16T18:08",
-"change": -6.88,
+"at": "2026-11-16T19:12",
+"change": -7.13,
 "prevClose": null,
-"price": 37900.0,
+"price": 37800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "352820": {
-"at": "2026-11-16T18:08",
-"change": 1.48,
+"at": "2026-11-16T19:12",
+"change": 1.35,
 "prevClose": null,
-"price": 158000.0,
+"price": 157800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "353200": {
-"at": "2026-11-16T18:08",
-"change": -9.75,
+"at": "2026-11-16T19:12",
+"change": -10.3,
 "prevClose": null,
-"price": 82400.0,
+"price": 81900.0,
 "src": "naver",
 "status": "OPEN"
 },
 "357780": {
-"at": "2026-11-16T18:08",
+"at": "2026-11-16T19:12",
 "change": -4.22,
 "prevClose": null,
 "price": 283500.0,
@@ -1641,26 +1641,26 @@
 "status": "CLOSE"
 },
 "373220": {
-"at": "2026-11-16T18:08",
-"change": -1.69,
+"at": "2026-11-16T19:12",
+"change": -2.16,
 "prevClose": null,
-"price": 319000.0,
+"price": 317500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "375500": {
-"at": "2026-11-16T18:08",
-"change": -4.44,
+"at": "2026-11-16T19:12",
+"change": -4.63,
 "prevClose": null,
-"price": 51600.0,
+"price": 51500.0,
 "src": "naver",
 "status": "OPEN"
 },
 "377300": {
-"at": "2026-11-16T18:08",
-"change": 0.0,
+"at": "2026-11-16T19:12",
+"change": -0.62,
 "prevClose": null,
-"price": 32400.0,
+"price": 32200.0,
 "src": "naver",
 "status": "OPEN"
 },
@@ -1673,82 +1673,82 @@
 "status": "CLOSE"
 },
 "383220": {
-"at": "2026-11-16T18:08",
-"change": -0.68,
+"at": "2026-11-16T19:12",
+"change": -0.51,
 "prevClose": null,
-"price": 58700.0,
+"price": 58800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "402340": {
-"at": "2026-11-16T18:08",
-"change": -9.32,
+"at": "2026-11-16T19:12",
+"change": -10.1,
 "prevClose": null,
-"price": 691000.0,
+"price": 685000.0,
 "src": "naver",
 "status": "OPEN"
 },
 "403870": {
-"at": "2026-11-16T18:08",
-"change": -9.09,
+"at": "2026-11-16T19:12",
+"change": -9.46,
 "prevClose": null,
-"price": 37000.0,
+"price": 36850.0,
 "src": "naver",
 "status": "OPEN"
 },
 "440110": {
-"at": "2026-11-16T18:08",
-"change": -8.38,
+"at": "2026-11-16T19:12",
+"change": -8.66,
 "prevClose": null,
-"price": 32800.0,
+"price": 32700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "443060": {
-"at": "2026-11-16T18:08",
-"change": 4.68,
+"at": "2026-11-16T19:12",
+"change": 4.57,
 "prevClose": null,
-"price": 183300.0,
+"price": 183100.0,
 "src": "naver",
 "status": "OPEN"
 },
 "450080": {
-"at": "2026-11-16T18:08",
-"change": -3.47,
+"at": "2026-11-16T19:12",
+"change": -3.3,
 "prevClose": null,
-"price": 27800.0,
+"price": 27850.0,
 "src": "naver",
 "status": "OPEN"
 },
 "454910": {
-"at": "2026-11-16T18:08",
-"change": -3.28,
+"at": "2026-11-16T19:12",
+"change": -3.95,
 "prevClose": null,
-"price": 50200.0,
+"price": 49850.0,
 "src": "naver",
 "status": "OPEN"
 },
 "457190": {
-"at": "2026-11-16T18:08",
-"change": -6.03,
+"at": "2026-11-16T19:12",
+"change": -6.79,
 "prevClose": null,
-"price": 73300.0,
+"price": 72700.0,
 "src": "naver",
 "status": "OPEN"
 },
 "483650": {
-"at": "2026-11-16T18:08",
-"change": 2.4,
+"at": "2026-11-16T19:12",
+"change": 2.31,
 "prevClose": null,
-"price": 123900.0,
+"price": 123800.0,
 "src": "naver",
 "status": "OPEN"
 },
 "489790": {
-"at": "2026-11-16T18:08",
-"change": -6.47,
+"at": "2026-11-16T19:12",
+"change": -7.07,
 "prevClose": null,
-"price": 39000.0,
+"price": 38750.0,
 "src": "naver",
 "status": "OPEN"
 }
@@ -1758,8 +1758,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.39,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 357.63
+"at": "2026-11-16T19:12+09:00",
+"price": 358.66
 },
 "prevClose": 354.88,
 "price": 356.27,
@@ -1769,8 +1769,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.2,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 295.77
+"at": "2026-11-16T18:03+09:00",
+"price": 296.8
 },
 "prevClose": 294.45,
 "price": 295.03,
@@ -1791,8 +1791,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 1.18,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 108.66
+"at": "2026-11-16T18:03+09:00",
+"price": 108.93
 },
 "prevClose": 107.25,
 "price": 108.52,
@@ -1802,8 +1802,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.22,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 253.02
+"at": "2026-11-16T18:25+09:00",
+"price": 252.49
 },
 "prevClose": 249.95,
 "price": 250.49,
@@ -1813,8 +1813,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.9,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 244.96
+"at": "2026-11-16T18:52+09:00",
+"price": 244.7
 },
 "prevClose": 238.54,
 "price": 243.08,
@@ -1824,8 +1824,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.77,
 "ext": {
-"at": "2026-11-16T18:03+09:00",
-"price": 385.42
+"at": "2026-11-16T19:12+09:00",
+"price": 389.3
 },
 "prevClose": 409.29,
 "price": 397.97,
@@ -1849,8 +1849,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.02,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 174.93
+"at": "2026-11-16T18:49+09:00",
+"price": 176.57
 },
 "prevClose": 178.41,
 "price": 178.45,
@@ -1888,8 +1888,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.74,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 361.12
+"at": "2026-11-16T19:11+09:00",
+"price": 356.0
 },
 "prevClose": 380.95,
 "price": 370.5,
@@ -1899,8 +1899,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -8.75,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 511.01
+"at": "2026-11-16T19:12+09:00",
+"price": 506.9327
 },
 "prevClose": 585.3,
 "price": 534.06,
@@ -1942,8 +1942,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.29,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 264.5274
+"at": "2026-11-16T19:06+09:00",
+"price": 264.7
 },
 "prevClose": 267.44,
 "price": 266.66,
@@ -1953,8 +1953,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.52,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 191.4
+"at": "2026-11-16T18:53+09:00",
+"price": 190.5922
 },
 "prevClose": 206.63,
 "price": 197.29,
@@ -1977,6 +1977,10 @@
 "APH": {
 "at": "2026-11-14T06:00+09:00",
 "change": -1.75,
+"ext": {
+"at": "2026-11-16T18:48+09:00",
+"price": 76.75
+},
 "prevClose": 79.62,
 "price": 78.23,
 "src": "yahoo"
@@ -1992,8 +1996,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 3.92,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 406.96
+"at": "2026-11-16T18:52+09:00",
+"price": 407.715
 },
 "prevClose": 393.68,
 "price": 409.1,
@@ -2010,8 +2014,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.63,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 182.51
+"at": "2026-11-16T19:09+09:00",
+"price": 181.31
 },
 "prevClose": 199.78,
 "price": 190.53,
@@ -2021,8 +2025,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.13,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 1454.82
+"at": "2026-11-16T19:12+09:00",
+"price": 1455.97
 },
 "prevClose": 1497.12,
 "price": 1495.16,
@@ -2032,8 +2036,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.04,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 33.31
+"at": "2026-11-16T19:08+09:00",
+"price": 33.03
 },
 "prevClose": 36.29,
 "price": 35.55,
@@ -2043,8 +2047,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.76,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 337.26
+"at": "2026-11-16T19:12+09:00",
+"price": 334.17
 },
 "prevClose": 364.36,
 "price": 347.01,
@@ -2053,6 +2057,10 @@
 "AXP": {
 "at": "2026-11-14T06:01+09:00",
 "change": 0.8,
+"ext": {
+"at": "2026-11-16T18:41+09:00",
+"price": 320.69
+},
 "prevClose": 318.06,
 "price": 320.6,
 "src": "yahoo"
@@ -2060,6 +2068,10 @@
 "AZN": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.04,
+"ext": {
+"at": "2026-11-16T18:09+09:00",
+"price": 185.57
+},
 "prevClose": 184.38,
 "price": 184.45,
 "src": "yahoo"
@@ -2068,8 +2080,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.66,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 37.33
+"at": "2026-11-16T18:15+09:00",
+"price": 37.28
 },
 "prevClose": 37.84,
 "price": 37.59,
@@ -2079,8 +2091,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.03,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 170.62
+"at": "2026-11-16T18:32+09:00",
+"price": 170.3
 },
 "prevClose": 171.55,
 "price": 171.5,
@@ -2090,8 +2102,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 0.02,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 92.88
+"at": "2026-11-16T19:12+09:00",
+"price": 92.89
 },
 "prevClose": 94.36,
 "price": 94.38,
@@ -2101,8 +2113,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.01,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 50.8
+"at": "2026-11-16T18:53+09:00",
+"price": 51.1057
 },
 "prevClose": 50.51,
 "price": 51.02,
@@ -2118,6 +2130,10 @@
 "BBVA": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.0,
+"ext": {
+"at": "2026-11-16T19:08+09:00",
+"price": 25.86
+},
 "prevClose": 25.92,
 "price": 25.92,
 "src": "yahoo"
@@ -2144,8 +2160,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.92,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 181.85
+"at": "2026-11-16T19:12+09:00",
+"price": 181.0565
 },
 "prevClose": 201.93,
 "price": 191.99,
@@ -2155,8 +2171,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.27,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 77.81
+"at": "2026-11-16T19:11+09:00",
+"price": 77.78
 },
 "prevClose": 80.51,
 "price": 79.49,
@@ -2177,8 +2193,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.52,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 1227.0546
+"at": "2026-11-16T18:27+09:00",
+"price": 1219.76
 },
 "prevClose": 1216.61,
 "price": 1222.91,
@@ -2195,8 +2211,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.78,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 64.0
+"at": "2026-11-16T18:57+09:00",
+"price": 63.96
 },
 "prevClose": 62.32,
 "price": 63.43,
@@ -2205,6 +2221,10 @@
 "BN": {
 "at": "2026-11-14T06:00+09:00",
 "change": -1.61,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 40.84
+},
 "prevClose": 41.64,
 "price": 40.97,
 "src": "yahoo"
@@ -2219,6 +2239,10 @@
 "BNY": {
 "at": "2026-11-14T06:02+09:00",
 "change": 0.41,
+"ext": {
+"at": "2026-11-16T18:00+09:00",
+"price": 153.43
+},
 "prevClose": 152.79,
 "price": 153.41,
 "src": "yahoo"
@@ -2227,8 +2251,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.88,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 45.51
+"at": "2026-11-16T19:12+09:00",
+"price": 45.58
 },
 "prevClose": 45.3004,
 "price": 45.7,
@@ -2238,8 +2262,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.32,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 44.2
+"at": "2026-11-16T18:16+09:00",
+"price": 44.5
 },
 "prevClose": 44.2,
 "price": 44.34,
@@ -2249,8 +2273,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.39,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 62.11
+"at": "2026-11-16T19:08+09:00",
+"price": 62.04
 },
 "prevClose": 61.04,
 "price": 61.89,
@@ -2259,6 +2283,10 @@
 "BUD": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.14,
+"ext": {
+"at": "2026-11-16T19:06+09:00",
+"price": 85.4
+},
 "prevClose": 83.85,
 "price": 84.81,
 "src": "yahoo"
@@ -2277,6 +2305,10 @@
 "C": {
 "at": "2026-11-14T06:02+09:00",
 "change": -0.04,
+"ext": {
+"at": "2026-11-16T18:42+09:00",
+"price": 123.45
+},
 "prevClose": 124.06,
 "price": 124.01,
 "src": "yahoo"
@@ -2292,8 +2324,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.84,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 589.99
+"at": "2026-11-16T19:11+09:00",
+"price": 589.0
 },
 "prevClose": 605.28,
 "price": 600.2,
@@ -2303,8 +2335,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.07,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 381.0
+"at": "2026-11-16T18:52+09:00",
+"price": 383.5
 },
 "prevClose": 371.76,
 "price": 375.74,
@@ -2314,8 +2346,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.37,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 29.05
+"at": "2026-11-16T18:37+09:00",
+"price": 29.16
 },
 "prevClose": 29.34,
 "price": 29.23,
@@ -2332,8 +2364,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.78,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 277.4
+"at": "2026-11-16T18:53+09:00",
+"price": 275.5
 },
 "prevClose": 282.4,
 "price": 280.2,
@@ -2349,6 +2381,10 @@
 "CL": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.81,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 100.29
+},
 "prevClose": 97.9,
 "price": 99.67,
 "src": "yahoo"
@@ -2364,8 +2400,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.45,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 25.34
+"at": "2026-11-16T18:37+09:00",
+"price": 25.16
 },
 "prevClose": 24.8,
 "price": 25.16,
@@ -2381,6 +2417,10 @@
 "CMI": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.71,
+"ext": {
+"at": "2026-11-16T18:12+09:00",
+"price": 447.36
+},
 "prevClose": 455.4,
 "price": 452.18,
 "src": "yahoo"
@@ -2396,8 +2436,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.3,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 49.85
+"at": "2026-11-16T18:34+09:00",
+"price": 50.2178
 },
 "prevClose": 49.11,
 "price": 49.75,
@@ -2418,8 +2458,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.59,
 "ext": {
-"at": "2026-11-16T18:05+09:00",
-"price": 141.9
+"at": "2026-11-16T18:29+09:00",
+"price": 141.16
 },
 "prevClose": 140.06,
 "price": 142.28,
@@ -2436,8 +2476,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.28,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 1116.0
+"at": "2026-11-16T18:43+09:00",
+"price": 1115.0
 },
 "prevClose": 1092.21,
 "price": 1106.21,
@@ -2461,8 +2501,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.12,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 218.85
+"at": "2026-11-16T18:50+09:00",
+"price": 218.91
 },
 "prevClose": 217.57,
 "price": 217.84,
@@ -2472,8 +2512,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.42,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 225.6
+"at": "2026-11-16T18:29+09:00",
+"price": 225.0
 },
 "prevClose": 229.87,
 "price": 226.61,
@@ -2483,8 +2523,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -6.24,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 94.7
+"at": "2026-11-16T19:01+09:00",
+"price": 94.72
 },
 "prevClose": 102.01,
 "price": 95.64,
@@ -2512,8 +2552,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 2.16,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 71.82
+"at": "2026-11-16T18:29+09:00",
+"price": 72.14
 },
 "prevClose": 70.84,
 "price": 72.37,
@@ -2544,6 +2584,10 @@
 "D": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.22,
+"ext": {
+"at": "2026-11-16T18:41+09:00",
+"price": 67.61
+},
 "prevClose": 67.51,
 "price": 67.66,
 "src": "yahoo"
@@ -2552,8 +2596,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.35,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 85.3
+"at": "2026-11-16T18:38+09:00",
+"price": 85.2
 },
 "prevClose": 86.55,
 "price": 86.25,
@@ -2569,6 +2613,10 @@
 "DB": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.08,
+"ext": {
+"at": "2026-11-16T18:56+09:00",
+"price": 36.58
+},
 "prevClose": 36.65,
 "price": 36.62,
 "src": "yahoo"
@@ -2577,8 +2625,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.16,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 183.31
+"at": "2026-11-16T18:36+09:00",
+"price": 182.04
 },
 "prevClose": 184.46,
 "price": 184.16,
@@ -2595,8 +2643,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": -7.18,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 330.01
+"at": "2026-11-16T19:11+09:00",
+"price": 327.0
 },
 "prevClose": 371.17,
 "price": 344.53,
@@ -2606,8 +2654,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.6,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 102.34
+"at": "2026-11-16T18:25+09:00",
+"price": 102.24
 },
 "prevClose": 99.99,
 "price": 101.59,
@@ -2624,8 +2672,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 0.63,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 119.45
+"at": "2026-11-16T18:31+09:00",
+"price": 119.5
 },
 "prevClose": 118.23,
 "price": 118.97,
@@ -2652,6 +2700,10 @@
 "E": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.5,
+"ext": {
+"at": "2026-11-16T19:11+09:00",
+"price": 57.6
+},
 "prevClose": 56.73,
 "price": 57.58,
 "src": "yahoo"
@@ -2671,8 +2723,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 1.6,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 309.23
+"at": "2026-11-16T18:44+09:00",
+"price": 311.0
 },
 "prevClose": 304.41,
 "price": 309.27,
@@ -2681,6 +2733,10 @@
 "ELV": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.05,
+"ext": {
+"at": "2026-11-16T18:01+09:00",
+"price": 434.86
+},
 "prevClose": 429.9,
 "price": 429.69,
 "src": "yahoo"
@@ -2695,6 +2751,10 @@
 "ENB": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.52,
+"ext": {
+"at": "2026-11-16T18:00+09:00",
+"price": 47.3
+},
 "prevClose": 47.4227,
 "price": 47.67,
 "src": "yahoo"
@@ -2702,6 +2762,10 @@
 "EOG": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.73,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 158.35
+},
 "prevClose": 155.62,
 "price": 158.32,
 "src": "yahoo"
@@ -2724,8 +2788,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.44,
 "ext": {
-"at": "2026-11-16T18:05+09:00",
-"price": 42.49
+"at": "2026-11-16T18:49+09:00",
+"price": 42.24
 },
 "prevClose": 42.76,
 "price": 42.95,
@@ -2742,8 +2806,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.69,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 346.9
+"at": "2026-11-16T18:28+09:00",
+"price": 343.5
 },
 "prevClose": 359.04,
 "price": 352.97,
@@ -2760,7 +2824,7 @@
 "at": "2026-11-14T06:03+09:00",
 "change": 0.08,
 "ext": {
-"at": "2026-11-16T18:04+09:00",
+"at": "2026-11-16T18:52+09:00",
 "price": 11.91
 },
 "prevClose": 11.9,
@@ -2770,6 +2834,10 @@
 "FAST": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.65,
+"ext": {
+"at": "2026-11-16T18:54+09:00",
+"price": 55.5
+},
 "prevClose": 55.55,
 "price": 55.19,
 "src": "yahoo"
@@ -2778,8 +2846,8 @@
 "at": "2026-11-14T06:03+09:00",
 "change": -2.0,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 58.26
+"at": "2026-11-16T19:08+09:00",
+"price": 57.8
 },
 "prevClose": 60.45,
 "price": 59.24,
@@ -2800,8 +2868,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.79,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 127.35
+"at": "2026-11-16T18:54+09:00",
+"price": 126.24
 },
 "prevClose": 129.54,
 "price": 127.22,
@@ -2810,6 +2878,10 @@
 "GD": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.11,
+"ext": {
+"at": "2026-11-16T18:02+09:00",
+"price": 362.8
+},
 "prevClose": 363.07,
 "price": 363.46,
 "src": "yahoo"
@@ -2818,8 +2890,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.29,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 329.63
+"at": "2026-11-16T18:18+09:00",
+"price": 330.05
 },
 "prevClose": 330.86,
 "price": 331.81,
@@ -2829,8 +2901,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.88,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 783.1
+"at": "2026-11-16T19:06+09:00",
+"price": 777.0
 },
 "prevClose": 818.49,
 "price": 803.13,
@@ -2851,8 +2923,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": -4.31,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 110.09
+"at": "2026-11-16T19:12+09:00",
+"price": 109.23
 },
 "prevClose": 119.22,
 "price": 114.08,
@@ -2861,6 +2933,10 @@
 "GM": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.29,
+"ext": {
+"at": "2026-11-16T18:00+09:00",
+"price": 85.55
+},
 "prevClose": 86.25,
 "price": 86.0,
 "src": "yahoo"
@@ -2869,8 +2945,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.96,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 291.07
+"at": "2026-11-16T19:12+09:00",
+"price": 291.57
 },
 "prevClose": 295.35,
 "price": 292.52,
@@ -2880,8 +2956,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.98,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 294.44
+"at": "2026-11-16T19:10+09:00",
+"price": 294.87
 },
 "prevClose": 298.7,
 "price": 295.77,
@@ -2909,8 +2985,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.52,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 50.9
+"at": "2026-11-16T18:42+09:00",
+"price": 50.875
 },
 "prevClose": 50.1882,
 "price": 50.45,
@@ -2934,8 +3010,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.12,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 349.28
+"at": "2026-11-16T18:03+09:00",
+"price": 349.36
 },
 "prevClose": 348.26,
 "price": 348.69,
@@ -2945,8 +3021,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.47,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 26.01
+"at": "2026-11-16T18:37+09:00",
+"price": 26.16
 },
 "prevClose": 25.71,
 "price": 25.83,
@@ -2970,8 +3046,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.29,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 74.14
+"at": "2026-11-16T19:09+09:00",
+"price": 73.955
 },
 "prevClose": 81.35,
 "price": 77.86,
@@ -2981,8 +3057,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": -3.73,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 47.14
+"at": "2026-11-16T19:09+09:00",
+"price": 45.96
 },
 "prevClose": 50.16,
 "price": 48.29,
@@ -2992,8 +3068,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.61,
 "ext": {
-"at": "2026-11-16T18:02+09:00",
-"price": 89.77
+"at": "2026-11-16T18:36+09:00",
+"price": 89.68
 },
 "prevClose": 89.08,
 "price": 89.62,
@@ -3010,8 +3086,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.57,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 80.67
+"at": "2026-11-16T18:38+09:00",
+"price": 80.5
 },
 "prevClose": 81.33,
 "price": 81.79,
@@ -3020,6 +3096,10 @@
 "IBM": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.01,
+"ext": {
+"at": "2026-11-16T18:29+09:00",
+"price": 247.2
+},
 "prevClose": 244.67,
 "price": 247.13,
 "src": "yahoo"
@@ -3041,6 +3121,10 @@
 "IDXX": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.89,
+"ext": {
+"at": "2026-11-16T18:38+09:00",
+"price": 704.3
+},
 "prevClose": 698.02,
 "price": 704.23,
 "src": "yahoo"
@@ -3049,8 +3133,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.58,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 33.04
+"at": "2026-11-16T19:12+09:00",
+"price": 32.98
 },
 "prevClose": 33.03,
 "price": 33.22,
@@ -3060,8 +3144,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.52,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 57.0
+"at": "2026-11-16T19:12+09:00",
+"price": 56.64
 },
 "prevClose": 61.2,
 "price": 59.66,
@@ -3071,8 +3155,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.45,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 345.3
+"at": "2026-11-16T19:07+09:00",
+"price": 346.0
 },
 "prevClose": 340.17,
 "price": 341.7,
@@ -3082,8 +3166,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.84,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 445.45
+"at": "2026-11-16T18:24+09:00",
+"price": 443.95
 },
 "prevClose": 439.89,
 "price": 443.59,
@@ -3093,8 +3177,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.17,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 7.53
+"at": "2026-11-16T18:54+09:00",
+"price": 7.46
 },
 "prevClose": 7.37,
 "price": 7.53,
@@ -3110,6 +3194,10 @@
 "JCI": {
 "at": "2026-11-14T06:00+09:00",
 "change": -2.26,
+"ext": {
+"at": "2026-11-16T18:49+09:00",
+"price": 138.01
+},
 "prevClose": 142.55,
 "price": 139.33,
 "src": "yahoo"
@@ -3118,8 +3206,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.79,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 288.76
+"at": "2026-11-16T18:53+09:00",
+"price": 289.0
 },
 "prevClose": 283.52,
 "price": 285.75,
@@ -3129,8 +3217,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.98,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 347.11
+"at": "2026-11-16T19:03+09:00",
+"price": 347.1
 },
 "prevClose": 342.82,
 "price": 346.19,
@@ -3147,8 +3235,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.57,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 25.19
+"at": "2026-11-16T18:47+09:00",
+"price": 25.3
 },
 "prevClose": 24.48,
 "price": 25.11,
@@ -3165,8 +3253,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -3.17,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 146.68
+"at": "2026-11-16T19:07+09:00",
+"price": 145.2
 },
 "prevClose": 157.3,
 "price": 152.32,
@@ -3176,8 +3264,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.09,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 110.0
+"at": "2026-11-16T18:53+09:00",
+"price": 109.66
 },
 "prevClose": 107.19,
 "price": 109.43,
@@ -3198,8 +3286,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.86,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 100.07
+"at": "2026-11-16T19:09+09:00",
+"price": 99.95
 },
 "prevClose": 97.44,
 "price": 99.25,
@@ -3209,8 +3297,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.68,
 "ext": {
-"at": "2026-11-16T18:02+09:00",
-"price": 528.2
+"at": "2026-11-16T19:12+09:00",
+"price": 527.79
 },
 "prevClose": 522.49,
 "price": 526.06,
@@ -3220,8 +3308,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.49,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 569.45
+"at": "2026-11-16T19:06+09:00",
+"price": 562.5
 },
 "prevClose": 624.65,
 "price": 596.62,
@@ -3231,8 +3319,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 1.26,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 1454.82
+"at": "2026-11-16T19:09+09:00",
+"price": 1456.81
 },
 "prevClose": 1425.55,
 "price": 1443.5,
@@ -3248,6 +3336,10 @@
 "LNG": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.24,
+"ext": {
+"at": "2026-11-16T18:36+09:00",
+"price": 309.0
+},
 "prevClose": 309.48,
 "price": 308.75,
 "src": "yahoo"
@@ -3267,8 +3359,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -3.36,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 218.24
+"at": "2026-11-16T19:09+09:00",
+"price": 216.76
 },
 "prevClose": 233.78,
 "price": 225.92,
@@ -3285,8 +3377,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.32,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 664.96
+"at": "2026-11-16T18:26+09:00",
+"price": 665.6
 },
 "prevClose": 652.6,
 "price": 661.19,
@@ -3303,8 +3395,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.61,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 273.15
+"at": "2026-11-16T18:03+09:00",
+"price": 273.42
 },
 "prevClose": 273.63,
 "price": 271.97,
@@ -3346,8 +3438,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.11,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 1490.0
+"at": "2026-11-16T18:56+09:00",
+"price": 1488.95
 },
 "prevClose": 1475.09,
 "price": 1491.49,
@@ -3364,8 +3456,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.9,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 637.34
+"at": "2026-11-16T19:12+09:00",
+"price": 636.55
 },
 "prevClose": 623.61,
 "price": 641.69,
@@ -3396,8 +3488,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.95,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 46.58
+"at": "2026-11-16T18:36+09:00",
+"price": 46.73
 },
 "prevClose": 45.57,
 "price": 46.46,
@@ -3407,8 +3499,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.92,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 79.04
+"at": "2026-11-16T18:23+09:00",
+"price": 78.97
 },
 "prevClose": 77.92,
 "price": 78.64,
@@ -3437,7 +3529,7 @@
 "change": -3.93,
 "ext": {
 "at": "2026-11-16T18:01+09:00",
-"price": 1350.67
+"price": 1350.66
 },
 "prevClose": 1447.4,
 "price": 1390.54,
@@ -3447,8 +3539,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 0.55,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 148.7
+"at": "2026-11-16T18:03+09:00",
+"price": 148.61
 },
 "prevClose": 146.95,
 "price": 147.76,
@@ -3458,8 +3550,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -3.45,
 "ext": {
-"at": "2026-11-16T18:02+09:00",
-"price": 218.2
+"at": "2026-11-16T19:03+09:00",
+"price": 219.92
 },
 "prevClose": 231.35,
 "price": 223.37,
@@ -3476,8 +3568,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.68,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 151.31
+"at": "2026-11-16T19:11+09:00",
+"price": 149.6
 },
 "prevClose": 164.45,
 "price": 156.76,
@@ -3487,8 +3579,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 0.78,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 189.93
+"at": "2026-11-16T18:03+09:00",
+"price": 189.5
 },
 "prevClose": 189.17,
 "price": 190.65,
@@ -3498,8 +3590,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.17,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 522.18
+"at": "2026-11-16T19:09+09:00",
+"price": 527.5
 },
 "prevClose": 523.0,
 "price": 523.88,
@@ -3516,8 +3608,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.44,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 102.84
+"at": "2026-11-16T19:12+09:00",
+"price": 102.9
 },
 "prevClose": 114.41,
 "price": 111.62,
@@ -3527,8 +3619,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.52,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 740.6627
+"at": "2026-11-16T19:12+09:00",
+"price": 735.87
 },
 "prevClose": 798.44,
 "price": 778.31,
@@ -3538,8 +3630,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.37,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 21.61
+"at": "2026-11-16T18:03+09:00",
+"price": 21.4
 },
 "prevClose": 21.75,
 "price": 21.83,
@@ -3556,8 +3648,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.2,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 85.3
+"at": "2026-11-16T18:55+09:00",
+"price": 85.2
 },
 "prevClose": 85.29,
 "price": 85.12,
@@ -3567,8 +3659,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.44,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 111.9696
+"at": "2026-11-16T18:45+09:00",
+"price": 111.61
 },
 "prevClose": 112.64,
 "price": 113.14,
@@ -3578,8 +3670,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": -3.98,
 "ext": {
-"at": "2026-11-16T18:05+09:00",
-"price": 300.05
+"at": "2026-11-16T18:49+09:00",
+"price": 298.79
 },
 "prevClose": 318.5,
 "price": 305.81,
@@ -3589,8 +3681,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.86,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 62.68
+"at": "2026-11-16T19:12+09:00",
+"price": 62.88
 },
 "prevClose": 62.69,
 "price": 62.15,
@@ -3599,6 +3691,10 @@
 "NGG": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.83,
+"ext": {
+"at": "2026-11-16T18:34+09:00",
+"price": 84.65
+},
 "prevClose": 83.6,
 "price": 84.29,
 "src": "yahoo"
@@ -3607,8 +3703,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.61,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 38.36
+"at": "2026-11-16T19:09+09:00",
+"price": 38.53
 },
 "prevClose": 37.76,
 "price": 37.99,
@@ -3625,8 +3721,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.58,
 "ext": {
-"at": "2026-11-16T18:04+09:00",
-"price": 102.36
+"at": "2026-11-16T18:53+09:00",
+"price": 102.3
 },
 "prevClose": 100.66,
 "price": 102.25,
@@ -3654,8 +3750,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 11.75,
 "ext": {
-"at": "2026-11-16T18:04+09:00",
-"price": 13.04
+"at": "2026-11-16T19:08+09:00",
+"price": 13.08
 },
 "prevClose": 11.83,
 "price": 13.22,
@@ -3676,8 +3772,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.01,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 159.9
+"at": "2026-11-16T19:12+09:00",
+"price": 158.75
 },
 "prevClose": 166.19,
 "price": 162.85,
@@ -3687,8 +3783,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.41,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 42.29
+"at": "2026-11-16T19:11+09:00",
+"price": 42.33
 },
 "prevClose": 40.65,
 "price": 41.63,
@@ -3697,6 +3793,10 @@
 "NVS": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.16,
+"ext": {
+"at": "2026-11-16T18:05+09:00",
+"price": 161.19
+},
 "prevClose": 160.25,
 "price": 160.5,
 "src": "yahoo"
@@ -3704,6 +3804,10 @@
 "NWG": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.64,
+"ext": {
+"at": "2026-11-16T18:00+09:00",
+"price": 15.83
+},
 "prevClose": 15.73,
 "price": 15.83,
 "src": "yahoo"
@@ -3719,8 +3823,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.74,
 "ext": {
-"at": "2026-11-16T18:02+09:00",
-"price": 58.91
+"at": "2026-11-16T18:28+09:00",
+"price": 59.09
 },
 "prevClose": 59.26,
 "price": 58.82,
@@ -3737,8 +3841,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": -1.38,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 122.31
+"at": "2026-11-16T19:12+09:00",
+"price": 122.23
 },
 "prevClose": 127.11,
 "price": 125.35,
@@ -3759,8 +3863,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.6,
 "ext": {
-"at": "2026-11-16T18:04+09:00",
-"price": 58.86
+"at": "2026-11-16T19:00+09:00",
+"price": 58.69
 },
 "prevClose": 58.4,
 "price": 58.75,
@@ -3770,8 +3874,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.13,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 322.32
+"at": "2026-11-16T19:11+09:00",
+"price": 317.5
 },
 "prevClose": 322.66,
 "price": 322.24,
@@ -3781,8 +3885,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.33,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 18.38
+"at": "2026-11-16T19:02+09:00",
+"price": 18.3153
 },
 "prevClose": 18.1,
 "price": 18.34,
@@ -3799,8 +3903,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.16,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 13.24
+"at": "2026-11-16T18:15+09:00",
+"price": 13.3
 },
 "prevClose": 12.97,
 "price": 13.25,
@@ -3821,8 +3925,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.24,
 "ext": {
-"at": "2026-11-16T18:03+09:00",
-"price": 146.31
+"at": "2026-11-16T18:43+09:00",
+"price": 146.44
 },
 "prevClose": 142.26,
 "price": 145.44,
@@ -3832,8 +3936,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 0.21,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 29.06
+"at": "2026-11-16T18:54+09:00",
+"price": 29.04
 },
 "prevClose": 28.83,
 "price": 28.89,
@@ -3843,8 +3947,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 1.05,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 170.97
+"at": "2026-11-16T18:43+09:00",
+"price": 171.01
 },
 "prevClose": 168.03,
 "price": 169.8,
@@ -3875,8 +3979,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -2.09,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 167.25
+"at": "2026-11-16T19:12+09:00",
+"price": 166.4
 },
 "prevClose": 171.58,
 "price": 167.99,
@@ -3886,8 +3990,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.17,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 200.87
+"at": "2026-11-16T19:04+09:00",
+"price": 200.67
 },
 "prevClose": 196.66,
 "price": 198.96,
@@ -3911,8 +4015,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.76,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 264.0395
+"at": "2026-11-16T18:34+09:00",
+"price": 266.42
 },
 "prevClose": 262.91,
 "price": 264.9,
@@ -3922,8 +4026,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.68,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 590.0
+"at": "2026-11-16T18:03+09:00",
+"price": 587.62
 },
 "prevClose": 606.16,
 "price": 602.01,
@@ -3950,6 +4054,10 @@
 "RCL": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.4,
+"ext": {
+"at": "2026-11-16T18:35+09:00",
+"price": 321.98
+},
 "prevClose": 321.99,
 "price": 323.27,
 "src": "yahoo"
@@ -3957,6 +4065,10 @@
 "REGN": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.45,
+"ext": {
+"at": "2026-11-16T18:27+09:00",
+"price": 964.91
+},
 "prevClose": 951.19,
 "price": 955.47,
 "src": "yahoo"
@@ -3965,8 +4077,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.17,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 40.75
+"at": "2026-11-16T18:21+09:00",
+"price": 40.82
 },
 "prevClose": 40.04,
 "price": 40.51,
@@ -3976,8 +4088,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.4,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 82.19
+"at": "2026-11-16T19:11+09:00",
+"price": 82.14
 },
 "prevClose": 83.28,
 "price": 82.95,
@@ -4004,6 +4116,10 @@
 "RTX": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.11,
+"ext": {
+"at": "2026-11-16T18:25+09:00",
+"price": 198.34
+},
 "prevClose": 198.36,
 "price": 198.58,
 "src": "yahoo"
@@ -4018,6 +4134,10 @@
 "SAN": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.66,
+"ext": {
+"at": "2026-11-16T19:00+09:00",
+"price": 12.15
+},
 "prevClose": 12.13,
 "price": 12.21,
 "src": "yahoo"
@@ -4025,6 +4145,10 @@
 "SAP": {
 "at": "2026-11-14T06:00+09:00",
 "change": 0.36,
+"ext": {
+"at": "2026-11-16T18:45+09:00",
+"price": 234.63
+},
 "prevClose": 234.06,
 "price": 234.9,
 "src": "yahoo"
@@ -4033,8 +4157,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.18,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 106.87
+"at": "2026-11-16T19:09+09:00",
+"price": 107.36
 },
 "prevClose": 106.63,
 "price": 106.44,
@@ -4043,6 +4167,10 @@
 "SCCO": {
 "at": "2026-11-14T06:00+09:00",
 "change": -2.46,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 161.01
+},
 "prevClose": 168.21,
 "price": 164.08,
 "src": "yahoo"
@@ -4062,8 +4190,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.33,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 98.7
+"at": "2026-11-16T19:12+09:00",
+"price": 99.33
 },
 "prevClose": 97.7788,
 "price": 99.08,
@@ -4091,8 +4219,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -4.3,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 125.85
+"at": "2026-11-16T19:12+09:00",
+"price": 124.79
 },
 "prevClose": 137.71,
 "price": 131.79,
@@ -4102,8 +4230,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.49,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 51.53
+"at": "2026-11-16T18:51+09:00",
+"price": 51.69
 },
 "prevClose": 50.91,
 "price": 51.67,
@@ -4120,8 +4248,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -5.59,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 836.5
+"at": "2026-11-16T19:12+09:00",
+"price": 830.28
 },
 "prevClose": 937.46,
 "price": 885.01,
@@ -4153,8 +4281,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.19,
 "ext": {
-"at": "2026-11-16T18:06+09:00",
-"price": 48.19
+"at": "2026-11-16T19:09+09:00",
+"price": 48.32
 },
 "prevClose": 48.46,
 "price": 48.37,
@@ -4175,8 +4303,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.34,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 15.18
+"at": "2026-11-16T19:06+09:00",
+"price": 15.16
 },
 "prevClose": 15.63,
 "price": 15.42,
@@ -4186,8 +4314,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.54,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 27.14
+"at": "2026-11-16T19:08+09:00",
+"price": 27.08
 },
 "prevClose": 26.66,
 "price": 27.07,
@@ -4197,8 +4325,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.59,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 140.9
+"at": "2026-11-16T19:12+09:00",
+"price": 139.5
 },
 "prevClose": 139.94,
 "price": 139.11,
@@ -4215,8 +4343,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.08,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 473.57
+"at": "2026-11-16T18:52+09:00",
+"price": 476.5
 },
 "prevClose": 468.51,
 "price": 473.59,
@@ -4226,8 +4354,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 2.36,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 613.45
+"at": "2026-11-16T18:03+09:00",
+"price": 613.06
 },
 "prevClose": 598.51,
 "price": 612.63,
@@ -4237,8 +4365,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -3.09,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 502.32
+"at": "2026-11-16T19:04+09:00",
+"price": 505.02
 },
 "prevClose": 545.14,
 "price": 528.29,
@@ -4259,8 +4387,8 @@
 "at": "2026-11-14T06:01+09:00",
 "change": -0.88,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 309.32
+"at": "2026-11-16T18:03+09:00",
+"price": 311.15
 },
 "prevClose": 312.39,
 "price": 309.64,
@@ -4270,7 +4398,7 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.0,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
+"at": "2026-11-16T18:55+09:00",
 "price": 22.33
 },
 "prevClose": 22.18,
@@ -4280,6 +4408,10 @@
 "TAK": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.47,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 21.8
+},
 "prevClose": 21.12,
 "price": 21.43,
 "src": "yahoo"
@@ -4316,8 +4448,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.34,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 162.0
+"at": "2026-11-16T18:03+09:00",
+"price": 161.78
 },
 "prevClose": 160.9,
 "price": 161.45,
@@ -4333,6 +4465,10 @@
 "TM": {
 "at": "2026-11-14T06:00+09:00",
 "change": 1.31,
+"ext": {
+"at": "2026-11-16T18:00+09:00",
+"price": 212.44
+},
 "prevClose": 209.68,
 "price": 212.43,
 "src": "yahoo"
@@ -4351,6 +4487,10 @@
 "TMUS": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.63,
+"ext": {
+"at": "2026-11-16T18:11+09:00",
+"price": 171.9
+},
 "prevClose": 171.03,
 "price": 169.95,
 "src": "yahoo"
@@ -4373,8 +4513,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.01,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 402.4867
+"at": "2026-11-16T18:12+09:00",
+"price": 405.0
 },
 "prevClose": 403.18,
 "price": 403.23,
@@ -4384,8 +4524,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.82,
 "ext": {
-"at": "2026-11-16T18:07+09:00",
-"price": 384.48
+"at": "2026-11-16T19:12+09:00",
+"price": 384.86
 },
 "prevClose": 397.45,
 "price": 390.22,
@@ -4395,8 +4535,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -1.67,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 381.8
+"at": "2026-11-16T19:12+09:00",
+"price": 380.53
 },
 "prevClose": 405.49,
 "price": 398.73,
@@ -4413,8 +4553,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.33,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 90.72
+"at": "2026-11-16T18:54+09:00",
+"price": 90.73
 },
 "prevClose": 89.55,
 "price": 90.74,
@@ -4431,8 +4571,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.82,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 69.26
+"at": "2026-11-16T18:56+09:00",
+"price": 69.2448
 },
 "prevClose": 69.12,
 "price": 69.69,
@@ -4441,6 +4581,10 @@
 "UBS": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.27,
+"ext": {
+"at": "2026-11-16T18:03+09:00",
+"price": 48.21
+},
 "prevClose": 48.44,
 "price": 48.31,
 "src": "yahoo"
@@ -4449,8 +4593,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.07,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 66.78
+"at": "2026-11-16T18:54+09:00",
+"price": 66.45
 },
 "prevClose": 65.5081,
 "price": 66.21,
@@ -4460,8 +4604,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 0.58,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 407.44
+"at": "2026-11-16T18:55+09:00",
+"price": 408.88
 },
 "prevClose": 405.13,
 "price": 407.46,
@@ -4482,8 +4626,8 @@
 "at": "2026-11-14T06:02+09:00",
 "change": 1.83,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 110.91
+"at": "2026-11-16T18:54+09:00",
+"price": 110.73
 },
 "prevClose": 110.38,
 "price": 112.4,
@@ -4507,8 +4651,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.3,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 426.33
+"at": "2026-11-16T18:51+09:00",
+"price": 429.49
 },
 "prevClose": 420.31,
 "price": 425.76,
@@ -4518,8 +4662,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.3,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 378.5917
+"at": "2026-11-16T18:01+09:00",
+"price": 380.0
 },
 "prevClose": 374.95,
 "price": 379.83,
@@ -4529,8 +4673,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -3.61,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 192.68
+"at": "2026-11-16T19:04+09:00",
+"price": 192.23
 },
 "prevClose": 209.64,
 "price": 202.07,
@@ -4540,8 +4684,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.74,
 "ext": {
-"at": "2026-11-16T18:00+09:00",
-"price": 545.22
+"at": "2026-11-16T18:20+09:00",
+"price": 544.7311
 },
 "prevClose": 542.62,
 "price": 538.6,
@@ -4551,8 +4695,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -0.41,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 46.67
+"at": "2026-11-16T19:11+09:00",
+"price": 46.66
 },
 "prevClose": 46.55,
 "price": 46.36,
@@ -4569,8 +4713,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": -5.0,
 "ext": {
-"at": "2026-11-16T18:05+09:00",
-"price": 283.57
+"at": "2026-11-16T19:08+09:00",
+"price": 281.6
 },
 "prevClose": 311.21,
 "price": 295.65,
@@ -4587,8 +4731,8 @@
 "at": "2026-11-14T06:03+09:00",
 "change": 0.34,
 "ext": {
-"at": "2026-11-16T18:01+09:00",
-"price": 86.24
+"at": "2026-11-16T18:53+09:00",
+"price": 86.46
 },
 "prevClose": 85.76,
 "price": 86.05,
@@ -4604,6 +4748,10 @@
 "WMB": {
 "at": "2026-11-14T06:00+09:00",
 "change": -0.5,
+"ext": {
+"at": "2026-11-16T18:42+09:00",
+"price": 68.9
+},
 "prevClose": 69.44,
 "price": 69.09,
 "src": "yahoo"
@@ -4612,8 +4760,8 @@
 "at": "2026-11-14T06:00+09:00",
 "change": 1.51,
 "ext": {
-"at": "2026-11-16T18:08+09:00",
-"price": 128.81
+"at": "2026-11-16T19:08+09:00",
+"price": 129.32
 },
 "prevClose": 126.19,
 "price": 128.09,
@@ -4634,16 +4782,16 @@
 "at": "2026-11-14T06:01+09:00",
 "change": 0.48,
 "ext": {
-"at": "2026-11-16T18:05+09:00",
-"price": 170.44
+"at": "2026-11-16T19:05+09:00",
+"price": 170.43
 },
 "prevClose": 169.78,
 "price": 170.59,
 "src": "yahoo"
 }
 },
-"fxAt": "2026-11-16T18:08+09:00",
-"fxUSDKRW": 1333.14,
+"fxAt": "2026-11-16T19:12+09:00",
+"fxUSDKRW": 1334.69,
 "missing": {
 "KR": [],
 "US": [
@@ -4652,5 +4800,5 @@
 "WHR PRA"
 ]
 },
-"updatedAt": "2026-11-16T18:08:56+09:00"
+"updatedAt": "2026-11-16T19:12:39+09:00"
 }
